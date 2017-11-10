@@ -1,0 +1,45 @@
+{
+  "COMMON": {
+    "PLEASEWAIT": "Please wait...",
+    "THISWEEK" : "This week",
+    "LASTWEEK" : "Last week"
+  },
+  "IMPRESSUM": {
+    "TITLE": "Impressum",
+    "PUBLISHER": "Publisher",
+    "PUBLISHERNAME": "Your company",
+    "IMPLEMENTATION": "Technical implementation",
+    "BFH": "Bern University of Applied Sciences",
+    "i4mi": "Institute for Medical Informatics - I4MI",
+    "ETH": "ETH",
+    "iis": "Institute of Information Systems",
+    "DATA_RETENTION": "Data management",
+    "APP": "Application",
+    "PLATFORM": "Platform",
+    "VERSION": "Version"
+  },
+  "BLOOD": {
+    "TITLE": "Blood",
+    "MYGROUP": "My blood type",
+    "MYMEASURE": "My mesasures",
+    "NOVALUE": "No value for this week",
+    "NEWMANUALVALUE": {
+      "TITLE": "New manual entry",
+      "CAPTION": "What is your current pulse (heartbeat) value in [pulse/min]?",
+      "SAVE": "save",
+      "CANCEL": "cancel"
+    },
+    "NEWMEASURE": {
+      "TITLE": "Measuring your pulse",
+      "CAPTIONTITLE": "Instructions",
+      "CAPTION": "Please put your finger on the back lens and flash of your smartphone and this all the time from count-down. The measure lasts 10 seconds",
+      "START": "Start",
+      "RESULTTITLE": "Result",
+      "RESULTCAPTION": "Your heartbeat is ",
+      "UNIT": "[beat/min]"
+    },
+    "ERRORS": {
+      "NOVALUEENTERED": "Houston we have a problem! Please enter a valide value between 40 and 220..."
+    }
+  }
+}

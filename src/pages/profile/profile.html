@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div id="photoSectionWrapper">
+    <div id="photoSection" (click)="photoProfilClick()">
+      <img alt="Image Profile" id="photoImage" src="{{photoAccessURL}}" />
+      <img class="uploadImage" [src]="parameters.pathCameraIcon" />
+    </div>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-icon name="mail" item-left></ion-icon>
+      <p><b id="username">{{ 'PROFILE.USERNAME' | translate }}</b></p>
+      <p>{{username}}</p>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="contacts" item-left></ion-icon>
+      <p><b id="name">{{ 'PROFILE.NAME' | translate }}</b></p>
+      <p>{{name}}</p>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="calendar" item-left></ion-icon>
+      <p><b id="birthdate">{{ 'PROFILE.BIRTHDATE' | translate }}</b></p>
+      <p>{{birthDate| date: 'dd.MM.y'}}</p>
+    </ion-item>
+    <ion-item>
+      <ion-icon name={{genderIcon}} item-left></ion-icon>
+      <p><b id="gender">{{ 'PROFILE.GENDER' | translate }}</b></p>
+      <p>{{gender}}</p>
+    </ion-item>
+    <ion-item (click)="updateBodyHeight()">
+      <ion-icon name="resize" item-left></ion-icon>
+      <p><b id="height">{{ 'PROFILE.HEIGHT' | translate }}</b></p>
+      <p>{{height}} cm</p>
+      <ion-icon name="create" item-right></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-menu [content]="content">
+  <ion-content>
+    <ion-item>
+      <div class="userBadge" (click)='openModal(profilePage.value)'>
+        <img class="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Danica_2010_cropped.jpg" />
+        <img class="editImage" src="http://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/pen-icon.png"/>
+        <h3>Elisabeth Brönnimann</h3>
+      </div>
+    </ion-item>
+    <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon class="iconMenu" name="{{p.icon}}"></ion-icon>{{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
