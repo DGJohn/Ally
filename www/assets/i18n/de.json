@@ -1,0 +1,45 @@
+{
+  "COMMON": {
+    "PLEASEWAIT": "Ein Moment Geduld, bitte...",
+    "THISWEEK" : "Diese Woche",
+    "LASTWEEK" : "Letzte Woche"
+  },
+    "IMPRESSUM": {
+        "TITLE": "Impressum",
+        "PUBLISHER": "Herausgeber",
+        "PUBLISHERNAME": "Ihre Firma",
+        "IMPLEMENTATION": "Technische Umsetzung",
+        "BFH" : "Berner Fachhochschule",
+        "i4mi" : "Institut für Medizininformatik - I4MI",
+        "ETH" : "ETH",
+        "iis" : "Institute of Information Systems",
+        "DATA_RETENTION": "Datenhaltung",
+        "APP": "Applikation",
+        "PLATFORM": "Plattform",
+        "VERSION": "Version"
+    },
+    "BLOOD":{
+      "TITLE": "Blut",
+      "MYGROUP": "Meine Blutgruppe",
+      "MYMEASURE" : "Meine Massnahmen",
+      "NOVALUE" : "Kein Wert für diese Woche",
+      "NEWMANUALVALUE":{
+        "TITLE" : "Neuer manueller Eintrag",
+        "CAPTION" : "Bitte geben Sie einen neuen Wert in [Herzschlag / min] ein:",
+        "SAVE" : "speichen",
+        "CANCEL" : "abbrechen"
+        },
+        "NEWMEASURE":{
+            "TITLE" : "Messen der Puls",
+            "CAPTIONTITLE" : "Anleitung",
+            "CAPTION" : "Bitte fügen Sie Ihren Finger auf die hintere Linse und den Blitz Ihres Smartphones und dies die ganze Zeit von count-down. Die Messungen dauert 10 Sekunden",
+            "START" : "Start",
+            "RESULTTITLE" : "Ergebnisse",
+            "RESULTCAPTION" : "Dein Herzschlag ist ",
+            "UNIT" : "[Herzschlag/Minute]"
+            },
+      "ERRORS":{
+        "NOVALUEENTERED" : "Houston, wir haben ein Problem! Bitte geben Sie eine ganze Zahl zwischen 40 und 220 ein..."
+      }
+    }
+}

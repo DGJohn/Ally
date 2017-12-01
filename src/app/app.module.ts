@@ -17,6 +17,7 @@ import { MidataConnectionService } from '../services/MidataConnectionService';
 import { InBrowserBrowser } from '../services/InBrowserBrowser';
 import { Camera } from '@ionic-native/camera';
 
+import { TabsPage } from '../pages/tabs/tabs';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ProfilePage } from '../pages/profile/profile';
@@ -51,7 +52,8 @@ import { ModalService } from '../services/ModalService';
     LoginPage,
     AdvanceDirectivesPage,
     QuestionsPage,
-    ProfilePage
+    ProfilePage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -77,7 +79,8 @@ import { ModalService } from '../services/ModalService';
     LoginPage,
     AdvanceDirectivesPage,
     QuestionsPage,
-    ProfilePage
+    ProfilePage,
+    TabsPage
   ],
   providers: [
     StatusBar,

@@ -9,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TranslateService } from '@ngx-translate/core';
 
+import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';
 import { BloodPage } from '../pages/blood/blood';
 import { LoginPage } from "../pages/login/login";
@@ -24,7 +25,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
 
-  rootPage: any = HomePage;
+  rootPage: any = TabsPage;
 
   pages: Array<{ title: string, component: any, icon: string }>;
 
@@ -49,6 +50,7 @@ export class MyApp {
         { title: 'Profile', component: ProfilePage, icon: 'person' },
         { title: 'Logout', component: LoginPage, icon: 'finger-print' },
         { title: value['IMPRESSUM.TITLE'], component: ImpressumPage, icon: 'apps' },
+        { title: 'Tabs', component: TabsPage, icon: 'apps'}
       ];
     });
     this.initializeApp();
