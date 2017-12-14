@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { OverviewPage } from '../overview/overview';
 import { CommunityPage } from '../community/community';
 import { IntroductionPage } from '../introduction/introduction';
+import { NewEntryPage } from '../newEntry/newEntry';
 
 @Component({
   selector: 'page-home',
@@ -23,5 +24,8 @@ pushCommunityPage() {
 
 pushIntroductionPage() {
   this.navCtrl.push(IntroductionPage)
+}
+pushNewEntryPage() {
+  this.navCtrl.push(NewEntryPage)
 }
 }

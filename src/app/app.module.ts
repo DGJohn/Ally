@@ -35,6 +35,8 @@ import { JobPage } from '../pages/introduction/job/job';
 import { ReminderTimePage } from '../pages/introduction/remindertime/remindertime';
 import { RewardPage } from '../pages/introduction/reward/reward';
 import { TakingDrugPage } from '../pages/introduction/takingdrug/takingdrug';
+import { NewEntryPage } from '../pages/newEntry/newEntry';
+
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -76,6 +78,7 @@ import { ModalService } from '../services/ModalService';
     ReminderTimePage,
     RewardPage,
     TakingDrugPage,
+    NewEntryPage,
     TabsPage
   ],
   imports: [
@@ -114,6 +117,7 @@ import { ModalService } from '../services/ModalService';
     ReminderTimePage,
     RewardPage,
     TakingDrugPage,
+    NewEntryPage,
     TabsPage
   ],
   providers: [

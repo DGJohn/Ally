@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Neuer Eintrag</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <button id="btnX" ion-button color="light" round icon-only>
+    <ion-icon name='close'></ion-icon>
+  </button>
+
+  <ion-item>
+        <img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;">
+    </ion-item>
+      <p>Wann sind deine Beschwerden aufgetreten?
+      </p>
+      <ion-item>
+        <ion-label>Datum</ion-label>
+        <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="myDate">
+        </ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label>Zeit</ion-label>
+        <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>
+      </ion-item>
+      <button id="btnForward" ion-button secondary>Weiter</button>
+
+</ion-content>

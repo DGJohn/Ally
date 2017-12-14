@@ -23,6 +23,7 @@ import { JobPage } from '../pages/introduction/job/job';
 import { ReminderTimePage } from '../pages/introduction/remindertime/remindertime';
 import { RewardPage } from '../pages/introduction/reward/reward';
 import { TakingDrugPage } from '../pages/introduction/takingdrug/takingdrug';
+import { NewEntryPage } from '../pages/newEntry/newEntry';
 import { MidataConnectionService } from "../services/MidataConnectionService";
 import { Network } from "@ionic-native/network";
 

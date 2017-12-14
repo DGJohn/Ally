@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Neuer Eintrag</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <button id="btnX" ion-button color="light" round icon-only>
+    <ion-icon name='close'></ion-icon>
+  </button>
+
+  <ion-item>
+        <img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;">
+    </ion-item>
+
+    <p>Hast Du Medikamente eingenommen?</p>
+          <ion-list radio-group [(ngModel)]="MedisEingenommen">
+            <ion-item>
+              <ion-label>Ja</ion-label>
+              <ion-radio value="Ja"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Nein</ion-label>
+              <ion-radio value="Nein"></ion-radio>
+            </ion-item>
+          </ion-list>
+          <p>Wenn ja ...</p>
+          <ion-list radio-group [(ngModel)]="VorbeugendBeschwerden">
+            <ion-item>
+              <ion-label>Vorbeugend</ion-label>
+              <ion-radio value="Vorbeugend"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Wegen Beschwerden</ion-label>
+              <ion-radio value="wegen Beschwerden"></ion-radio>
+            </ion-item>
+          </ion-list>
+
+    <button id="btnForward" ion-button secondary>Weiter</button>
+
+</ion-content>

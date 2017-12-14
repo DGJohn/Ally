@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Neuer Eintrag</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <button id="btnX" ion-button color="light" round icon-only>
+    <ion-icon name='close'></ion-icon>
+  </button>
+
+  <ion-item>
+        <!-- img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;" -->
+    </ion-item>
+
+    <p>Gib bitte spontan an, wie stark deine Beschwerden sind?</p>
+          <h5>Augenbeschwerden</h5>
+          <p>(Brennen, Jucken, Tränen)</p>
+            <ion-item>
+            <ion-range min="0" max="10" [(ngModel)]="Augenbeschwerden">
+              <ion-label range-left>0</ion-label>
+              <ion-label range-right>10</ion-label>
+            </ion-range>
+          </ion-item>
+          <h5>Nasenbeschwerden</h5>
+          <p>(Schnupfen, Juckreiz)</p>
+          <ion-item>
+            <ion-range min="0" max="10" [(ngModel)]="Nasenbeschwerden">
+              <ion-label range-left>0</ion-label>
+              <ion-label range-right>10</ion-label>
+            </ion-range>
+          </ion-item>
+          <h5>Atembeschwerden</h5>
+          <p>(Atemnot, Husten)</p>
+          <ion-item>
+            <ion-range min="0" max="10" [(ngModel)]="Atembeschwerden">
+              <ion-label range-left>0</ion-label>
+              <ion-label range-right>10</ion-label>
+            </ion-range>
+          </ion-item>
+      <button id="btnForward" ion-button secondary>Weiter</button>
+
+</ion-content>

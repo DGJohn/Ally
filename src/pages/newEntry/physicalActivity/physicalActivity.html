@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Neuer Eintrag</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <button id="btnX" ion-button color="light" round icon-only>
+    <ion-icon name='close'></ion-icon>
+  </button>
+
+  <ion-item>
+        <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->
+    </ion-item>
+
+  <p>Wie stark hast Du dich körperlich betätigt?</p>
+
+  <ion-item>
+    <ion-range min="0" max="10" [(ngModel)]="physicalActivity">
+      <ion-label range-left>0</ion-label>
+      <ion-label range-right>10</ion-label>
+    </ion-range>
+  </ion-item>
+
+  <button id="btnForward" ion-button secondary>Weiter</button>
+
+</ion-content>
