@@ -5,7 +5,7 @@ import { NavController } from 'ionic-angular';
   selector: 'page-tips',
   templateUrl: 'tips.html'
 })
-export class tipsPage {
+export class TipsPage {
 
   constructor(public navCtrl: NavController) {
   }

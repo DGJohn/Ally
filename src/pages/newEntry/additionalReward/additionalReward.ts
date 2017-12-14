@@ -5,7 +5,7 @@ import { NavController } from 'ionic-angular';
   selector: 'page-additionalReward',
   templateUrl: 'additionalReward.html'
 })
-export class additionalRewardPage {
+export class AdditionalRewardPage {
 
   constructor(public navCtrl: NavController) {
   }

@@ -5,7 +5,7 @@ import { NavController } from 'ionic-angular';
   selector: 'page-dateTime',
   templateUrl: 'dateTime.html'
 })
-export class dateTimePage {
+export class DateTimePage {
 
   constructor(public navCtrl: NavController) {
   }

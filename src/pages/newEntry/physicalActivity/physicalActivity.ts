@@ -5,7 +5,7 @@ import { NavController } from 'ionic-angular';
   selector: 'page-physicalActivity',
   templateUrl: 'physicalActivity.html'
 })
-export class physicalActivityPage {
+export class PhysicalActivityPage {
 
   constructor(public navCtrl: NavController) {
   }

@@ -24,6 +24,13 @@ import { ReminderTimePage } from '../pages/introduction/remindertime/remindertim
 import { RewardPage } from '../pages/introduction/reward/reward';
 import { TakingDrugPage } from '../pages/introduction/takingdrug/takingdrug';
 import { NewEntryPage } from '../pages/newEntry/newEntry';
+import { DateTimePage } from '../pages/newEntry/dateTime/dateTime';
+import { ComplaintsPage } from '../pages/newEntry/complaints/complaints';
+import { PhysicalActivityPage } from '../pages/newEntry/physicalActivity/physicalActivity';
+import { MedicationPage } from '../pages/newEntry/medication/medication';
+import { TotalPointsPage } from '../pages/newEntry/totalPoints/totalPoints';
+import { AdditionalRewardPage } from '../pages/newEntry/additionalReward/additionalReward';
+import { TipsPage } from '../pages/newEntry/tips/tips';
 import { MidataConnectionService } from "../services/MidataConnectionService";
 import { Network } from "@ionic-native/network";
 
