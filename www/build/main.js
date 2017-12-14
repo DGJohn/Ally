@@ -1,4 +1,4 @@
-webpackJsonp([7],{
+webpackJsonp([14],{
 
 /***/ 101:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -38,14 +38,14 @@ Answer.currentId = 0;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfilePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_languageService_languageService__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_parametersService_parametersService__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_camera__ = __webpack_require__(370);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_midata__ = __webpack_require__(510);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_camera__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_midata__ = __webpack_require__(511);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_midata___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_midata__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_MidataConnectionService__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__typings_globals__ = __webpack_require__(511);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__typings_globals__ = __webpack_require__(512);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -302,7 +302,7 @@ var ProfilePage = (function () {
 }());
 ProfilePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-profile',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\profile\profile.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Profile</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <div id="photoSectionWrapper">\n\n    <div id="photoSection" (click)="photoProfilClick()">\n\n      <img alt="Image Profile" id="photoImage" src="{{photoAccessURL}}" />\n\n      <img class="uploadImage" [src]="parameters.pathCameraIcon" />\n\n    </div>\n\n  </div>\n\n\n\n  <ion-list>\n\n    <ion-item>\n\n      <ion-icon name="mail" item-left></ion-icon>\n\n      <p><b id="username">{{ \'PROFILE.USERNAME\' | translate }}</b></p>\n\n      <p>{{username}}</p>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-icon name="contacts" item-left></ion-icon>\n\n      <p><b id="name">{{ \'PROFILE.NAME\' | translate }}</b></p>\n\n      <p>{{name}}</p>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-icon name="calendar" item-left></ion-icon>\n\n      <p><b id="birthdate">{{ \'PROFILE.BIRTHDATE\' | translate }}</b></p>\n\n      <p>{{birthDate| date: \'dd.MM.y\'}}</p>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-icon name={{genderIcon}} item-left></ion-icon>\n\n      <p><b id="gender">{{ \'PROFILE.GENDER\' | translate }}</b></p>\n\n      <p>{{gender}}</p>\n\n    </ion-item>\n\n    <ion-item (click)="updateBodyHeight()">\n\n      <ion-icon name="resize" item-left></ion-icon>\n\n      <p><b id="height">{{ \'PROFILE.HEIGHT\' | translate }}</b></p>\n\n      <p>{{height}} cm</p>\n\n      <ion-icon name="create" item-right></ion-icon>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\profile\profile.html"*/
+        selector: 'page-profile',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/profile/profile.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Profile</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <div id="photoSectionWrapper">\n    <div id="photoSection" (click)="photoProfilClick()">\n      <img alt="Image Profile" id="photoImage" src="{{photoAccessURL}}" />\n      <img class="uploadImage" [src]="parameters.pathCameraIcon" />\n    </div>\n  </div>\n\n  <ion-list>\n    <ion-item>\n      <ion-icon name="mail" item-left></ion-icon>\n      <p><b id="username">{{ \'PROFILE.USERNAME\' | translate }}</b></p>\n      <p>{{username}}</p>\n    </ion-item>\n    <ion-item>\n      <ion-icon name="contacts" item-left></ion-icon>\n      <p><b id="name">{{ \'PROFILE.NAME\' | translate }}</b></p>\n      <p>{{name}}</p>\n    </ion-item>\n    <ion-item>\n      <ion-icon name="calendar" item-left></ion-icon>\n      <p><b id="birthdate">{{ \'PROFILE.BIRTHDATE\' | translate }}</b></p>\n      <p>{{birthDate| date: \'dd.MM.y\'}}</p>\n    </ion-item>\n    <ion-item>\n      <ion-icon name={{genderIcon}} item-left></ion-icon>\n      <p><b id="gender">{{ \'PROFILE.GENDER\' | translate }}</b></p>\n      <p>{{gender}}</p>\n    </ion-item>\n    <ion-item (click)="updateBodyHeight()">\n      <ion-icon name="resize" item-left></ion-icon>\n      <p><b id="height">{{ \'PROFILE.HEIGHT\' | translate }}</b></p>\n      <p>{{height}} cm</p>\n      <ion-icon name="create" item-right></ion-icon>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/profile/profile.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_2__services_languageService_languageService__["a" /* LanguageService */],
@@ -322,11 +322,11 @@ ProfilePage = __decorate([
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LanguageService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_globalization__ = __webpack_require__(368);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_native_storage__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_globalization__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_native_storage__ = __webpack_require__(370);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -423,10 +423,10 @@ LanguageService = __decorate([
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdvanceDirectivesPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Objects_Question__ = __webpack_require__(390);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Objects_Group__ = __webpack_require__(391);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Objects_Question__ = __webpack_require__(391);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Objects_Group__ = __webpack_require__(392);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__QuestionsModal_questions__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Objects_AnswersType_TextAnswer__ = __webpack_require__(190);
@@ -549,7 +549,7 @@ var AdvanceDirectivesPage = (function () {
 }());
 AdvanceDirectivesPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["n" /* Component */])({
-        selector: 'page-advance-directives',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\advance-directives\advance-directives.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Advance directives</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-grid>\n\n    <ion-row>\n\n      <ion-col col-2></ion-col>\n\n      <ion-col col-8><button ion-button color="secondary" round block (click)="askQuestions()">Répondre aux questions</button></ion-col>\n\n      <ion-col col-2></ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n  <ng-container *ngFor="let group of groups; let i = index">\n\n    <ion-card color="primary" (click)="inability(i)">\n\n      <ion-card-content>\n\n        {{group.groupTitle}} \n\n      </ion-card-content>\n\n    </ion-card>\n\n    <ng-container *ngFor="let question of group.questions">\n\n      <ion-card [hidden]="!hideInability[i]">\n\n        <ion-card-header text-wrap>\n\n          <b>{{question.label}}</b>\n\n        </ion-card-header>\n\n        <ion-card-content>\n\n          <ion-list *ngFor="let answer of question.answerValue">\n\n            <ng-container *ngIf="question.type == \'text\' && answer">\n\n              <ion-item text-wrap><b>{{answer.label}}:</b> {{answer.value}}</ion-item>\n\n            </ng-container>\n\n            <ng-container *ngIf="question.type == \'radio\' && answer">\n\n              <ion-item text-wrap>{{answer.label}}</ion-item>\n\n              <ion-list *ngFor="let subAnswer of question.subAnswerValue">\n\n                <ng-container *ngIf="subAnswer">\n\n                  <ion-item class="sub-item" text-wrap>{{subAnswer.label}}</ion-item>\n\n                </ng-container>\n\n              </ion-list>\n\n              <ion-list *ngFor="let subSubAnswer of question.subSubAnswerValue">\n\n                <ng-container *ngIf="subSubAnswer">\n\n                  <ion-item class="sub-sub-item" text-wrap>{{subSubAnswer.label}}</ion-item>\n\n                </ng-container>\n\n              </ion-list>\n\n            </ng-container>\n\n            <ng-container *ngIf="question.type == \'checkbox\' && answer">\n\n              <ion-item text-wrap>{{answer.label}}</ion-item>\n\n            </ng-container>\n\n          </ion-list>\n\n          <ng-container *ngIf="question.answerValue.length < 1">\n\n            <ion-list>\n\n              <ion-item>Aucune réponse disponible</ion-item>\n\n            </ion-list>\n\n          </ng-container>\n\n        </ion-card-content>\n\n      </ion-card>\n\n    </ng-container>\n\n  </ng-container>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\advance-directives\advance-directives.html"*/,
+        selector: 'page-advance-directives',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/advance-directives/advance-directives.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Advance directives</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-2></ion-col>\n      <ion-col col-8><button ion-button color="secondary" round block (click)="askQuestions()">Répondre aux questions</button></ion-col>\n      <ion-col col-2></ion-col>\n    </ion-row>\n  </ion-grid>\n  <ng-container *ngFor="let group of groups; let i = index">\n    <ion-card color="primary" (click)="inability(i)">\n      <ion-card-content>\n        {{group.groupTitle}} \n      </ion-card-content>\n    </ion-card>\n    <ng-container *ngFor="let question of group.questions">\n      <ion-card [hidden]="!hideInability[i]">\n        <ion-card-header text-wrap>\n          <b>{{question.label}}</b>\n        </ion-card-header>\n        <ion-card-content>\n          <ion-list *ngFor="let answer of question.answerValue">\n            <ng-container *ngIf="question.type == \'text\' && answer">\n              <ion-item text-wrap><b>{{answer.label}}:</b> {{answer.value}}</ion-item>\n            </ng-container>\n            <ng-container *ngIf="question.type == \'radio\' && answer">\n              <ion-item text-wrap>{{answer.label}}</ion-item>\n              <ion-list *ngFor="let subAnswer of question.subAnswerValue">\n                <ng-container *ngIf="subAnswer">\n                  <ion-item class="sub-item" text-wrap>{{subAnswer.label}}</ion-item>\n                </ng-container>\n              </ion-list>\n              <ion-list *ngFor="let subSubAnswer of question.subSubAnswerValue">\n                <ng-container *ngIf="subSubAnswer">\n                  <ion-item class="sub-sub-item" text-wrap>{{subSubAnswer.label}}</ion-item>\n                </ng-container>\n              </ion-list>\n            </ng-container>\n            <ng-container *ngIf="question.type == \'checkbox\' && answer">\n              <ion-item text-wrap>{{answer.label}}</ion-item>\n            </ng-container>\n          </ion-list>\n          <ng-container *ngIf="question.answerValue.length < 1">\n            <ion-list>\n              <ion-item>Aucune réponse disponible</ion-item>\n            </ion-list>\n          </ng-container>\n        </ion-card-content>\n      </ion-card>\n    </ng-container>\n  </ng-container>\n</ion-content>'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/advance-directives/advance-directives.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["i" /* ModalController */], __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */]])
 ], AdvanceDirectivesPage);
@@ -564,7 +564,7 @@ AdvanceDirectivesPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QuestionsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Objects_AnswersType_TextAnswer__ = __webpack_require__(190);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Objects_AnswersType_RadioAnswer__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Objects_AnswersType_CheckboxAnswer__ = __webpack_require__(192);
@@ -643,7 +643,7 @@ __decorate([
 ], QuestionsPage.prototype, "slides", void 0);
 QuestionsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-questions',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\advance-directives\QuestionsModal\questions.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons left>\n\n      <button ion-button icon-only (click)="dismiss()">\n\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>Questions</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-slides>\n\n    <ng-container *ngFor="let group of groups">\n\n      <ion-slide class="explanations">\n\n        <ion-card color="light">\n\n          <ion-card-header color="primary">\n\n            {{group.groupTitle}}\n\n          </ion-card-header>\n\n          <ion-card-content>\n\n            {{group.groupDescription}}\n\n          </ion-card-content>\n\n        </ion-card>\n\n      </ion-slide>\n\n      <ng-container *ngFor="let question of group.questions">\n\n        <ion-slide *ngIf="question.type == \'text\'">\n\n          <h1>{{question.label}}</h1>\n\n          <ion-list *ngFor="let answer of question.answers">\n\n            <ion-item>\n\n              <ion-label fixed>{{answer.label}}</ion-label>\n\n              <ion-input type="text" #textValue (input)="changeAnswer(question, answer, textValue.value)" value="{{answer.value}}"></ion-input>\n\n            </ion-item>\n\n          </ion-list>\n\n        </ion-slide>\n\n        <ion-slide *ngIf="question.type == \'radio\'">\n\n          <h1>{{question.label}}</h1>\n\n          <ion-list radio-group [(ngModel)]="radioAnswer">\n\n            <ng-container *ngFor="let answer of question.answers">\n\n              <ion-item text-wrap item-divider>\n\n                <ion-label>{{answer.label}}</ion-label>\n\n                <ion-radio #radioValue value="{{answer.name}}" (ionSelect)="changeAnswer(question, answer)"></ion-radio>\n\n              </ion-item>\n\n              <ng-container *ngIf="answer.subAnswers && radioAnswer == answer.name">\n\n                <ion-list radio-group [(ngModel)]="radioSubAnswer">\n\n                  <ng-container *ngFor="let subAnswer of answer.subAnswers">\n\n                    <ion-item text-wrap class="sub-item">\n\n                      <ion-label class="subAnswer">{{subAnswer.label}}</ion-label>\n\n                      <ion-radio value="{{subAnswer.name}}" (ionSelect)="changeAnswer(question, answer, \'\', subAnswer)"></ion-radio>\n\n                    </ion-item>\n\n                    <ion-list radio-group>\n\n                      <ng-container *ngIf="subAnswer.subAnswers && radioSubAnswer == subAnswer.name">\n\n                        <ion-item text-wrap class="sub-sub-item" *ngFor="let subSubAnswer of subAnswer.subAnswers">\n\n                          <ion-label class="subSubAnswer">{{subSubAnswer.label}}</ion-label>\n\n                          <ion-radio value="{{subSubAnswer.name}}" (ionSelect)="changeAnswer(question, answer, \'\', subAnswer, subSubAnswer)"></ion-radio>\n\n                        </ion-item>\n\n                      </ng-container>\n\n                    </ion-list>\n\n                  </ng-container>\n\n                </ion-list>\n\n              </ng-container>\n\n            </ng-container>\n\n          </ion-list>\n\n        </ion-slide>\n\n        <ion-slide *ngIf="question.type == \'checkbox\'">\n\n          <h1>{{question.label}}</h1>\n\n          <ion-list *ngFor="let answer of question.answers">\n\n            <ion-item text-wrap item-divider>\n\n              <ion-label>{{answer.label}}</ion-label>\n\n              <ion-checkbox #checkValue (ionChange)="changeAnswer(question, answer, checkValue.value)"></ion-checkbox>\n\n            </ion-item>\n\n          </ion-list>\n\n        </ion-slide>\n\n\n\n      </ng-container>\n\n    </ng-container>\n\n  </ion-slides>\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <ion-grid>\n\n    <ion-row>\n\n      <ion-col>\n\n        <button ion-button full (click)="close()" *ngIf="slides._isBeginning">Fermer</button>\n\n        <button ion-button full (click)="previous()" *ngIf="!slides._isBeginning">Précédant</button>\n\n      </ion-col>\n\n      <ion-col>\n\n        <button ion-button full (click)="next()" *ngIf="!slides._isEnd">Suivant</button>\n\n        <button ion-button full (click)="close()" *ngIf="slides._isEnd">Fermer</button>\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\advance-directives\QuestionsModal\questions.html"*/,
+        selector: 'page-questions',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/advance-directives/QuestionsModal/questions.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-buttons left>\n      <button ion-button icon-only (click)="dismiss()">\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Questions</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-slides>\n    <ng-container *ngFor="let group of groups">\n      <ion-slide class="explanations">\n        <ion-card color="light">\n          <ion-card-header color="primary">\n            {{group.groupTitle}}\n          </ion-card-header>\n          <ion-card-content>\n            {{group.groupDescription}}\n          </ion-card-content>\n        </ion-card>\n      </ion-slide>\n      <ng-container *ngFor="let question of group.questions">\n        <ion-slide *ngIf="question.type == \'text\'">\n          <h1>{{question.label}}</h1>\n          <ion-list *ngFor="let answer of question.answers">\n            <ion-item>\n              <ion-label fixed>{{answer.label}}</ion-label>\n              <ion-input type="text" #textValue (input)="changeAnswer(question, answer, textValue.value)" value="{{answer.value}}"></ion-input>\n            </ion-item>\n          </ion-list>\n        </ion-slide>\n        <ion-slide *ngIf="question.type == \'radio\'">\n          <h1>{{question.label}}</h1>\n          <ion-list radio-group [(ngModel)]="radioAnswer">\n            <ng-container *ngFor="let answer of question.answers">\n              <ion-item text-wrap item-divider>\n                <ion-label>{{answer.label}}</ion-label>\n                <ion-radio #radioValue value="{{answer.name}}" (ionSelect)="changeAnswer(question, answer)"></ion-radio>\n              </ion-item>\n              <ng-container *ngIf="answer.subAnswers && radioAnswer == answer.name">\n                <ion-list radio-group [(ngModel)]="radioSubAnswer">\n                  <ng-container *ngFor="let subAnswer of answer.subAnswers">\n                    <ion-item text-wrap class="sub-item">\n                      <ion-label class="subAnswer">{{subAnswer.label}}</ion-label>\n                      <ion-radio value="{{subAnswer.name}}" (ionSelect)="changeAnswer(question, answer, \'\', subAnswer)"></ion-radio>\n                    </ion-item>\n                    <ion-list radio-group>\n                      <ng-container *ngIf="subAnswer.subAnswers && radioSubAnswer == subAnswer.name">\n                        <ion-item text-wrap class="sub-sub-item" *ngFor="let subSubAnswer of subAnswer.subAnswers">\n                          <ion-label class="subSubAnswer">{{subSubAnswer.label}}</ion-label>\n                          <ion-radio value="{{subSubAnswer.name}}" (ionSelect)="changeAnswer(question, answer, \'\', subAnswer, subSubAnswer)"></ion-radio>\n                        </ion-item>\n                      </ng-container>\n                    </ion-list>\n                  </ng-container>\n                </ion-list>\n              </ng-container>\n            </ng-container>\n          </ion-list>\n        </ion-slide>\n        <ion-slide *ngIf="question.type == \'checkbox\'">\n          <h1>{{question.label}}</h1>\n          <ion-list *ngFor="let answer of question.answers">\n            <ion-item text-wrap item-divider>\n              <ion-label>{{answer.label}}</ion-label>\n              <ion-checkbox #checkValue (ionChange)="changeAnswer(question, answer, checkValue.value)"></ion-checkbox>\n            </ion-item>\n          </ion-list>\n        </ion-slide>\n\n      </ng-container>\n    </ng-container>\n  </ion-slides>\n</ion-content>\n\n<ion-footer>\n  <ion-grid>\n    <ion-row>\n      <ion-col>\n        <button ion-button full (click)="close()" *ngIf="slides._isBeginning">Fermer</button>\n        <button ion-button full (click)="previous()" *ngIf="!slides._isBeginning">Précédant</button>\n      </ion-col>\n      <ion-col>\n        <button ion-button full (click)="next()" *ngIf="!slides._isEnd">Suivant</button>\n        <button ion-button full (click)="close()" *ngIf="slides._isEnd">Fermer</button>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-footer>'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/advance-directives/QuestionsModal/questions.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ViewController */]])
 ], QuestionsPage);
@@ -658,7 +658,7 @@ QuestionsPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PulseDailyDataPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_chart_js__ = __webpack_require__(308);
@@ -746,7 +746,7 @@ __decorate([
 ], PulseDailyDataPage.prototype, "chartCanvas", void 0);
 PulseDailyDataPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-pulse-daily-data',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\blood\pulseDailyData\pulseDailyData.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons left>\n\n      <button ion-button navPop icon-only>\n\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>Blood pulse</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content has-footer no-bounce>\n\n  <h1>{{formatDate(dateOfDay, \'dddd Do MMMM YYYY\')}}</h1>\n\n  <ion-card *ngIf="dailyData.length > 3">\n\n    <ion-card-content>\n\n      <canvas #chartCanvas></canvas>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  <ion-list>\n\n    <ion-item-sliding #item *ngFor="let measure of dailyData">\n\n      <ion-item>\n\n        <ion-icon name="heart-outline" item-start color="danger"></ion-icon>\n\n        <h2>{{formatDate(measure.date, \'HH:mm\')}}</h2>\n\n        <p>{{measure.value}}</p>\n\n        </ion-item>\n\n        <ion-item-options>\n\n          <button ion-button color="danger" (click)="delete(item)">\n\n            <ion-icon name="trash"></ion-icon>\n\n            Delete\n\n        </button>\n\n        </ion-item-options>\n\n    </ion-item-sliding>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\blood\pulseDailyData\pulseDailyData.html"*/,
+        selector: 'page-pulse-daily-data',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/blood/pulseDailyData/pulseDailyData.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Blood pulse</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content has-footer no-bounce>\n  <h1>{{formatDate(dateOfDay, \'dddd Do MMMM YYYY\')}}</h1>\n  <ion-card *ngIf="dailyData.length > 3">\n    <ion-card-content>\n      <canvas #chartCanvas></canvas>\n    </ion-card-content>\n  </ion-card>\n  <ion-list>\n    <ion-item-sliding #item *ngFor="let measure of dailyData">\n      <ion-item>\n        <ion-icon name="heart-outline" item-start color="danger"></ion-icon>\n        <h2>{{formatDate(measure.date, \'HH:mm\')}}</h2>\n        <p>{{measure.value}}</p>\n        </ion-item>\n        <ion-item-options>\n          <button ion-button color="danger" (click)="delete(item)">\n            <ion-icon name="trash"></ion-icon>\n            Delete\n        </button>\n        </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/blood/pulseDailyData/pulseDailyData.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], PulseDailyDataPage);
@@ -761,7 +761,7 @@ PulseDailyDataPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PulseMeasurePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_diagnostic__ = __webpack_require__(318);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(38);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -844,7 +844,7 @@ var PulseMeasurePage = (function () {
 }());
 PulseMeasurePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-pulse-measure',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\blood\pulse-measure\pulse-measure.html"*/'\n\n<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons left>\n\n      <button ion-button navPop icon-only>\n\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>{{ \'BLOOD.NEWMEASURE.TITLE\' | translate }}</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-card>\n\n    <ion-card-header>\n\n      {{ \'BLOOD.NEWMEASURE.CAPTIONTITLE\' | translate }}\n\n    </ion-card-header>\n\n    <ion-card-content>\n\n      {{ \'BLOOD.NEWMEASURE.CAPTION\' | translate }}\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n  <ion-row [hidden]="isMeasuring">\n\n    <ion-col>\n\n      <button ion-button (click)="takeMeasure()">{{ \'BLOOD.NEWMEASURE.START\' | translate }}</button>\n\n    </ion-col>\n\n  </ion-row>\n\n\n\n  <ion-row [hidden]="!isMeasuring">\n\n    <ion-col class="counter">\n\n      {{counter}}\n\n    </ion-col>\n\n  </ion-row>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\blood\pulse-measure\pulse-measure.html"*/,
+        selector: 'page-pulse-measure',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/blood/pulse-measure/pulse-measure.html"*/'\n<ion-header>\n  <ion-navbar>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'BLOOD.NEWMEASURE.TITLE\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      {{ \'BLOOD.NEWMEASURE.CAPTIONTITLE\' | translate }}\n    </ion-card-header>\n    <ion-card-content>\n      {{ \'BLOOD.NEWMEASURE.CAPTION\' | translate }}\n    </ion-card-content>\n  </ion-card>\n\n  <ion-row [hidden]="isMeasuring">\n    <ion-col>\n      <button ion-button (click)="takeMeasure()">{{ \'BLOOD.NEWMEASURE.START\' | translate }}</button>\n    </ion-col>\n  </ion-row>\n\n  <ion-row [hidden]="!isMeasuring">\n    <ion-col class="counter">\n      {{counter}}\n    </ion-col>\n  </ion-row>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/blood/pulse-measure/pulse-measure.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ViewController */],
@@ -864,7 +864,7 @@ PulseMeasurePage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(321);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_MidataConnectionService__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_ModalService__ = __webpack_require__(324);
@@ -929,7 +929,7 @@ var LoginPage = (function () {
 }());
 LoginPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\login\login.html"*/'<ion-content>\n\n  <div id="midataLogoWrapper">\n\n      <span class="helper"></span>\n\n      <ion-img alt="MIDATA logo" src="assets/img/logo-midata-full.png" id="logoMidata" (click)="visitMidata()"></ion-img>\n\n  </div>\n\n  <div id="blockHeader">\n\n  </div>\n\n  <ion-slides pager>\n\n    <ion-slide>\n\n      <h2 class="slide-title">Welcome to MiDemo</h2>\n\n    </ion-slide>\n\n\n\n    <ion-slide>\n\n      <h2 class="slide-title">What can I do for you?</h2>\n\n    </ion-slide>\n\n\n\n    <ion-slide>\n\n      <h2 class="slide-title">Tipps!</h2>\n\n    </ion-slide>\n\n</ion-slides>\n\n\n\n  <div id="btnZone">\n\n    <div class="wrapper default" id="btnLogin" (click)="login()">\n\n        login\n\n    </div>\n\n    <div class="wrapper" id="btnRegister" (click)="register()">\n\n        register\n\n    </div>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\login\login.html"*/,
+        selector: 'page-login',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/login/login.html"*/'<ion-content>\n  <div id="midataLogoWrapper">\n      <span class="helper"></span>\n      <ion-img alt="MIDATA logo" src="assets/img/logo-midata-full.png" id="logoMidata" (click)="visitMidata()"></ion-img>\n  </div>\n  <div id="blockHeader">\n  </div>\n  <ion-slides pager>\n    <ion-slide>\n      <h2 class="slide-title">Welcome to MiDemo</h2>\n    </ion-slide>\n\n    <ion-slide>\n      <h2 class="slide-title">What can I do for you?</h2>\n    </ion-slide>\n\n    <ion-slide>\n      <h2 class="slide-title">Tipps!</h2>\n    </ion-slide>\n</ion-slides>\n\n  <div id="btnZone">\n    <div class="wrapper default" id="btnLogin" (click)="login()">\n        login\n    </div>\n    <div class="wrapper" id="btnRegister" (click)="register()">\n        register\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/login/login.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
@@ -964,32 +964,60 @@ webpackEmptyAsyncContext.id = 147;
 
 var map = {
 	"../pages/advance-directives/QuestionsModal/questions.module": [
-		529,
-		6
+		533,
+		13
 	],
 	"../pages/advance-directives/advance-directives.module": [
-		528,
-		5
+		532,
+		12
 	],
 	"../pages/blood/blood.module": [
-		530,
-		4
+		534,
+		11
 	],
 	"../pages/blood/pulse-measure/pulse-measure.module": [
-		531,
-		3
+		535,
+		10
 	],
 	"../pages/blood/pulseDailyData/pulseDailyData.module": [
-		532,
+		536,
+		9
+	],
+	"../pages/game/false/false.module": [
+		537,
+		6
+	],
+	"../pages/game/question1/question1.module": [
+		538,
+		0
+	],
+	"../pages/game/question2/question2.module": [
+		539,
+		5
+	],
+	"../pages/game/question3/question3.module": [
+		540,
+		4
+	],
+	"../pages/game/question4/question4.module": [
+		541,
+		3
+	],
+	"../pages/game/quizhello/quizhello.module": [
+		542,
 		2
 	],
-	"../pages/impressum/impressum.module": [
-		533,
+	"../pages/game/right/right.module": [
+		543,
 		1
 	],
+	"../pages/impressum/impressum.module": [
+		544,
+		8
+	],
 	"../pages/login/login.module": [
-		534,
-		0
+		545,
+		7
 	]
 };
 function webpackAsyncContext(req) {
@@ -1165,7 +1193,7 @@ webpackEmptyAsyncContext.id = 323;
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(38);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1297,7 +1325,7 @@ ModalService = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OverviewPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1317,7 +1345,7 @@ var OverviewPage = (function () {
 }());
 OverviewPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-overview',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\overview\overview.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Übersicht</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <button ion-button block>\n\n      Test</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\overview\overview.html"*/
+        selector: 'page-overview',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/overview/overview.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Übersicht</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <button ion-button block>\n      Test</button>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/overview/overview.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], OverviewPage);
@@ -1332,7 +1360,7 @@ OverviewPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommunityPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1352,7 +1380,7 @@ var CommunityPage = (function () {
 }());
 CommunityPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-community',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\community\community.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Community</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <button ion-button block>\n\n      Test</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\community\community.html"*/
+        selector: 'page-community',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/community/community.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Community</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <button ion-button block>\n      Test</button>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/community/community.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], CommunityPage);
@@ -1367,7 +1395,7 @@ CommunityPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IntroductionPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1387,7 +1415,7 @@ var IntroductionPage = (function () {
 }());
 IntroductionPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-introduction',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\introduction.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Einführung</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <button ion-button block>\n\n      Test</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\introduction.html"*/
+        selector: 'page-introduction',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/introduction.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Einführung</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <button ion-button block>\n      Test</button>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/introduction.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], IntroductionPage);
@@ -1402,7 +1430,7 @@ IntroductionPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewEntryPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1422,7 +1450,7 @@ var NewEntryPage = (function () {
 }());
 NewEntryPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-newEntry',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\newEntry\newEntry.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Neuer Eintrag</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n    <button id="btnX" ion-button color="light" round icon-only>\n\n      <ion-icon name=\'close\'></ion-icon>\n\n    </button>\n\n\n\n    <ion-item>\n\n      <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n\n    </ion-item>\n\n\n\n    <h4 id="h4HalloTim">Hallo Tim!</h4>\n\n       <p id="pHalloTim">Mit jedem Eintrag, den Du\n\n         machst, hilfst Du uns eine\n\n         bessere Übersicht über die\n\n         aktuelle Pollenbelastung in\n\n         der Schweiz zu erhalten.</p>\n\n\n\n  <button id="btnForward" ion-button secondary>Weiter</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\newEntry\newEntry.html"*/
+        selector: 'page-newEntry',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/newEntry.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Neuer Eintrag</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n    <button id="btnX" ion-button color="light" round icon-only>\n      <ion-icon name=\'close\'></ion-icon>\n    </button>\n\n    <ion-item>\n      <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n    </ion-item>\n\n    <h4 id="h4HalloTim">Hallo Tim!</h4>\n       <p id="pHalloTim">Mit jedem Eintrag, den Du\n         machst, hilfst Du uns eine\n         bessere Übersicht über die\n         aktuelle Pollenbelastung in\n         der Schweiz zu erhalten.</p>\n\n  <button id="btnForward" ion-button secondary>Weiter</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/newEntry.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], NewEntryPage);
@@ -1431,7 +1459,42 @@ NewEntryPage = __decorate([
 
 /***/ }),
 
-/***/ 371:
+/***/ 329:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GamePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var GamePage = (function () {
+    function GamePage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    return GamePage;
+}());
+GamePage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-game',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/game/game.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Game</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <button ion-button block>\n      Test</button>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/game/game.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
+], GamePage);
+
+//# sourceMappingURL=game.js.map
+
+/***/ }),
+
+/***/ 372:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1465,7 +1528,7 @@ var TabsPage = (function () {
     return TabsPage;
 }());
 TabsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Pinnwand" tabIcon="clipboard"></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="Profil" tabIcon="person"></ion-tab>\n\n  <ion-tab [root]="tab4Root" tabTitle="Einstellungen" tabIcon="settings"></ion-tab>\n\n\n\n</ion-tabs>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\tabs\tabs.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Pinnwand" tabIcon="clipboard"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Profil" tabIcon="person"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Einstellungen" tabIcon="settings"></ion-tab>\n\n</ion-tabs>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/tabs/tabs.html"*/
     }),
     __metadata("design:paramtypes", [])
 ], TabsPage);
@@ -1474,7 +1537,7 @@ TabsPage = __decorate([
 
 /***/ }),
 
-/***/ 372:
+/***/ 373:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -1487,17 +1550,17 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 372;
+webpackEmptyAsyncContext.id = 373;
 
 /***/ }),
 
-/***/ 375:
+/***/ 376:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(376);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(390);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1505,7 +1568,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 389:
+/***/ 390:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1515,18 +1578,18 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_diagnostic__ = __webpack_require__(318);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_app_version__ = __webpack_require__(320);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_impressum_impressum__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_globalization__ = __webpack_require__(368);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_storage__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_globalization__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_storage__ = __webpack_require__(370);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_storage__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ngx_translate_core__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_MidataConnectionService__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_InBrowserBrowser__ = __webpack_require__(509);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_camera__ = __webpack_require__(370);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_tabs_tabs__ = __webpack_require__(371);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__app_component__ = __webpack_require__(512);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_InBrowserBrowser__ = __webpack_require__(510);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_camera__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_tabs_tabs__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__app_component__ = __webpack_require__(513);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_home_home__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_profile_profile__ = __webpack_require__(131);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_blood_blood__ = __webpack_require__(70);
@@ -1535,39 +1598,41 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_overview_overview__ = __webpack_require__(325);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_community_community__ = __webpack_require__(326);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_introduction_introduction__ = __webpack_require__(327);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_introduction_allergy_allergy__ = __webpack_require__(513);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_introduction_drug_drug__ = __webpack_require__(514);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_introduction_finish_finish__ = __webpack_require__(515);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_introduction_heightweight_heightweight__ = __webpack_require__(516);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_introduction_job_job__ = __webpack_require__(517);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_introduction_remindertime_remindertime__ = __webpack_require__(518);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_introduction_reward_reward__ = __webpack_require__(519);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_introduction_takingdrug_takingdrug__ = __webpack_require__(520);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_introduction_allergy_allergy__ = __webpack_require__(514);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_introduction_drug_drug__ = __webpack_require__(515);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_introduction_finish_finish__ = __webpack_require__(516);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_introduction_heightweight_heightweight__ = __webpack_require__(517);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_introduction_job_job__ = __webpack_require__(518);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_introduction_remindertime_remindertime__ = __webpack_require__(519);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_introduction_reward_reward__ = __webpack_require__(520);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_introduction_takingdrug_takingdrug__ = __webpack_require__(521);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_newEntry_newEntry__ = __webpack_require__(328);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pages_newEntry_dateTime_dateTime__ = __webpack_require__(521);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_newEntry_complaints_complaints__ = __webpack_require__(522);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pages_newEntry_physicalActivity_physicalActivity__ = __webpack_require__(523);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__pages_newEntry_medication_medication__ = __webpack_require__(524);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__pages_newEntry_totalPoints_totalPoints__ = __webpack_require__(535);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__pages_newEntry_additionalReward_additionalReward__ = __webpack_require__(536);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__pages_newEntry_tips_tips__ = __webpack_require__(537);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__ionic_native_status_bar__ = __webpack_require__(373);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__ionic_native_splash_screen__ = __webpack_require__(374);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__util__ = __webpack_require__(525);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__services_languageService_languageService__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__services_parametersService_parametersService__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__pages_login_login__ = __webpack_require__(137);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__ionic_native_secure_storage__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__ionic_native_in_app_browser__ = __webpack_require__(321);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__ionic_native_network__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__angular_common_http__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__services_ModalService__ = __webpack_require__(324);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pages_newEntry_dateTime_dateTime__ = __webpack_require__(522);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_newEntry_complaints_complaints__ = __webpack_require__(523);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pages_newEntry_physicalActivity_physicalActivity__ = __webpack_require__(524);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__pages_newEntry_medication_medication__ = __webpack_require__(525);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__pages_newEntry_totalPoints_totalPoints__ = __webpack_require__(526);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__pages_newEntry_additionalReward_additionalReward__ = __webpack_require__(527);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__pages_newEntry_tips_tips__ = __webpack_require__(528);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_game_game__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__ionic_native_status_bar__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__ionic_native_splash_screen__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__util__ = __webpack_require__(529);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__services_languageService_languageService__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__services_parametersService_parametersService__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pages_login_login__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__ionic_native_secure_storage__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__ionic_native_in_app_browser__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__ionic_native_network__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__angular_common_http__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__services_ModalService__ = __webpack_require__(324);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -1634,7 +1699,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_20__pages_blood_pulse_measure_pulse_measure__["a" /* PulseMeasurePage */],
             __WEBPACK_IMPORTED_MODULE_21__pages_blood_pulseDailyData_pulseDailyData__["a" /* PulseDailyDataPage */],
             __WEBPACK_IMPORTED_MODULE_4__pages_impressum_impressum__["a" /* ImpressumPage */],
-            __WEBPACK_IMPORTED_MODULE_46__pages_login_login__["a" /* LoginPage */],
+            __WEBPACK_IMPORTED_MODULE_47__pages_login_login__["a" /* LoginPage */],
             __WEBPACK_IMPORTED_MODULE_0__pages_advance_directives_advance_directives__["a" /* AdvanceDirectivesPage */],
             __WEBPACK_IMPORTED_MODULE_1__pages_advance_directives_QuestionsModal_questions__["a" /* QuestionsPage */],
             __WEBPACK_IMPORTED_MODULE_18__pages_profile_profile__["a" /* ProfilePage */],
@@ -1657,6 +1722,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_38__pages_newEntry_totalPoints_totalPoints__["a" /* TotalPointsPage */],
             __WEBPACK_IMPORTED_MODULE_39__pages_newEntry_additionalReward_additionalReward__["a" /* AdditionalRewardPage */],
             __WEBPACK_IMPORTED_MODULE_40__pages_newEntry_tips_tips__["a" /* TipsPage */],
+            __WEBPACK_IMPORTED_MODULE_41__pages_game_game__["a" /* GamePage */],
             __WEBPACK_IMPORTED_MODULE_15__pages_tabs_tabs__["a" /* TabsPage */]
         ],
         imports: [
@@ -1668,17 +1734,24 @@ AppModule = __decorate([
                     { loadChildren: '../pages/blood/blood.module#BloodPageModule', name: 'BloodPage', segment: 'blood', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/blood/pulse-measure/pulse-measure.module#PulseMeasurePageModule', name: 'PulseMeasurePage', segment: 'pulse-measure', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/blood/pulseDailyData/pulseDailyData.module#PulseDailyDataPageModule', name: 'PulseDailyDataPage', segment: 'pulseDailyData', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/game/false/false.module#FalsePageModule', name: 'FalsePage', segment: 'false', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/game/question1/question1.module#Question1PageModule', name: 'Question1Page', segment: 'question1', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/game/question2/question2.module#Question2PageModule', name: 'Question2Page', segment: 'question2', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/game/question3/question3.module#Question3PageModule', name: 'Question3Page', segment: 'question3', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/game/question4/question4.module#Question4PageModule', name: 'Question4Page', segment: 'question4', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/game/quizhello/quizhello.module#QuizhelloPageModule', name: 'QuizhelloPage', segment: 'quizhello', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/game/right/right.module#RightPageModule', name: 'RightPage', segment: 'right', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/impressum/impressum.module#ImpressumPageModule', name: 'ImpressumPage', segment: 'impressum', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] }
                 ]
             }),
-            __WEBPACK_IMPORTED_MODULE_50__angular_common_http__["b" /* HttpClientModule */],
+            __WEBPACK_IMPORTED_MODULE_51__angular_common_http__["b" /* HttpClientModule */],
             __WEBPACK_IMPORTED_MODULE_10__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
             __WEBPACK_IMPORTED_MODULE_11__ngx_translate_core__["b" /* TranslateModule */].forRoot({
                 loader: {
                     provide: __WEBPACK_IMPORTED_MODULE_11__ngx_translate_core__["a" /* TranslateLoader */],
-                    useFactory: (__WEBPACK_IMPORTED_MODULE_43__util__["a" /* createTranslateLoader */]),
-                    deps: [__WEBPACK_IMPORTED_MODULE_50__angular_common_http__["a" /* HttpClient */]]
+                    useFactory: (__WEBPACK_IMPORTED_MODULE_44__util__["a" /* createTranslateLoader */]),
+                    deps: [__WEBPACK_IMPORTED_MODULE_51__angular_common_http__["a" /* HttpClient */]]
                 }
             })
         ],
@@ -1690,7 +1763,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_20__pages_blood_pulse_measure_pulse_measure__["a" /* PulseMeasurePage */],
             __WEBPACK_IMPORTED_MODULE_21__pages_blood_pulseDailyData_pulseDailyData__["a" /* PulseDailyDataPage */],
             __WEBPACK_IMPORTED_MODULE_4__pages_impressum_impressum__["a" /* ImpressumPage */],
-            __WEBPACK_IMPORTED_MODULE_46__pages_login_login__["a" /* LoginPage */],
+            __WEBPACK_IMPORTED_MODULE_47__pages_login_login__["a" /* LoginPage */],
             __WEBPACK_IMPORTED_MODULE_0__pages_advance_directives_advance_directives__["a" /* AdvanceDirectivesPage */],
             __WEBPACK_IMPORTED_MODULE_1__pages_advance_directives_QuestionsModal_questions__["a" /* QuestionsPage */],
             __WEBPACK_IMPORTED_MODULE_18__pages_profile_profile__["a" /* ProfilePage */],
@@ -1713,24 +1786,25 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_38__pages_newEntry_totalPoints_totalPoints__["a" /* TotalPointsPage */],
             __WEBPACK_IMPORTED_MODULE_39__pages_newEntry_additionalReward_additionalReward__["a" /* AdditionalRewardPage */],
             __WEBPACK_IMPORTED_MODULE_40__pages_newEntry_tips_tips__["a" /* TipsPage */],
+            __WEBPACK_IMPORTED_MODULE_41__pages_game_game__["a" /* GamePage */],
             __WEBPACK_IMPORTED_MODULE_15__pages_tabs_tabs__["a" /* TabsPage */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_41__ionic_native_status_bar__["a" /* StatusBar */],
-            __WEBPACK_IMPORTED_MODULE_42__ionic_native_splash_screen__["a" /* SplashScreen */],
-            __WEBPACK_IMPORTED_MODULE_44__services_languageService_languageService__["a" /* LanguageService */],
+            __WEBPACK_IMPORTED_MODULE_42__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_43__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_45__services_languageService_languageService__["a" /* LanguageService */],
             { provide: __WEBPACK_IMPORTED_MODULE_8__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["e" /* IonicErrorHandler */] },
             __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_storage__["a" /* NativeStorage */],
             __WEBPACK_IMPORTED_MODULE_5__ionic_native_globalization__["a" /* Globalization */],
             __WEBPACK_IMPORTED_MODULE_2__ionic_native_diagnostic__["a" /* Diagnostic */],
             __WEBPACK_IMPORTED_MODULE_3__ionic_native_app_version__["a" /* AppVersion */],
-            __WEBPACK_IMPORTED_MODULE_45__services_parametersService_parametersService__["a" /* ParametersService */],
-            __WEBPACK_IMPORTED_MODULE_47__ionic_native_secure_storage__["a" /* SecureStorage */],
-            __WEBPACK_IMPORTED_MODULE_49__ionic_native_network__["a" /* Network */],
-            __WEBPACK_IMPORTED_MODULE_48__ionic_native_in_app_browser__["a" /* InAppBrowser */],
+            __WEBPACK_IMPORTED_MODULE_46__services_parametersService_parametersService__["a" /* ParametersService */],
+            __WEBPACK_IMPORTED_MODULE_48__ionic_native_secure_storage__["a" /* SecureStorage */],
+            __WEBPACK_IMPORTED_MODULE_50__ionic_native_network__["a" /* Network */],
+            __WEBPACK_IMPORTED_MODULE_49__ionic_native_in_app_browser__["a" /* InAppBrowser */],
             __WEBPACK_IMPORTED_MODULE_13__services_InBrowserBrowser__["a" /* InBrowserBrowser */],
             __WEBPACK_IMPORTED_MODULE_12__services_MidataConnectionService__["a" /* MidataConnectionService */],
-            __WEBPACK_IMPORTED_MODULE_51__services_ModalService__["a" /* ModalService */],
+            __WEBPACK_IMPORTED_MODULE_52__services_ModalService__["a" /* ModalService */],
             __WEBPACK_IMPORTED_MODULE_14__ionic_native_camera__["a" /* Camera */]
         ]
     })
@@ -1740,7 +1814,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 390:
+/***/ 391:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1836,7 +1910,7 @@ var Question = (function () {
 
 /***/ }),
 
-/***/ 391:
+/***/ 392:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1875,7 +1949,7 @@ var Group = (function () {
 
 /***/ }),
 
-/***/ 414:
+/***/ 415:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -2124,11 +2198,11 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 414;
+webpackContext.id = 415;
 
 /***/ }),
 
-/***/ 460:
+/***/ 461:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2166,7 +2240,7 @@ var PulseValidator = (function () {
 
 /***/ }),
 
-/***/ 491:
+/***/ 492:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2175,7 +2249,7 @@ var PulseValidator = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Midata__ = __webpack_require__(322);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Midata___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_Midata__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_secure_storage__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(109);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -2314,14 +2388,14 @@ MidataConnectionWrapper = __decorate([
 
 /***/ }),
 
-/***/ 509:
+/***/ 510:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InBrowserBrowser; });
 /* unused harmony export InBrowserBrowserObject */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
@@ -2557,7 +2631,7 @@ var InBrowserBrowserObject = (function () {
 
 /***/ }),
 
-/***/ 511:
+/***/ 512:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2589,7 +2663,7 @@ var MEDIA = {
 
 /***/ }),
 
-/***/ 512:
+/***/ 513:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2599,11 +2673,11 @@ var MEDIA = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_languageService_languageService__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_parametersService_parametersService__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(373);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__ = __webpack_require__(375);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_core__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__ = __webpack_require__(372);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_home_home__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_blood_blood__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_login_login__ = __webpack_require__(137);
@@ -2756,27 +2830,35 @@ var MyApp = (function () {
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_4__angular_core__["_14" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_5_ionic_angular__["j" /* Nav */]),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["j" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["j" /* Nav */]) === "function" && _a || Object)
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["j" /* Nav */])
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_4__angular_core__["n" /* Component */])({
-        selector: 'page-app',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-content>\n\n    <ion-item>\n\n      <div class="userBadge" (click)=\'openModal(profilePage.value)\'>\n\n        <img class="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Danica_2010_cropped.jpg" />\n\n        <img class="editImage" src="http://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/pen-icon.png"/>\n\n        <h3>Elisabeth Brönnimann</h3>\n\n      </div>\n\n    </ion-item>\n\n    <ion-list>\n\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n\n        <ion-icon class="iconMenu" name="{{p.icon}}"></ion-icon>{{p.title}}\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\app\app.html"*/
+        selector: 'page-app',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-content>\n    <ion-item>\n      <div class="userBadge" (click)=\'openModal(profilePage.value)\'>\n        <img class="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Danica_2010_cropped.jpg" />\n        <img class="editImage" src="http://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/pen-icon.png"/>\n        <h3>Elisabeth Brönnimann</h3>\n      </div>\n    </ion-item>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        <ion-icon class="iconMenu" name="{{p.icon}}"></ion-icon>{{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n</ion-menu>\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/app/app.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["m" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["m" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["i" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["i" /* ModalController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_14__services_MidataConnectionService__["a" /* MidataConnectionService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_14__services_MidataConnectionService__["a" /* MidataConnectionService */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_15__ionic_native_network__["a" /* Network */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_15__ionic_native_network__["a" /* Network */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["h" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["h" /* LoadingController */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_2__services_languageService_languageService__["a" /* LanguageService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_languageService_languageService__["a" /* LanguageService */]) === "function" && _j || Object, typeof (_k = typeof __WEBPACK_IMPORTED_MODULE_3__services_parametersService_parametersService__["a" /* ParametersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_parametersService_parametersService__["a" /* ParametersService */]) === "function" && _k || Object, typeof (_l = typeof __WEBPACK_IMPORTED_MODULE_8__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_8__ngx_translate_core__["c" /* TranslateService */]) === "function" && _l || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5_ionic_angular__["m" /* Platform */],
+        __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["i" /* ModalController */],
+        __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__["a" /* StatusBar */],
+        __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__["a" /* SplashScreen */],
+        __WEBPACK_IMPORTED_MODULE_14__services_MidataConnectionService__["a" /* MidataConnectionService */],
+        __WEBPACK_IMPORTED_MODULE_15__ionic_native_network__["a" /* Network */],
+        __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["h" /* LoadingController */],
+        __WEBPACK_IMPORTED_MODULE_2__services_languageService_languageService__["a" /* LanguageService */],
+        __WEBPACK_IMPORTED_MODULE_3__services_parametersService_parametersService__["a" /* ParametersService */],
+        __WEBPACK_IMPORTED_MODULE_8__ngx_translate_core__["c" /* TranslateService */]])
 ], MyApp);
 
-var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l;
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
 
-/***/ 513:
+/***/ 514:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AllergyPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2796,7 +2878,7 @@ var AllergyPage = (function () {
 }());
 AllergyPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-allergy',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\allergy\allergy.html"*/''/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\allergy\allergy.html"*/
+        selector: 'page-allergy',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/allergy/allergy.html"*/''/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/allergy/allergy.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], AllergyPage);
@@ -2805,13 +2887,13 @@ AllergyPage = __decorate([
 
 /***/ }),
 
-/***/ 514:
+/***/ 515:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DrugPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2831,7 +2913,7 @@ var DrugPage = (function () {
 }());
 DrugPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-drug',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\drug\drug.html"*/''/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\drug\drug.html"*/
+        selector: 'page-drug',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/drug/drug.html"*/''/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/drug/drug.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], DrugPage);
@@ -2840,13 +2922,13 @@ DrugPage = __decorate([
 
 /***/ }),
 
-/***/ 515:
+/***/ 516:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FinishPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2866,7 +2948,7 @@ var FinishPage = (function () {
 }());
 FinishPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-finish',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\finish\finish.html"*/''/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\finish\finish.html"*/
+        selector: 'page-finish',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/finish/finish.html"*/''/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/finish/finish.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], FinishPage);
@@ -2875,13 +2957,13 @@ FinishPage = __decorate([
 
 /***/ }),
 
-/***/ 516:
+/***/ 517:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeightWeightPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2901,7 +2983,7 @@ var HeightWeightPage = (function () {
 }());
 HeightWeightPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-heightweight',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\heightweight\heightweight.html"*/''/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\heightweight\heightweight.html"*/
+        selector: 'page-heightweight',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/heightweight/heightweight.html"*/''/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/heightweight/heightweight.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], HeightWeightPage);
@@ -2910,13 +2992,13 @@ HeightWeightPage = __decorate([
 
 /***/ }),
 
-/***/ 517:
+/***/ 518:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2936,7 +3018,7 @@ var JobPage = (function () {
 }());
 JobPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-job',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\job\job.html"*/''/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\job\job.html"*/
+        selector: 'page-job',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/job/job.html"*/''/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/job/job.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], JobPage);
@@ -2945,13 +3027,13 @@ JobPage = __decorate([
 
 /***/ }),
 
-/***/ 518:
+/***/ 519:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReminderTimePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2971,7 +3053,7 @@ var ReminderTimePage = (function () {
 }());
 ReminderTimePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-remindertime',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\remindertime\remindertime.html"*/''/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\remindertime\remindertime.html"*/
+        selector: 'page-remindertime',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/remindertime/remindertime.html"*/''/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/remindertime/remindertime.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], ReminderTimePage);
@@ -2980,13 +3062,13 @@ ReminderTimePage = __decorate([
 
 /***/ }),
 
-/***/ 519:
+/***/ 520:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RewardPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3006,7 +3088,7 @@ var RewardPage = (function () {
 }());
 RewardPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-reward',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\reward\reward.html"*/''/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\reward\reward.html"*/
+        selector: 'page-reward',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/reward/reward.html"*/''/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/reward/reward.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], RewardPage);
@@ -3015,13 +3097,13 @@ RewardPage = __decorate([
 
 /***/ }),
 
-/***/ 520:
+/***/ 521:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TakingDrugPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3041,7 +3123,7 @@ var TakingDrugPage = (function () {
 }());
 TakingDrugPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-takingdrug',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\takingdrug\takingdrug.html"*/''/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\introduction\takingdrug\takingdrug.html"*/
+        selector: 'page-takingdrug',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/takingdrug/takingdrug.html"*/''/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/takingdrug/takingdrug.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], TakingDrugPage);
@@ -3050,13 +3132,13 @@ TakingDrugPage = __decorate([
 
 /***/ }),
 
-/***/ 521:
+/***/ 522:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DateTimePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3076,7 +3158,7 @@ var DateTimePage = (function () {
 }());
 DateTimePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-dateTime',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\newEntry\dateTime\dateTime.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Neuer Eintrag</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <button id="btnX" ion-button color="light" round icon-only>\n\n    <ion-icon name=\'close\'></ion-icon>\n\n  </button>\n\n\n\n  <ion-item>\n\n        <img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;">\n\n    </ion-item>\n\n      <p>Wann sind deine Beschwerden aufgetreten?\n\n      </p>\n\n      <ion-item>\n\n        <ion-label>Datum</ion-label>\n\n        <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="myDate">\n\n        </ion-datetime>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Zeit</ion-label>\n\n        <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>\n\n      </ion-item>\n\n      <button id="btnForward" ion-button secondary>Weiter</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\newEntry\dateTime\dateTime.html"*/
+        selector: 'page-dateTime',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/dateTime/dateTime.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Neuer Eintrag</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <button id="btnX" ion-button color="light" round icon-only>\n    <ion-icon name=\'close\'></ion-icon>\n  </button>\n\n  <ion-item>\n        <img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;">\n    </ion-item>\n      <p>Wann sind deine Beschwerden aufgetreten?\n      </p>\n      <ion-item>\n        <ion-label>Datum</ion-label>\n        <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="myDate">\n        </ion-datetime>\n      </ion-item>\n      <ion-item>\n        <ion-label>Zeit</ion-label>\n        <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>\n      </ion-item>\n      <button id="btnForward" ion-button secondary>Weiter</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/dateTime/dateTime.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], DateTimePage);
@@ -3085,13 +3167,13 @@ DateTimePage = __decorate([
 
 /***/ }),
 
-/***/ 522:
+/***/ 523:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComplaintsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3111,7 +3193,7 @@ var ComplaintsPage = (function () {
 }());
 ComplaintsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-complaints',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\newEntry\complaints\complaints.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Neuer Eintrag</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <button id="btnX" ion-button color="light" round icon-only>\n\n    <ion-icon name=\'close\'></ion-icon>\n\n  </button>\n\n\n\n  <ion-item>\n\n        <!-- img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;" -->\n\n    </ion-item>\n\n\n\n    <p>Gib bitte spontan an, wie stark deine Beschwerden sind?</p>\n\n          <h5>Augenbeschwerden</h5>\n\n          <p>(Brennen, Jucken, Tränen)</p>\n\n            <ion-item>\n\n            <ion-range min="0" max="10" [(ngModel)]="Augenbeschwerden">\n\n              <ion-label range-left>0</ion-label>\n\n              <ion-label range-right>10</ion-label>\n\n            </ion-range>\n\n          </ion-item>\n\n          <h5>Nasenbeschwerden</h5>\n\n          <p>(Schnupfen, Juckreiz)</p>\n\n          <ion-item>\n\n            <ion-range min="0" max="10" [(ngModel)]="Nasenbeschwerden">\n\n              <ion-label range-left>0</ion-label>\n\n              <ion-label range-right>10</ion-label>\n\n            </ion-range>\n\n          </ion-item>\n\n          <h5>Atembeschwerden</h5>\n\n          <p>(Atemnot, Husten)</p>\n\n          <ion-item>\n\n            <ion-range min="0" max="10" [(ngModel)]="Atembeschwerden">\n\n              <ion-label range-left>0</ion-label>\n\n              <ion-label range-right>10</ion-label>\n\n            </ion-range>\n\n          </ion-item>\n\n      <button id="btnForward" ion-button secondary>Weiter</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\newEntry\complaints\complaints.html"*/
+        selector: 'page-complaints',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/complaints/complaints.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Neuer Eintrag</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <button id="btnX" ion-button color="light" round icon-only>\n    <ion-icon name=\'close\'></ion-icon>\n  </button>\n\n  <ion-item>\n        <!-- img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;" -->\n    </ion-item>\n\n    <p>Gib bitte spontan an, wie stark deine Beschwerden sind?</p>\n          <h5>Augenbeschwerden</h5>\n          <p>(Brennen, Jucken, Tränen)</p>\n            <ion-item>\n            <ion-range min="0" max="10" [(ngModel)]="Augenbeschwerden">\n              <ion-label range-left>0</ion-label>\n              <ion-label range-right>10</ion-label>\n            </ion-range>\n          </ion-item>\n          <h5>Nasenbeschwerden</h5>\n          <p>(Schnupfen, Juckreiz)</p>\n          <ion-item>\n            <ion-range min="0" max="10" [(ngModel)]="Nasenbeschwerden">\n              <ion-label range-left>0</ion-label>\n              <ion-label range-right>10</ion-label>\n            </ion-range>\n          </ion-item>\n          <h5>Atembeschwerden</h5>\n          <p>(Atemnot, Husten)</p>\n          <ion-item>\n            <ion-range min="0" max="10" [(ngModel)]="Atembeschwerden">\n              <ion-label range-left>0</ion-label>\n              <ion-label range-right>10</ion-label>\n            </ion-range>\n          </ion-item>\n      <button id="btnForward" ion-button secondary>Weiter</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/complaints/complaints.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], ComplaintsPage);
@@ -3120,13 +3202,13 @@ ComplaintsPage = __decorate([
 
 /***/ }),
 
-/***/ 523:
+/***/ 524:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PhysicalActivityPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3146,7 +3228,7 @@ var PhysicalActivityPage = (function () {
 }());
 PhysicalActivityPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-physicalActivity',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\newEntry\physicalActivity\physicalActivity.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Neuer Eintrag</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <button id="btnX" ion-button color="light" round icon-only>\n\n    <ion-icon name=\'close\'></ion-icon>\n\n  </button>\n\n\n\n  <ion-item>\n\n        <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n\n    </ion-item>\n\n\n\n  <p>Wie stark hast Du dich körperlich betätigt?</p>\n\n\n\n  <ion-item>\n\n    <ion-range min="0" max="10" [(ngModel)]="physicalActivity">\n\n      <ion-label range-left>0</ion-label>\n\n      <ion-label range-right>10</ion-label>\n\n    </ion-range>\n\n  </ion-item>\n\n\n\n  <button id="btnForward" ion-button secondary>Weiter</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\newEntry\physicalActivity\physicalActivity.html"*/
+        selector: 'page-physicalActivity',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/physicalActivity/physicalActivity.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Neuer Eintrag</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <button id="btnX" ion-button color="light" round icon-only>\n    <ion-icon name=\'close\'></ion-icon>\n  </button>\n\n  <ion-item>\n        <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n    </ion-item>\n\n  <p>Wie stark hast Du dich körperlich betätigt?</p>\n\n  <ion-item>\n    <ion-range min="0" max="10" [(ngModel)]="physicalActivity">\n      <ion-label range-left>0</ion-label>\n      <ion-label range-right>10</ion-label>\n    </ion-range>\n  </ion-item>\n\n  <button id="btnForward" ion-button secondary>Weiter</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/physicalActivity/physicalActivity.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], PhysicalActivityPage);
@@ -3155,13 +3237,13 @@ PhysicalActivityPage = __decorate([
 
 /***/ }),
 
-/***/ 524:
+/***/ 525:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MedicationPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3181,7 +3263,7 @@ var MedicationPage = (function () {
 }());
 MedicationPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-medication',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\newEntry\medication\medication.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Neuer Eintrag</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <button id="btnX" ion-button color="light" round icon-only>\n\n    <ion-icon name=\'close\'></ion-icon>\n\n  </button>\n\n\n\n  <ion-item>\n\n        <img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;">\n\n    </ion-item>\n\n\n\n    <p>Hast Du Medikamente eingenommen?</p>\n\n          <ion-list radio-group [(ngModel)]="MedisEingenommen">\n\n            <ion-item>\n\n              <ion-label>Ja</ion-label>\n\n              <ion-radio value="Ja"></ion-radio>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label>Nein</ion-label>\n\n              <ion-radio value="Nein"></ion-radio>\n\n            </ion-item>\n\n          </ion-list>\n\n          <p>Wenn ja ...</p>\n\n          <ion-list radio-group [(ngModel)]="VorbeugendBeschwerden">\n\n            <ion-item>\n\n              <ion-label>Vorbeugend</ion-label>\n\n              <ion-radio value="Vorbeugend"></ion-radio>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label>Wegen Beschwerden</ion-label>\n\n              <ion-radio value="wegen Beschwerden"></ion-radio>\n\n            </ion-item>\n\n          </ion-list>\n\n\n\n    <button id="btnForward" ion-button secondary>Weiter</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\newEntry\medication\medication.html"*/
+        selector: 'page-medication',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/medication/medication.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Neuer Eintrag</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <button id="btnX" ion-button color="light" round icon-only>\n    <ion-icon name=\'close\'></ion-icon>\n  </button>\n\n  <ion-item>\n        <img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;">\n    </ion-item>\n\n    <p>Hast Du Medikamente eingenommen?</p>\n          <ion-list radio-group [(ngModel)]="MedisEingenommen">\n            <ion-item>\n              <ion-label>Ja</ion-label>\n              <ion-radio value="Ja"></ion-radio>\n            </ion-item>\n            <ion-item>\n              <ion-label>Nein</ion-label>\n              <ion-radio value="Nein"></ion-radio>\n            </ion-item>\n          </ion-list>\n          <p>Wenn ja ...</p>\n          <ion-list radio-group [(ngModel)]="VorbeugendBeschwerden">\n            <ion-item>\n              <ion-label>Vorbeugend</ion-label>\n              <ion-radio value="Vorbeugend"></ion-radio>\n            </ion-item>\n            <ion-item>\n              <ion-label>Wegen Beschwerden</ion-label>\n              <ion-radio value="wegen Beschwerden"></ion-radio>\n            </ion-item>\n          </ion-list>\n\n    <button id="btnForward" ion-button secondary>Weiter</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/medication/medication.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], MedicationPage);
@@ -3190,27 +3272,13 @@ MedicationPage = __decorate([
 
 /***/ }),
 
-/***/ 525:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = createTranslateLoader;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ngx_translate_http_loader__ = __webpack_require__(526);
-
-function createTranslateLoader(http) {
-    return new __WEBPACK_IMPORTED_MODULE_0__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, './assets/i18n/', '.json');
-}
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-
-/***/ 535:
+/***/ 526:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TotalPointsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3230,7 +3298,7 @@ var TotalPointsPage = (function () {
 }());
 TotalPointsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-totalPoints',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\newEntry\totalPoints\totalPoints.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Neuer Eintrag</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <button id="btnX" ion-button color="light" round icon-only>\n\n    <ion-icon name=\'close\'></ion-icon>\n\n  </button>\n\n\n\n  <ion-item>\n\n        <!-- img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n\n    </ion-item>\n\n\n\n  <p>Vielen Dank! Du hast soeben einen Punkt erhalten. :)</p>\n\n\n\n  <button id="btnForward" ion-button secondary>Weiter</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\newEntry\totalPoints\totalPoints.html"*/
+        selector: 'page-totalPoints',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/totalPoints/totalPoints.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Neuer Eintrag</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <button id="btnX" ion-button color="light" round icon-only>\n    <ion-icon name=\'close\'></ion-icon>\n  </button>\n\n  <ion-item>\n        <!-- img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n    </ion-item>\n\n  <p>Vielen Dank! Du hast soeben einen Punkt erhalten. :)</p>\n\n  <button id="btnForward" ion-button secondary>Weiter</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/totalPoints/totalPoints.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], TotalPointsPage);
@@ -3239,13 +3307,13 @@ TotalPointsPage = __decorate([
 
 /***/ }),
 
-/***/ 536:
+/***/ 527:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdditionalRewardPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3265,7 +3333,7 @@ var AdditionalRewardPage = (function () {
 }());
 AdditionalRewardPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-additionalReward',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\newEntry\additionalReward\additionalReward.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Neuer Eintrag</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <button id="btnX" ion-button color="light" round icon-only>\n\n    <ion-icon name=\'close\'></ion-icon>\n\n  </button>\n\n\n\n  <ion-item>\n\n        <!-- img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n\n    </ion-item>\n\n\n\n  <p>Öffne eine Truhe und hole dir zusätzliche Punkte und einen Tipp.</p>\n\n\n\n  <button id="btnForward" ion-button secondary>Weiter</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\newEntry\additionalReward\additionalReward.html"*/
+        selector: 'page-additionalReward',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/additionalReward/additionalReward.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Neuer Eintrag</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <button id="btnX" ion-button color="light" round icon-only>\n    <ion-icon name=\'close\'></ion-icon>\n  </button>\n\n  <ion-item>\n        <!-- img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n    </ion-item>\n\n  <p>Öffne eine Truhe und hole dir zusätzliche Punkte und einen Tipp.</p>\n\n  <button id="btnForward" ion-button secondary>Weiter</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/additionalReward/additionalReward.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], AdditionalRewardPage);
@@ -3274,13 +3342,13 @@ AdditionalRewardPage = __decorate([
 
 /***/ }),
 
-/***/ 537:
+/***/ 528:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TipsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3300,12 +3368,26 @@ var TipsPage = (function () {
 }());
 TipsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-tips',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\newEntry\tips\tips.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Neuer Eintrag</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <button id="btnX" ion-button color="light" round icon-only>\n\n    <ion-icon name=\'close\'></ion-icon>\n\n  </button>\n\n\n\n  <ion-item>\n\n        <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n\n    </ion-item>\n\n\n\n    <p>Ich habe deine Daten analysiert. Deine Beschwerden entsprechen\n\n           am ehesten einer Gräserpollenallergie!</p>\n\n         <h1>Mein Tipp:</h1>\n\n         <p>Halte dich wenig draussen auf.</p>\n\n         <p>Wasche dir täglich die Haare.</p>\n\n\n\n    <button id="btnForward" ion-button secondary>Weiter</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\newEntry\tips\tips.html"*/
+        selector: 'page-tips',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/tips/tips.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Neuer Eintrag</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <button id="btnX" ion-button color="light" round icon-only>\n    <ion-icon name=\'close\'></ion-icon>\n  </button>\n\n  <ion-item>\n        <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n    </ion-item>\n\n    <p>Ich habe deine Daten analysiert. Deine Beschwerden entsprechen\n           am ehesten einer Gräserpollenallergie!</p>\n         <h1>Mein Tipp:</h1>\n         <p>Halte dich wenig draussen auf.</p>\n         <p>Wasche dir täglich die Haare.</p>\n\n    <button id="btnForward" ion-button secondary>Weiter</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/tips/tips.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], TipsPage);
 
 //# sourceMappingURL=tips.js.map
+
+/***/ }),
+
+/***/ 529:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = createTranslateLoader;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ngx_translate_http_loader__ = __webpack_require__(530);
+
+function createTranslateLoader(http) {
+    return new __WEBPACK_IMPORTED_MODULE_0__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, './assets/i18n/', '.json');
+}
+//# sourceMappingURL=index.js.map
 
 /***/ }),
 
@@ -3371,19 +3453,19 @@ ParametersService = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MidataConnectionService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_network__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_secure_storage__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_fromPromise__ = __webpack_require__(488);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_fromPromise__ = __webpack_require__(489);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_fromPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_Midata__ = __webpack_require__(322);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_Midata___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_Midata__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__MidataConnectionWrapper__ = __webpack_require__(491);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__MidataConnectionWrapper__ = __webpack_require__(492);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -3575,11 +3657,12 @@ MidataConnectionService = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__overview_overview__ = __webpack_require__(325);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__community_community__ = __webpack_require__(326);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__introduction_introduction__ = __webpack_require__(327);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__newEntry_newEntry__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__game_game__ = __webpack_require__(329);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3589,6 +3672,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -3611,15 +3695,19 @@ var HomePage = (function () {
     HomePage.prototype.pushNewEntryPage = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__newEntry_newEntry__["a" /* NewEntryPage */]);
     };
+    HomePage.prototype.pushGamePage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__game_game__["a" /* GamePage */]);
+    };
     return HomePage;
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Home</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <button ion-button block (click)="pushNewEntryPage()">\n\n    Neuer Eintrag</button>\n\n  <button ion-button block (click)="pushOverviewPage()">\n\n    Übersicht</button>\n\n  <button ion-button block (click)="pushPollenPage()">\n\n   Pollenprognose</button>\n\n  <button ion-button block (click)="pushCommunityPage()">\n\n    Community</button>\n\n    <button ion-button block (click)="pushGamePage()">\n\n      Game</button>\n\n    <button ion-button block (click)="pushIntroductionPage()">\n\n        Einführung</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <button ion-button block (click)="pushNewEntryPage()">\n    Neuer Eintrag</button>\n  <button ion-button block (click)="pushOverviewPage()">\n    Übersicht</button>\n  <button ion-button block (click)="pushPollenPage()">\n   Pollenprognose</button>\n  <button ion-button block (click)="pushCommunityPage()">\n    Community</button>\n    <button ion-button block (click)="pushGamePage()">\n      Game</button>\n    <button ion-button block (click)="pushIntroductionPage()">\n        Einführung</button>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/home/home.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _a || Object])
 ], HomePage);
 
+var _a;
 //# sourceMappingURL=home.js.map
 
 /***/ }),
@@ -3630,9 +3718,9 @@ HomePage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BloodPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pulseDailyData_pulseDailyData__ = __webpack_require__(135);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__validators_pulseValidator__ = __webpack_require__(460);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__validators_pulseValidator__ = __webpack_require__(461);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pulse_measure_pulse_measure__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_moment__ = __webpack_require__(1);
@@ -3913,7 +4001,7 @@ __decorate([
 ], BloodPage.prototype, "chartCanvas", void 0);
 BloodPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["n" /* Component */])({
-        selector: 'page-blood',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\blood\blood.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>{{ \'BLOOD.TITLE\' | translate }}</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content has-footer no-bounce overflow-scroll=\'false\'>\n\n  <ion-fab right bottom #fab>\n\n    <button ion-fab mini><ion-icon name="add"></ion-icon></button>\n\n    <ion-fab-list side="top">\n\n      <button ion-fab (click)="showPromptMeasure(fab)"><ion-icon name="create"></ion-icon></button>\n\n      <button ion-fab (click)="showTakeMeasure(fab)"><ion-icon name="pulse"></ion-icon></button>\n\n    </ion-fab-list>\n\n  </ion-fab>\n\n  <ion-item>\n\n    <ion-label>{{ \'BLOOD.MYGROUP\' | translate }}</ion-label>\n\n    <ion-select interface="popover">\n\n      <ion-option value="a+">A+</ion-option>\n\n      <ion-option value="a-">A-</ion-option>\n\n      <ion-option value="b+">A+</ion-option>\n\n      <ion-option value="b-">A-</ion-option>\n\n      <ion-option value="o+">O+</ion-option>\n\n      <ion-option value="o-">O-</ion-option>\n\n      <ion-option value="ab">AB-</ion-option>\n\n    </ion-select>\n\n  </ion-item>\n\n  <ion-card>\n\n    <ion-card-content>\n\n      <canvas #chartCanvas></canvas>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  <ion-item>\n\n    <ion-label>{{ \'BLOOD.MYMEASURE\' | translate }}</ion-label>\n\n  </ion-item>\n\n    <ion-list [virtualScroll]="dayToBeDisplayed" [headerFn]="getWeeklyHeader" [approxItemHeight]="\'49px\'">\n\n      <ion-item-divider color="light" *virtualHeader="let header">\n\n        {{ header }}\n\n      </ion-item-divider>\n\n      <button ion-item *virtualItem="let day" (click)="showDate(day)">\n\n        <ion-icon name="heart-outline" item-start color="danger"></ion-icon>\n\n        <ion-label>{{formatDate(day)}}</ion-label>\n\n      </button>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\blood\blood.html"*/,
+        selector: 'page-blood',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/blood/blood.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>{{ \'BLOOD.TITLE\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content has-footer no-bounce overflow-scroll=\'false\'>\n  <ion-fab right bottom #fab>\n    <button ion-fab mini><ion-icon name="add"></ion-icon></button>\n    <ion-fab-list side="top">\n      <button ion-fab (click)="showPromptMeasure(fab)"><ion-icon name="create"></ion-icon></button>\n      <button ion-fab (click)="showTakeMeasure(fab)"><ion-icon name="pulse"></ion-icon></button>\n    </ion-fab-list>\n  </ion-fab>\n  <ion-item>\n    <ion-label>{{ \'BLOOD.MYGROUP\' | translate }}</ion-label>\n    <ion-select interface="popover">\n      <ion-option value="a+">A+</ion-option>\n      <ion-option value="a-">A-</ion-option>\n      <ion-option value="b+">A+</ion-option>\n      <ion-option value="b-">A-</ion-option>\n      <ion-option value="o+">O+</ion-option>\n      <ion-option value="o-">O-</ion-option>\n      <ion-option value="ab">AB-</ion-option>\n    </ion-select>\n  </ion-item>\n  <ion-card>\n    <ion-card-content>\n      <canvas #chartCanvas></canvas>\n    </ion-card-content>\n  </ion-card>\n  <ion-item>\n    <ion-label>{{ \'BLOOD.MYMEASURE\' | translate }}</ion-label>\n  </ion-item>\n    <ion-list [virtualScroll]="dayToBeDisplayed" [headerFn]="getWeeklyHeader" [approxItemHeight]="\'49px\'">\n      <ion-item-divider color="light" *virtualHeader="let header">\n        {{ header }}\n      </ion-item-divider>\n      <button ion-item *virtualItem="let day" (click)="showDate(day)">\n        <ion-icon name="heart-outline" item-start color="danger"></ion-icon>\n        <ion-label>{{formatDate(day)}}</ion-label>\n      </button>\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/blood/blood.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["l" /* NavParams */],
@@ -3961,7 +4049,7 @@ var ImpressumPage = (function () {
 }());
 ImpressumPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-impressum',template:/*ion-inline-start:"C:\Users\Roberto\GitHub\Ally\src\pages\impressum\impressum.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>{{ \'IMPRESSUM.TITLE\' | translate }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <div style="margin-left: 5%; margin-right: 5%; text-align:center;">\n\n      <h3>{{ \'IMPRESSUM.VERSION\' | translate }}</h3>\n\n      <p>{{appVersionNumber}}</p>\n\n      <hr>\n\n\n\n      <h3>{{ \'IMPRESSUM.PUBLISHER\' | translate }}</h3>\n\n      <p>{{ \'IMPRESSUM.PUBLISHERNAME\' | translate }}</p>\n\n      <hr>\n\n\n\n      <h3>{{ \'IMPRESSUM.IMPLEMENTATION\' | translate }}</h3>\n\n      <p><i>{{ \'IMPRESSUM.APP\' | translate }}</i><br>\n\n        {{ \'IMPRESSUM.BFH\' | translate }}<br>\n\n        {{ \'IMPRESSUM.i4mi\' | translate }}</p>\n\n      <p>&nbsp;</p>\n\n      <p><i>{{ \'IMPRESSUM.PLATFORM\' | translate }}</i><br>\n\n        {{ \'IMPRESSUM.ETH\' | translate }}<br>\n\n        {{ \'IMPRESSUM.iis\' | translate }}\n\n      </p>\n\n      <hr>\n\n\n\n      <h3>{{ \'IMPRESSUM.DATA_RETENTION\' | translate }}</h3>\n\n      <p><a href="{{parameters.midataPlatformURL}}">{{parameters.midataPlatformURL}}</a></p>\n\n\n\n      <br>\n\n\n\n      <div style="width: 90%" style="border: 0px;">\n\n        <table>\n\n          <tr>\n\n            <td style="width: 33%">\n\n              <img [src]="parameters.pathLogoBFH">\n\n            </td>\n\n            <td style="width: 33%">\n\n              <img [src]="parameters.pathLogoPublisher">\n\n            </td>\n\n            <td style="width: 33%">\n\n              <img [src]="parameters.pathLogoETH">\n\n            </td>\n\n          </tr>\n\n          <tr>\n\n            <td colspan="3">\n\n              <img [src]="parameters.pathLogoMIDATA">\n\n            </td>\n\n          </tr>\n\n        </table>\n\n      </div>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Roberto\GitHub\Ally\src\pages\impressum\impressum.html"*/,
+        selector: 'page-impressum',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/impressum/impressum.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>{{ \'IMPRESSUM.TITLE\' | translate }}</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <div style="margin-left: 5%; margin-right: 5%; text-align:center;">\n      <h3>{{ \'IMPRESSUM.VERSION\' | translate }}</h3>\n      <p>{{appVersionNumber}}</p>\n      <hr>\n\n      <h3>{{ \'IMPRESSUM.PUBLISHER\' | translate }}</h3>\n      <p>{{ \'IMPRESSUM.PUBLISHERNAME\' | translate }}</p>\n      <hr>\n\n      <h3>{{ \'IMPRESSUM.IMPLEMENTATION\' | translate }}</h3>\n      <p><i>{{ \'IMPRESSUM.APP\' | translate }}</i><br>\n        {{ \'IMPRESSUM.BFH\' | translate }}<br>\n        {{ \'IMPRESSUM.i4mi\' | translate }}</p>\n      <p>&nbsp;</p>\n      <p><i>{{ \'IMPRESSUM.PLATFORM\' | translate }}</i><br>\n        {{ \'IMPRESSUM.ETH\' | translate }}<br>\n        {{ \'IMPRESSUM.iis\' | translate }}\n      </p>\n      <hr>\n\n      <h3>{{ \'IMPRESSUM.DATA_RETENTION\' | translate }}</h3>\n      <p><a href="{{parameters.midataPlatformURL}}">{{parameters.midataPlatformURL}}</a></p>\n\n      <br>\n\n      <div style="width: 90%" style="border: 0px;">\n        <table>\n          <tr>\n            <td style="width: 33%">\n              <img [src]="parameters.pathLogoBFH">\n            </td>\n            <td style="width: 33%">\n              <img [src]="parameters.pathLogoPublisher">\n            </td>\n            <td style="width: 33%">\n              <img [src]="parameters.pathLogoETH">\n            </td>\n          </tr>\n          <tr>\n            <td colspan="3">\n              <img [src]="parameters.pathLogoMIDATA">\n            </td>\n          </tr>\n        </table>\n      </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/impressum/impressum.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_native_app_version__["a" /* AppVersion */], __WEBPACK_IMPORTED_MODULE_2__services_parametersService_parametersService__["a" /* ParametersService */]])
 ], ImpressumPage);
@@ -3970,5 +4058,5 @@ ImpressumPage = __decorate([
 
 /***/ })
 
-},[375]);
+},[376]);
 //# sourceMappingURL=main.js.map

@@ -43,6 +43,7 @@ import { MedicationPage } from '../pages/newEntry/medication/medication';
 import { TotalPointsPage } from '../pages/newEntry/totalPoints/totalPoints';
 import { AdditionalRewardPage } from '../pages/newEntry/additionalReward/additionalReward';
 import { TipsPage } from '../pages/newEntry/tips/tips';
+import { GamePage } from '../pages/game/game';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -91,6 +92,7 @@ import { ModalService } from '../services/ModalService';
     TotalPointsPage,
     AdditionalRewardPage,
     TipsPage,
+    GamePage,
     TabsPage
   ],
   imports: [
@@ -137,6 +139,7 @@ import { ModalService } from '../services/ModalService';
     TotalPointsPage,
     AdditionalRewardPage,
     TipsPage,
+    GamePage,
     TabsPage
   ],
   providers: [
