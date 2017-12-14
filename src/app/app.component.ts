@@ -14,6 +14,15 @@ import { HomePage } from '../pages/home/home';
 import { BloodPage } from '../pages/blood/blood';
 import { LoginPage } from "../pages/login/login";
 import { ProfilePage } from "../pages/profile/profile";
+import { IntroductionPage } from '../pages/introduction/introduction';
+import { AllergyPage } from '../pages/introduction/allergy/allergy';
+import { DrugPage } from '../pages/introduction/drug/drug';
+import { FinishPage } from '../pages/introduction/finish/finish';
+import { HeightWeightPage } from '../pages/introduction/heightweight/heightweight';
+import { JobPage } from '../pages/introduction/job/job';
+import { ReminderTimePage } from '../pages/introduction/remindertime/remindertime';
+import { RewardPage } from '../pages/introduction/reward/reward';
+import { TakingDrugPage } from '../pages/introduction/takingdrug/takingdrug';
 import { MidataConnectionService } from "../services/MidataConnectionService";
 import { Network } from "@ionic-native/network";
 

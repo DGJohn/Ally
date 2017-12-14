@@ -26,6 +26,16 @@ import { PulseMeasurePage } from '../pages/blood/pulse-measure/pulse-measure';
 import { PulseDailyDataPage } from '../pages/blood/pulseDailyData/pulseDailyData';
 import { OverviewPage } from '../pages/overview/overview';
 import { CommunityPage } from '../pages/community/community';
+import { IntroductionPage } from '../pages/introduction/introduction';
+import { AllergyPage } from '../pages/introduction/allergy/allergy';
+import { DrugPage } from '../pages/introduction/drug/drug';
+import { FinishPage } from '../pages/introduction/finish/finish';
+import { HeightWeightPage } from '../pages/introduction/heightweight/heightweight';
+import { JobPage } from '../pages/introduction/job/job';
+import { ReminderTimePage } from '../pages/introduction/remindertime/remindertime';
+import { RewardPage } from '../pages/introduction/reward/reward';
+import { TakingDrugPage } from '../pages/introduction/takingdrug/takingdrug';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -57,6 +67,15 @@ import { ModalService } from '../services/ModalService';
     ProfilePage,
     OverviewPage,
     CommunityPage,
+    IntroductionPage,
+    AllergyPage,
+    DrugPage,
+    FinishPage,
+    HeightWeightPage,
+    JobPage,
+    ReminderTimePage,
+    RewardPage,
+    TakingDrugPage,
     TabsPage
   ],
   imports: [
@@ -86,6 +105,15 @@ import { ModalService } from '../services/ModalService';
     ProfilePage,
     OverviewPage,
     CommunityPage,
+    IntroductionPage,
+    AllergyPage,
+    DrugPage,
+    FinishPage,
+    HeightWeightPage,
+    JobPage,
+    ReminderTimePage,
+    RewardPage,
+    TakingDrugPage,
     TabsPage
   ],
   providers: [
