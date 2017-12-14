@@ -76,9 +76,10 @@ RightPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-right',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/game/right/right.html"*/'<ion-row Padding>\n  <ion-col>\n    <div>\n      <ion-col>\n      </ion-col>\n      <ion-col>\n        <img class="ally" src="assets/imgs/Ally-M.jpg" style="float:right;" alt="Lights" style="width:30%;max-width:400px">\n      </ion-col>\n    </div>\n  </ion-col>\n</ion-row>\n\n<ion-row>\n\n  <ion-col>\n    <div>\n      <p>Super Tim!</p>\n      <p>Deine Antwort war korrekt - weiter so!</p>\n    </div>\n  </ion-col>\n</ion-row>\n\n<ion-col>\n  <div>\n\n  </div>\n</ion-col>'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/game/right/right.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _b || Object])
 ], RightPage);
 
+var _a, _b;
 //# sourceMappingURL=right.js.map
 
 /***/ })

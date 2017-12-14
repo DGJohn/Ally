@@ -3704,10 +3704,9 @@ HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-home',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <button ion-button block (click)="pushNewEntryPage()">\n    Neuer Eintrag</button>\n  <button ion-button block (click)="pushOverviewPage()">\n    Übersicht</button>\n  <button ion-button block (click)="pushPollenPage()">\n   Pollenprognose</button>\n  <button ion-button block (click)="pushCommunityPage()">\n    Community</button>\n    <button ion-button block (click)="pushGamePage()">\n      Game</button>\n    <button ion-button block (click)="pushIntroductionPage()">\n        Einführung</button>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/home/home.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], HomePage);
 
-var _a;
 //# sourceMappingURL=home.js.map
 
 /***/ }),

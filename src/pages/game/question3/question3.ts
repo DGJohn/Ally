@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {HomePage} from "../home/home";
+import { RightPage } from '../right/right';
 
 
 @IonicPage()
@@ -30,7 +30,7 @@ export class Question3Page {
 console.log(selected);
 if(selected.value === this.rightAnswer){
   console.log("RICHTIG");
-  this.navCtrl.push(HomePage);
+  this.navCtrl.push(RightPage);
     } else {
   console.log("FALSCH");
   // TODO: Push other Page
@@ -38,5 +38,3 @@ if(selected.value === this.rightAnswer){
   }
 
 }
-
-
