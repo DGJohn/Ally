@@ -24,6 +24,8 @@ import { ProfilePage } from '../pages/profile/profile';
 import { BloodPage } from '../pages/blood/blood';
 import { PulseMeasurePage } from '../pages/blood/pulse-measure/pulse-measure';
 import { PulseDailyDataPage } from '../pages/blood/pulseDailyData/pulseDailyData';
+import { OverviewPage } from '../pages/overview/overview';
+import { CommunityPage } from '../pages/community/community';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -53,6 +55,8 @@ import { ModalService } from '../services/ModalService';
     AdvanceDirectivesPage,
     QuestionsPage,
     ProfilePage,
+    OverviewPage,
+    CommunityPage,
     TabsPage
   ],
   imports: [
@@ -80,6 +84,8 @@ import { ModalService } from '../services/ModalService';
     AdvanceDirectivesPage,
     QuestionsPage,
     ProfilePage,
+    OverviewPage,
+    CommunityPage,
     TabsPage
   ],
   providers: [
