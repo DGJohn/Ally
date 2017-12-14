@@ -5,8 +5,12 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button>Neuer Eintrag</button>
-  <button ion-button>Statistik</button>
-  <button ion-button>Pollenprognose</button>
-  <button ion-button>Community</button>
+  <button ion-button block (click)="pushNewEntryPage()">
+    Neuer Eintrag</button>
+  <button ion-button block (click)="pushOverviewPage()">
+    Übersicht</button>
+  <button ion-button block (click)="pushPollenPage()">
+   Pollenprognose</button>
+  <button ion-button block (click)="pushCommunityPage()">
+    Community</button>
 </ion-content>
