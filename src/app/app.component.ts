@@ -31,8 +31,8 @@ import { MedicationPage } from '../pages/newEntry/medication/medication';
 import { TotalPointsPage } from '../pages/newEntry/totalPoints/totalPoints';
 import { AdditionalRewardPage } from '../pages/newEntry/additionalReward/additionalReward';
 import { TipsPage } from '../pages/newEntry/tips/tips';
+import { PollenPage } from '../pages/pollen/pollen';
 import { MidataConnectionService } from "../services/MidataConnectionService";
-import { GamePage } from '../pages/game/game';
 import { Network } from "@ionic-native/network";
 
 @Component({
