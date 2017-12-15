@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { ReminderTimePage } from '../remindertime/remindertime';
 
 @Component({
   selector: 'page-drug',
@@ -10,4 +11,7 @@ export class DrugPage {
   constructor(public navCtrl: NavController) {
   }
 
+  pushReminderTimePage() {
+    this.navCtrl.push(ReminderTimePage)
+}
 }

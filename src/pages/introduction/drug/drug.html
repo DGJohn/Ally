@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Dosierung der Medikamente</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p>
+    <ion-card>
+  <img src="img/nin-live.png"/>
+  <ion-card-content>
+    <p>
+Hier kannst Du die Dosierung Deiner Medikamente erfassen
+    </p>
+  </ion-card-content>
+</ion-card>
+  </p>
+
+<ion-list radio-group [(ngModel)]="useMedication">
+     <ion-item>
+       <ion-label ion-label-small>täglich</ion-label>
+       <ion-radio value="everyDay" checked></ion-radio>
+     </ion-item>
+     <ion-item>
+       <ion-label>Nach Bedarf</ion-label>
+       <ion-radio value="uponNeed"></ion-radio>
+     </ion-item>
+     <ion-item>
+       <ion-label>Nie</ion-label>
+       <ion-radio value="never"></ion-radio>
+     </ion-item>
+     <ion-item>
+       <ion-label>Dossierung</ion-label>
+       <ion-select [(ngModel)]="bekannteAllergien" multiple="true">
+         <ion-option>morgens</ion-option>
+         <ion-option>mittags</ion-option>
+         <ion-option>abends</ion-option>
+         <ion-option>nachts</ion-option>
+       </ion-select>
+     </ion-item>
+   </ion-list>
+
+   <button ion-button (click)="pushReminderTimePage()">weiter</button>

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Grösse und Gewicht</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p>
+    <ion-card>
+  <img src="img/nin-live.png"/>
+  <ion-card-content>
+    <ion-card-title>
+      </ion-card-title>
+    <p>
+  Erfasse Deine Grösse und Dein Gewicht
+    </p>
+  </ion-card-content>
+</ion-card>
+  </p>
+
+  <ion-item>
+      <ion-label>Grösse in cm</ion-label>
+      <ion-range min="100" max="250" step="1" snaps="true" color="secondary"></ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-label>Gewicht in m</ion-label>
+      <ion-range min="40" max="150" step="1" snaps="true" color="secondary"></ion-range>
+    </ion-item>
+
+    <button ion-button (click)="pushJobPage()">weiter</button>

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Belohnung</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p>
+    <ion-card>
+  <img src="img/nin-live.png"/>
+  <ion-card-content>
+    <p>
+  Wähle Deine Belohnung für die Teilnahme für die Erfassung Deiner Allergie aus
+    </p>
+  </ion-card-content>
+</ion-card>
+  </p>
+    <ion-list radio-group [(ngModel)]="questionWhichReward">
+      <ion-item>
+        <ion-label>Gratis-Allergietest</ion-label>
+        <ion-radio value="allergietest" checked></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Gratis-Medikament</ion-label>
+        <ion-radio value="medikament"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Gratis-Allergieberatung</ion-label>
+        <ion-radio value="allergieberatung"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Spende für eine Allergie-Institution</ion-label>
+        <ion-radio value="spende"></ion-radio>
+      </ion-item>
+    </ion-list>
+
+  <button ion-button (click)="pushHeightWeightPage()">weiter</button>

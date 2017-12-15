@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { FinishPage } from '../finish/finish';
 
 @Component({
   selector: 'page-remindertime',
@@ -10,4 +11,7 @@ export class ReminderTimePage {
   constructor(public navCtrl: NavController) {
   }
 
+  pushFinishPage() {
+    this.navCtrl.push(FinishPage)
+}
 }

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Dosierung der Medikamente</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p>
+    <ion-card>
+  <img src="img/nin-live.png"/>
+  <ion-card-content>
+    <p>
+Ich bin da, um Dir zu helfen, Deine täglichen Einträge zu erfassen
+    </p>
+     <p>Wann darf ich Dich daran erinnern?</p>
+  </ion-card-content>
+</ion-card>
+  </p>
+  <ion-item>
+       <ion-label>Zeit</ion-label>
+       <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>
+     </ion-item>
+
+       <button ion-button (click)="pushFinishPage()">weiter</button>

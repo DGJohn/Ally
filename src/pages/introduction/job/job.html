@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Beruf & Arbeitsort</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p>
+    <ion-card>
+  <img src="img/nin-live.png"/>
+  <ion-card-content>
+    <ion-card-title>
+      </ion-card-title>
+    <p>
+  Was machst Du beruflich?
+  </ion-card-content>
+</ion-card>
+  </p>
+
+  <ion-item>
+    <ion-label>Beruf</ion-label>
+    <ion-select [(ngModel)]="berufe">
+      <ion-option>Bauer</ion-option>
+      <ion-option>Büroangestellter</ion-option>
+      <ion-option>Zimmermann</ion-option>
+      <ion-option>Lokführer</ion-option>
+      <ion-option>Medizininformatiker</ion-option>
+      <ion-option>Physiotherapeut</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Arbeitsumgebung</ion-label>
+    <ion-select [(ngModel)]="arbeitsumgebung" multiple="true">
+      <ion-option>draussen</ion-option>
+      <ion-option>drinnen</ion-option>
+      <ion-option>in der Natur</ion-option>
+      <ion-option>in einer Fabrik</ion-option>
+      <ion-option>zu Hause</ion-option>
+      <ion-option>unterschiedlich</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <button ion-button (click)="pushAllergyPage()">weiter</button>
