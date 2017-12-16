@@ -6,7 +6,7 @@
 
 <ion-content padding>
 
-    <button id="btnX" ion-button color="light" round icon-only>
+    <button id="btnX" (click)="pushHomePage()" ion-button color="light" round icon-only>
       <ion-icon name='close'></ion-icon>
     </button>
 
@@ -21,6 +21,6 @@
          aktuelle Pollenbelastung in
          der Schweiz zu erhalten.</p>
 
-  <button id="btnForward" ion-button secondary>Weiter</button>
+  <button id="btnForward" (click)="pushDateTimePage()" ion-button secondary>Weiter</button>
 
 </ion-content>

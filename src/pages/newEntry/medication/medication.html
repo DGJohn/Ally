@@ -6,7 +6,7 @@
 
 <ion-content padding>
 
-  <button id="btnX" ion-button color="light" round icon-only>
+  <button id="btnX" (click)="pushHomePage()" ion-button color="light" round icon-only>
     <ion-icon name='close'></ion-icon>
   </button>
 
@@ -37,6 +37,6 @@
             </ion-item>
           </ion-list>
 
-    <button id="btnForward" ion-button secondary>Weiter</button>
+    <button id="btnForward" (click)="pushTotalPointsPage()" ion-button secondary>Weiter</button>
 
 </ion-content>

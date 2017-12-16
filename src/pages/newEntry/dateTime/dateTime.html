@@ -6,12 +6,12 @@
 
 <ion-content padding>
 
-  <button id="btnX" ion-button color="light" round icon-only>
+  <button id="btnX" (click)="pushHomePage()" ion-button color="light" round icon-only>
     <ion-icon name='close'></ion-icon>
   </button>
 
   <ion-item>
-        <img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;">
+        <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->
     </ion-item>
       <p>Wann sind deine Beschwerden aufgetreten?
       </p>
@@ -24,6 +24,6 @@
         <ion-label>Zeit</ion-label>
         <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>
       </ion-item>
-      <button id="btnForward" ion-button secondary>Weiter</button>
+      <button id="btnForward" (click)="pushComplaintsPage()" ion-button secondary>Weiter</button>
 
 </ion-content>
