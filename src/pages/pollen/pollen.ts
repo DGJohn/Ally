@@ -11,7 +11,7 @@ export class PollenPage {
   }
 
   selectedCurrentLocation() {
-    
+
   }
 
   selectedBern() {
@@ -21,4 +21,5 @@ export class PollenPage {
   selectedBiel() {
 
   }
+
 }

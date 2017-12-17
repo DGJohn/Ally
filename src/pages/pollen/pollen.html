@@ -14,5 +14,23 @@
     <ion-segment-button value="biel"
     (ionSelect)="selectedBiel()">Biel</ion-segment-button>
   </ion-segment>
+  <div [ngSwitch]="orte">
+    <ion-list *ngSwitchCase="'aktuellerOrt'">
+      <ion-item>
+        <p>aktueller Ort, wird aber noch bearbeitet...</p>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'bern'">
+      <ion-item>
+        <p>Bern, wird aber noch bearbeitet...</p>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'biel'">
+      <ion-item>
+        <p>Biel, wird aber noch bearbeitet...</p>
+      </ion-item>
+    </ion-list>
+  </div>
   <button ion-button>Tim, spiel mit uns und komm ins nächste Level</button>
+
 </ion-content>
