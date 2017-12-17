@@ -1,6 +1,6 @@
 webpackJsonp([8],{
 
-/***/ 544:
+/***/ 546:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24,7 +24,7 @@ var ImpressumPageModule = (function () {
     return ImpressumPageModule;
 }());
 ImpressumPageModule = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
         declarations: [
             __WEBPACK_IMPORTED_MODULE_2__impressum__["a" /* ImpressumPage */],
         ],

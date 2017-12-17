@@ -15,6 +15,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { MidataConnectionService } from '../services/MidataConnectionService';
 import { InBrowserBrowser } from '../services/InBrowserBrowser';
+import { ChartsModule } from 'ng2-charts';
 import { Camera } from '@ionic-native/camera';
 
 import { TabsPage } from '../pages/tabs/tabs';
@@ -97,9 +98,12 @@ import { ModalService } from '../services/ModalService';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      backButtonText: 'Zurück'
+    }),
     HttpClientModule,
     IonicStorageModule.forRoot(),
+    ChartsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

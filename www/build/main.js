@@ -32,20 +32,20 @@ Answer.currentId = 0;
 
 /***/ }),
 
-/***/ 131:
+/***/ 132:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfilePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_languageService_languageService__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_parametersService_parametersService__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_camera__ = __webpack_require__(379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_midata__ = __webpack_require__(519);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_languageService_languageService__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_parametersService_parametersService__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_camera__ = __webpack_require__(386);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_midata__ = __webpack_require__(528);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_midata___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_midata__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_MidataConnectionService__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__typings_globals__ = __webpack_require__(520);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_MidataConnectionService__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__typings_globals__ = __webpack_require__(529);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -301,8 +301,8 @@ var ProfilePage = (function () {
     return ProfilePage;
 }());
 ProfilePage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-profile',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\profile\profile.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Profile</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <div id="photoSectionWrapper">\n\n    <div id="photoSection" (click)="photoProfilClick()">\n\n      <img alt="Image Profile" id="photoImage" src="{{photoAccessURL}}" />\n\n      <img class="uploadImage" [src]="parameters.pathCameraIcon" />\n\n    </div>\n\n  </div>\n\n\n\n  <ion-list>\n\n    <ion-item>\n\n      <ion-icon name="mail" item-left></ion-icon>\n\n      <p><b id="username">{{ \'PROFILE.USERNAME\' | translate }}</b></p>\n\n      <p>{{username}}</p>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-icon name="contacts" item-left></ion-icon>\n\n      <p><b id="name">{{ \'PROFILE.NAME\' | translate }}</b></p>\n\n      <p>{{name}}</p>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-icon name="calendar" item-left></ion-icon>\n\n      <p><b id="birthdate">{{ \'PROFILE.BIRTHDATE\' | translate }}</b></p>\n\n      <p>{{birthDate| date: \'dd.MM.y\'}}</p>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-icon name={{genderIcon}} item-left></ion-icon>\n\n      <p><b id="gender">{{ \'PROFILE.GENDER\' | translate }}</b></p>\n\n      <p>{{gender}}</p>\n\n    </ion-item>\n\n    <ion-item (click)="updateBodyHeight()">\n\n      <ion-icon name="resize" item-left></ion-icon>\n\n      <p><b id="height">{{ \'PROFILE.HEIGHT\' | translate }}</b></p>\n\n      <p>{{height}} cm</p>\n\n      <ion-icon name="create" item-right></ion-icon>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\profile\profile.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-profile',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/profile/profile.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Profile</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <div id="photoSectionWrapper">\n    <div id="photoSection" (click)="photoProfilClick()">\n      <img alt="Image Profile" id="photoImage" src="{{photoAccessURL}}" />\n      <img class="uploadImage" [src]="parameters.pathCameraIcon" />\n    </div>\n  </div>\n\n  <ion-list>\n    <ion-item>\n      <ion-icon name="mail" item-left></ion-icon>\n      <p><b id="username">{{ \'PROFILE.USERNAME\' | translate }}</b></p>\n      <p>{{username}}</p>\n    </ion-item>\n    <ion-item>\n      <ion-icon name="contacts" item-left></ion-icon>\n      <p><b id="name">{{ \'PROFILE.NAME\' | translate }}</b></p>\n      <p>{{name}}</p>\n    </ion-item>\n    <ion-item>\n      <ion-icon name="calendar" item-left></ion-icon>\n      <p><b id="birthdate">{{ \'PROFILE.BIRTHDATE\' | translate }}</b></p>\n      <p>{{birthDate| date: \'dd.MM.y\'}}</p>\n    </ion-item>\n    <ion-item>\n      <ion-icon name={{genderIcon}} item-left></ion-icon>\n      <p><b id="gender">{{ \'PROFILE.GENDER\' | translate }}</b></p>\n      <p>{{gender}}</p>\n    </ion-item>\n    <ion-item (click)="updateBodyHeight()">\n      <ion-icon name="resize" item-left></ion-icon>\n      <p><b id="height">{{ \'PROFILE.HEIGHT\' | translate }}</b></p>\n      <p>{{height}} cm</p>\n      <ion-icon name="create" item-right></ion-icon>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/profile/profile.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_2__services_languageService_languageService__["a" /* LanguageService */],
@@ -310,14 +310,14 @@ ProfilePage = __decorate([
         __WEBPACK_IMPORTED_MODULE_4__ionic_native_camera__["a" /* Camera */],
         __WEBPACK_IMPORTED_MODULE_3__services_parametersService_parametersService__["a" /* ParametersService */],
         __WEBPACK_IMPORTED_MODULE_6__services_MidataConnectionService__["a" /* MidataConnectionService */],
-        __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* NgZone */]])
+        __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"]])
 ], ProfilePage);
 
 //# sourceMappingURL=profile.js.map
 
 /***/ }),
 
-/***/ 132:
+/***/ 133:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -325,8 +325,8 @@ ProfilePage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_globalization__ = __webpack_require__(377);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_native_storage__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_globalization__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_native_storage__ = __webpack_require__(385);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -407,7 +407,7 @@ var LanguageService = (function () {
     return LanguageService;
 }());
 LanguageService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["B" /* Injectable */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["m" /* Platform */],
         __WEBPACK_IMPORTED_MODULE_4__ionic_native_native_storage__["a" /* NativeStorage */],
         __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */],
@@ -418,20 +418,20 @@ LanguageService = __decorate([
 
 /***/ }),
 
-/***/ 133:
+/***/ 134:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdvanceDirectivesPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Objects_Question__ = __webpack_require__(399);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Objects_Group__ = __webpack_require__(400);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Objects_Question__ = __webpack_require__(406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Objects_Group__ = __webpack_require__(407);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__QuestionsModal_questions__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Objects_AnswersType_TextAnswer__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Objects_AnswersType_RadioAnswer__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Objects_AnswersType_CheckboxAnswer__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__QuestionsModal_questions__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Objects_AnswersType_TextAnswer__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Objects_AnswersType_RadioAnswer__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Objects_AnswersType_CheckboxAnswer__ = __webpack_require__(193);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -548,8 +548,8 @@ var AdvanceDirectivesPage = (function () {
     return AdvanceDirectivesPage;
 }());
 AdvanceDirectivesPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["n" /* Component */])({
-        selector: 'page-advance-directives',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\advance-directives\advance-directives.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Advance directives</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-grid>\n\n    <ion-row>\n\n      <ion-col col-2></ion-col>\n\n      <ion-col col-8><button ion-button color="secondary" round block (click)="askQuestions()">Répondre aux questions</button></ion-col>\n\n      <ion-col col-2></ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n  <ng-container *ngFor="let group of groups; let i = index">\n\n    <ion-card color="primary" (click)="inability(i)">\n\n      <ion-card-content>\n\n        {{group.groupTitle}} \n\n      </ion-card-content>\n\n    </ion-card>\n\n    <ng-container *ngFor="let question of group.questions">\n\n      <ion-card [hidden]="!hideInability[i]">\n\n        <ion-card-header text-wrap>\n\n          <b>{{question.label}}</b>\n\n        </ion-card-header>\n\n        <ion-card-content>\n\n          <ion-list *ngFor="let answer of question.answerValue">\n\n            <ng-container *ngIf="question.type == \'text\' && answer">\n\n              <ion-item text-wrap><b>{{answer.label}}:</b> {{answer.value}}</ion-item>\n\n            </ng-container>\n\n            <ng-container *ngIf="question.type == \'radio\' && answer">\n\n              <ion-item text-wrap>{{answer.label}}</ion-item>\n\n              <ion-list *ngFor="let subAnswer of question.subAnswerValue">\n\n                <ng-container *ngIf="subAnswer">\n\n                  <ion-item class="sub-item" text-wrap>{{subAnswer.label}}</ion-item>\n\n                </ng-container>\n\n              </ion-list>\n\n              <ion-list *ngFor="let subSubAnswer of question.subSubAnswerValue">\n\n                <ng-container *ngIf="subSubAnswer">\n\n                  <ion-item class="sub-sub-item" text-wrap>{{subSubAnswer.label}}</ion-item>\n\n                </ng-container>\n\n              </ion-list>\n\n            </ng-container>\n\n            <ng-container *ngIf="question.type == \'checkbox\' && answer">\n\n              <ion-item text-wrap>{{answer.label}}</ion-item>\n\n            </ng-container>\n\n          </ion-list>\n\n          <ng-container *ngIf="question.answerValue.length < 1">\n\n            <ion-list>\n\n              <ion-item>Aucune réponse disponible</ion-item>\n\n            </ion-list>\n\n          </ng-container>\n\n        </ion-card-content>\n\n      </ion-card>\n\n    </ng-container>\n\n  </ng-container>\n\n</ion-content>'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\advance-directives\advance-directives.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["Component"])({
+        selector: 'page-advance-directives',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/advance-directives/advance-directives.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Advance directives</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-2></ion-col>\n      <ion-col col-8><button ion-button color="secondary" round block (click)="askQuestions()">Répondre aux questions</button></ion-col>\n      <ion-col col-2></ion-col>\n    </ion-row>\n  </ion-grid>\n  <ng-container *ngFor="let group of groups; let i = index">\n    <ion-card color="primary" (click)="inability(i)">\n      <ion-card-content>\n        {{group.groupTitle}} \n      </ion-card-content>\n    </ion-card>\n    <ng-container *ngFor="let question of group.questions">\n      <ion-card [hidden]="!hideInability[i]">\n        <ion-card-header text-wrap>\n          <b>{{question.label}}</b>\n        </ion-card-header>\n        <ion-card-content>\n          <ion-list *ngFor="let answer of question.answerValue">\n            <ng-container *ngIf="question.type == \'text\' && answer">\n              <ion-item text-wrap><b>{{answer.label}}:</b> {{answer.value}}</ion-item>\n            </ng-container>\n            <ng-container *ngIf="question.type == \'radio\' && answer">\n              <ion-item text-wrap>{{answer.label}}</ion-item>\n              <ion-list *ngFor="let subAnswer of question.subAnswerValue">\n                <ng-container *ngIf="subAnswer">\n                  <ion-item class="sub-item" text-wrap>{{subAnswer.label}}</ion-item>\n                </ng-container>\n              </ion-list>\n              <ion-list *ngFor="let subSubAnswer of question.subSubAnswerValue">\n                <ng-container *ngIf="subSubAnswer">\n                  <ion-item class="sub-sub-item" text-wrap>{{subSubAnswer.label}}</ion-item>\n                </ng-container>\n              </ion-list>\n            </ng-container>\n            <ng-container *ngIf="question.type == \'checkbox\' && answer">\n              <ion-item text-wrap>{{answer.label}}</ion-item>\n            </ng-container>\n          </ion-list>\n          <ng-container *ngIf="question.answerValue.length < 1">\n            <ion-list>\n              <ion-item>Aucune réponse disponible</ion-item>\n            </ion-list>\n          </ng-container>\n        </ion-card-content>\n      </ion-card>\n    </ng-container>\n  </ng-container>\n</ion-content>'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/advance-directives/advance-directives.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["i" /* ModalController */], __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */]])
 ], AdvanceDirectivesPage);
@@ -558,16 +558,16 @@ AdvanceDirectivesPage = __decorate([
 
 /***/ }),
 
-/***/ 134:
+/***/ 135:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QuestionsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Objects_AnswersType_TextAnswer__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Objects_AnswersType_RadioAnswer__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Objects_AnswersType_CheckboxAnswer__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Objects_AnswersType_TextAnswer__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Objects_AnswersType_RadioAnswer__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Objects_AnswersType_CheckboxAnswer__ = __webpack_require__(193);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -638,12 +638,12 @@ var QuestionsPage = (function () {
     return QuestionsPage;
 }());
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */]),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */]),
     __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */])
 ], QuestionsPage.prototype, "slides", void 0);
 QuestionsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-questions',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\advance-directives\QuestionsModal\questions.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons left>\n\n      <button ion-button icon-only (click)="dismiss()">\n\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>Questions</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-slides>\n\n    <ng-container *ngFor="let group of groups">\n\n      <ion-slide class="explanations">\n\n        <ion-card color="light">\n\n          <ion-card-header color="primary">\n\n            {{group.groupTitle}}\n\n          </ion-card-header>\n\n          <ion-card-content>\n\n            {{group.groupDescription}}\n\n          </ion-card-content>\n\n        </ion-card>\n\n      </ion-slide>\n\n      <ng-container *ngFor="let question of group.questions">\n\n        <ion-slide *ngIf="question.type == \'text\'">\n\n          <h1>{{question.label}}</h1>\n\n          <ion-list *ngFor="let answer of question.answers">\n\n            <ion-item>\n\n              <ion-label fixed>{{answer.label}}</ion-label>\n\n              <ion-input type="text" #textValue (input)="changeAnswer(question, answer, textValue.value)" value="{{answer.value}}"></ion-input>\n\n            </ion-item>\n\n          </ion-list>\n\n        </ion-slide>\n\n        <ion-slide *ngIf="question.type == \'radio\'">\n\n          <h1>{{question.label}}</h1>\n\n          <ion-list radio-group [(ngModel)]="radioAnswer">\n\n            <ng-container *ngFor="let answer of question.answers">\n\n              <ion-item text-wrap item-divider>\n\n                <ion-label>{{answer.label}}</ion-label>\n\n                <ion-radio #radioValue value="{{answer.name}}" (ionSelect)="changeAnswer(question, answer)"></ion-radio>\n\n              </ion-item>\n\n              <ng-container *ngIf="answer.subAnswers && radioAnswer == answer.name">\n\n                <ion-list radio-group [(ngModel)]="radioSubAnswer">\n\n                  <ng-container *ngFor="let subAnswer of answer.subAnswers">\n\n                    <ion-item text-wrap class="sub-item">\n\n                      <ion-label class="subAnswer">{{subAnswer.label}}</ion-label>\n\n                      <ion-radio value="{{subAnswer.name}}" (ionSelect)="changeAnswer(question, answer, \'\', subAnswer)"></ion-radio>\n\n                    </ion-item>\n\n                    <ion-list radio-group>\n\n                      <ng-container *ngIf="subAnswer.subAnswers && radioSubAnswer == subAnswer.name">\n\n                        <ion-item text-wrap class="sub-sub-item" *ngFor="let subSubAnswer of subAnswer.subAnswers">\n\n                          <ion-label class="subSubAnswer">{{subSubAnswer.label}}</ion-label>\n\n                          <ion-radio value="{{subSubAnswer.name}}" (ionSelect)="changeAnswer(question, answer, \'\', subAnswer, subSubAnswer)"></ion-radio>\n\n                        </ion-item>\n\n                      </ng-container>\n\n                    </ion-list>\n\n                  </ng-container>\n\n                </ion-list>\n\n              </ng-container>\n\n            </ng-container>\n\n          </ion-list>\n\n        </ion-slide>\n\n        <ion-slide *ngIf="question.type == \'checkbox\'">\n\n          <h1>{{question.label}}</h1>\n\n          <ion-list *ngFor="let answer of question.answers">\n\n            <ion-item text-wrap item-divider>\n\n              <ion-label>{{answer.label}}</ion-label>\n\n              <ion-checkbox #checkValue (ionChange)="changeAnswer(question, answer, checkValue.value)"></ion-checkbox>\n\n            </ion-item>\n\n          </ion-list>\n\n        </ion-slide>\n\n\n\n      </ng-container>\n\n    </ng-container>\n\n  </ion-slides>\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <ion-grid>\n\n    <ion-row>\n\n      <ion-col>\n\n        <button ion-button full (click)="close()" *ngIf="slides._isBeginning">Fermer</button>\n\n        <button ion-button full (click)="previous()" *ngIf="!slides._isBeginning">Précédant</button>\n\n      </ion-col>\n\n      <ion-col>\n\n        <button ion-button full (click)="next()" *ngIf="!slides._isEnd">Suivant</button>\n\n        <button ion-button full (click)="close()" *ngIf="slides._isEnd">Fermer</button>\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\advance-directives\QuestionsModal\questions.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-questions',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/advance-directives/QuestionsModal/questions.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-buttons left>\n      <button ion-button icon-only (click)="dismiss()">\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Questions</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-slides>\n    <ng-container *ngFor="let group of groups">\n      <ion-slide class="explanations">\n        <ion-card color="light">\n          <ion-card-header color="primary">\n            {{group.groupTitle}}\n          </ion-card-header>\n          <ion-card-content>\n            {{group.groupDescription}}\n          </ion-card-content>\n        </ion-card>\n      </ion-slide>\n      <ng-container *ngFor="let question of group.questions">\n        <ion-slide *ngIf="question.type == \'text\'">\n          <h1>{{question.label}}</h1>\n          <ion-list *ngFor="let answer of question.answers">\n            <ion-item>\n              <ion-label fixed>{{answer.label}}</ion-label>\n              <ion-input type="text" #textValue (input)="changeAnswer(question, answer, textValue.value)" value="{{answer.value}}"></ion-input>\n            </ion-item>\n          </ion-list>\n        </ion-slide>\n        <ion-slide *ngIf="question.type == \'radio\'">\n          <h1>{{question.label}}</h1>\n          <ion-list radio-group [(ngModel)]="radioAnswer">\n            <ng-container *ngFor="let answer of question.answers">\n              <ion-item text-wrap item-divider>\n                <ion-label>{{answer.label}}</ion-label>\n                <ion-radio #radioValue value="{{answer.name}}" (ionSelect)="changeAnswer(question, answer)"></ion-radio>\n              </ion-item>\n              <ng-container *ngIf="answer.subAnswers && radioAnswer == answer.name">\n                <ion-list radio-group [(ngModel)]="radioSubAnswer">\n                  <ng-container *ngFor="let subAnswer of answer.subAnswers">\n                    <ion-item text-wrap class="sub-item">\n                      <ion-label class="subAnswer">{{subAnswer.label}}</ion-label>\n                      <ion-radio value="{{subAnswer.name}}" (ionSelect)="changeAnswer(question, answer, \'\', subAnswer)"></ion-radio>\n                    </ion-item>\n                    <ion-list radio-group>\n                      <ng-container *ngIf="subAnswer.subAnswers && radioSubAnswer == subAnswer.name">\n                        <ion-item text-wrap class="sub-sub-item" *ngFor="let subSubAnswer of subAnswer.subAnswers">\n                          <ion-label class="subSubAnswer">{{subSubAnswer.label}}</ion-label>\n                          <ion-radio value="{{subSubAnswer.name}}" (ionSelect)="changeAnswer(question, answer, \'\', subAnswer, subSubAnswer)"></ion-radio>\n                        </ion-item>\n                      </ng-container>\n                    </ion-list>\n                  </ng-container>\n                </ion-list>\n              </ng-container>\n            </ng-container>\n          </ion-list>\n        </ion-slide>\n        <ion-slide *ngIf="question.type == \'checkbox\'">\n          <h1>{{question.label}}</h1>\n          <ion-list *ngFor="let answer of question.answers">\n            <ion-item text-wrap item-divider>\n              <ion-label>{{answer.label}}</ion-label>\n              <ion-checkbox #checkValue (ionChange)="changeAnswer(question, answer, checkValue.value)"></ion-checkbox>\n            </ion-item>\n          </ion-list>\n        </ion-slide>\n\n      </ng-container>\n    </ng-container>\n  </ion-slides>\n</ion-content>\n\n<ion-footer>\n  <ion-grid>\n    <ion-row>\n      <ion-col>\n        <button ion-button full (click)="close()" *ngIf="slides._isBeginning">Fermer</button>\n        <button ion-button full (click)="previous()" *ngIf="!slides._isBeginning">Précédant</button>\n      </ion-col>\n      <ion-col>\n        <button ion-button full (click)="next()" *ngIf="!slides._isEnd">Suivant</button>\n        <button ion-button full (click)="close()" *ngIf="slides._isEnd">Fermer</button>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-footer>'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/advance-directives/QuestionsModal/questions.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ViewController */]])
 ], QuestionsPage);
@@ -652,7 +652,7 @@ QuestionsPage = __decorate([
 
 /***/ }),
 
-/***/ 135:
+/***/ 136:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -661,7 +661,7 @@ QuestionsPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_chart_js__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_chart_js__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_chart_js__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -741,12 +741,12 @@ var PulseDailyDataPage = (function () {
     return PulseDailyDataPage;
 }());
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])('chartCanvas'),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('chartCanvas'),
     __metadata("design:type", Object)
 ], PulseDailyDataPage.prototype, "chartCanvas", void 0);
 PulseDailyDataPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-pulse-daily-data',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\blood\pulseDailyData\pulseDailyData.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons left>\n\n      <button ion-button navPop icon-only>\n\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>Blood pulse</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content has-footer no-bounce>\n\n  <h1>{{formatDate(dateOfDay, \'dddd Do MMMM YYYY\')}}</h1>\n\n  <ion-card *ngIf="dailyData.length > 3">\n\n    <ion-card-content>\n\n      <canvas #chartCanvas></canvas>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  <ion-list>\n\n    <ion-item-sliding #item *ngFor="let measure of dailyData">\n\n      <ion-item>\n\n        <ion-icon name="heart-outline" item-start color="danger"></ion-icon>\n\n        <h2>{{formatDate(measure.date, \'HH:mm\')}}</h2>\n\n        <p>{{measure.value}}</p>\n\n        </ion-item>\n\n        <ion-item-options>\n\n          <button ion-button color="danger" (click)="delete(item)">\n\n            <ion-icon name="trash"></ion-icon>\n\n            Delete\n\n        </button>\n\n        </ion-item-options>\n\n    </ion-item-sliding>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\blood\pulseDailyData\pulseDailyData.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-pulse-daily-data',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/blood/pulseDailyData/pulseDailyData.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Blood pulse</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content has-footer no-bounce>\n  <h1>{{formatDate(dateOfDay, \'dddd Do MMMM YYYY\')}}</h1>\n  <ion-card *ngIf="dailyData.length > 3">\n    <ion-card-content>\n      <canvas #chartCanvas></canvas>\n    </ion-card-content>\n  </ion-card>\n  <ion-list>\n    <ion-item-sliding #item *ngFor="let measure of dailyData">\n      <ion-item>\n        <ion-icon name="heart-outline" item-start color="danger"></ion-icon>\n        <h2>{{formatDate(measure.date, \'HH:mm\')}}</h2>\n        <p>{{measure.value}}</p>\n        </ion-item>\n        <ion-item-options>\n          <button ion-button color="danger" (click)="delete(item)">\n            <ion-icon name="trash"></ion-icon>\n            Delete\n        </button>\n        </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/blood/pulseDailyData/pulseDailyData.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], PulseDailyDataPage);
@@ -755,7 +755,7 @@ PulseDailyDataPage = __decorate([
 
 /***/ }),
 
-/***/ 136:
+/***/ 137:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -843,8 +843,8 @@ var PulseMeasurePage = (function () {
     return PulseMeasurePage;
 }());
 PulseMeasurePage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-pulse-measure',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\blood\pulse-measure\pulse-measure.html"*/'\n\n<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons left>\n\n      <button ion-button navPop icon-only>\n\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>{{ \'BLOOD.NEWMEASURE.TITLE\' | translate }}</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <ion-card>\n\n    <ion-card-header>\n\n      {{ \'BLOOD.NEWMEASURE.CAPTIONTITLE\' | translate }}\n\n    </ion-card-header>\n\n    <ion-card-content>\n\n      {{ \'BLOOD.NEWMEASURE.CAPTION\' | translate }}\n\n    </ion-card-content>\n\n  </ion-card>\n\n\n\n  <ion-row [hidden]="isMeasuring">\n\n    <ion-col>\n\n      <button ion-button (click)="takeMeasure()">{{ \'BLOOD.NEWMEASURE.START\' | translate }}</button>\n\n    </ion-col>\n\n  </ion-row>\n\n\n\n  <ion-row [hidden]="!isMeasuring">\n\n    <ion-col class="counter">\n\n      {{counter}}\n\n    </ion-col>\n\n  </ion-row>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\blood\pulse-measure\pulse-measure.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-pulse-measure',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/blood/pulse-measure/pulse-measure.html"*/'\n<ion-header>\n  <ion-navbar>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'BLOOD.NEWMEASURE.TITLE\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-header>\n      {{ \'BLOOD.NEWMEASURE.CAPTIONTITLE\' | translate }}\n    </ion-card-header>\n    <ion-card-content>\n      {{ \'BLOOD.NEWMEASURE.CAPTION\' | translate }}\n    </ion-card-content>\n  </ion-card>\n\n  <ion-row [hidden]="isMeasuring">\n    <ion-col>\n      <button ion-button (click)="takeMeasure()">{{ \'BLOOD.NEWMEASURE.START\' | translate }}</button>\n    </ion-col>\n  </ion-row>\n\n  <ion-row [hidden]="!isMeasuring">\n    <ion-col class="counter">\n      {{counter}}\n    </ion-col>\n  </ion-row>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/blood/pulse-measure/pulse-measure.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ViewController */],
@@ -858,7 +858,7 @@ PulseMeasurePage = __decorate([
 
 /***/ }),
 
-/***/ 137:
+/***/ 138:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -866,9 +866,9 @@ PulseMeasurePage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(321);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_MidataConnectionService__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_MidataConnectionService__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_ModalService__ = __webpack_require__(324);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(53);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -928,8 +928,8 @@ var LoginPage = (function () {
     return LoginPage;
 }());
 LoginPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\login\login.html"*/'<ion-content>\n\n  <div id="midataLogoWrapper">\n\n      <span class="helper"></span>\n\n      <ion-img alt="MIDATA logo" src="assets/img/logo-midata-full.png" id="logoMidata" (click)="visitMidata()"></ion-img>\n\n  </div>\n\n  <div id="blockHeader">\n\n  </div>\n\n  <ion-slides pager>\n\n    <ion-slide>\n\n      <h2 class="slide-title">Welcome to MiDemo</h2>\n\n    </ion-slide>\n\n\n\n    <ion-slide>\n\n      <h2 class="slide-title">What can I do for you?</h2>\n\n    </ion-slide>\n\n\n\n    <ion-slide>\n\n      <h2 class="slide-title">Tipps!</h2>\n\n    </ion-slide>\n\n</ion-slides>\n\n\n\n  <div id="btnZone">\n\n    <div class="wrapper default" id="btnLogin" (click)="login()">\n\n        login\n\n    </div>\n\n    <div class="wrapper" id="btnRegister" (click)="register()">\n\n        register\n\n    </div>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\login\login.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-login',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/login/login.html"*/'<ion-content>\n  <div id="midataLogoWrapper">\n      <span class="helper"></span>\n      <ion-img alt="MIDATA logo" src="assets/img/logo-midata-full.png" id="logoMidata" (click)="visitMidata()"></ion-img>\n  </div>\n  <div id="blockHeader">\n  </div>\n  <ion-slides pager>\n    <ion-slide>\n      <h2 class="slide-title">Welcome to MiDemo</h2>\n    </ion-slide>\n\n    <ion-slide>\n      <h2 class="slide-title">What can I do for you?</h2>\n    </ion-slide>\n\n    <ion-slide>\n      <h2 class="slide-title">Tipps!</h2>\n    </ion-slide>\n</ion-slides>\n\n  <div id="btnZone">\n    <div class="wrapper default" id="btnLogin" (click)="login()">\n        login\n    </div>\n    <div class="wrapper" id="btnRegister" (click)="register()">\n        register\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/login/login.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
@@ -942,7 +942,7 @@ LoginPage = __decorate([
 
 /***/ }),
 
-/***/ 147:
+/***/ 148:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -955,68 +955,68 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 147;
+webpackEmptyAsyncContext.id = 148;
 
 /***/ }),
 
-/***/ 189:
+/***/ 190:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/advance-directives/QuestionsModal/questions.module": [
-		533,
+		535,
 		13
 	],
 	"../pages/advance-directives/advance-directives.module": [
-		532,
+		534,
 		12
 	],
 	"../pages/blood/blood.module": [
-		534,
+		536,
 		11
 	],
 	"../pages/blood/pulse-measure/pulse-measure.module": [
-		535,
+		537,
 		10
 	],
 	"../pages/blood/pulseDailyData/pulseDailyData.module": [
-		536,
+		538,
 		9
 	],
 	"../pages/game/false/false.module": [
-		537,
+		539,
 		6
 	],
 	"../pages/game/question1/question1.module": [
-		538,
+		540,
 		3
 	],
 	"../pages/game/question2/question2.module": [
-		539,
+		542,
 		2
 	],
 	"../pages/game/question3/question3.module": [
-		540,
+		541,
 		1
 	],
 	"../pages/game/question4/question4.module": [
-		541,
+		543,
 		0
 	],
 	"../pages/game/quizhello/quizhello.module": [
-		542,
+		544,
 		5
 	],
 	"../pages/game/right/right.module": [
-		543,
+		545,
 		4
 	],
 	"../pages/impressum/impressum.module": [
-		544,
+		546,
 		8
 	],
 	"../pages/login/login.module": [
-		545,
+		547,
 		7
 	]
 };
@@ -1031,12 +1031,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 189;
+webpackAsyncContext.id = 190;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 190:
+/***/ 191:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1077,7 +1077,7 @@ var TextAnswer = (function (_super) {
 
 /***/ }),
 
-/***/ 191:
+/***/ 192:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1137,7 +1137,7 @@ var RadioAnswer = (function (_super) {
 
 /***/ }),
 
-/***/ 192:
+/***/ 193:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1309,7 +1309,7 @@ var ModalService = (function () {
     return ModalService;
 }());
 ModalService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["B" /* Injectable */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["a" /* AlertController */],
         __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */],
         __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["b" /* App */]])
@@ -1340,16 +1340,52 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var OverviewPage = (function () {
     function OverviewPage(navCtrl) {
         this.navCtrl = navCtrl;
+        this.barChartOptions = {
+            scaleShowVerticalLines: false,
+            responsive: true
+        };
+        this.barChartLabels = ['Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August'];
+        this.barChartType = 'bar';
+        this.barChartLegend = true;
+        this.barChartData = [
+            { data: [0, 2, 5, 8, 9, 7, 3], label: 'Augenbeschwerden' },
+            { data: [2, 6, 6, 10, 8, 2, 0], label: 'Nasenbeschwerden' },
+            { data: [2, 4, 5, 7, 9, 7, 3], label: 'Atembeschwerden' },
+        ];
+        this.barChartLabelsMonth = ['01.-07.02.2017', '08.-15.02.2017', '16.-23.02.2017', '24.02.-28.02.2017'];
+        this.barChartTypeMonth = 'bar';
+        this.barChartLegendMonth = true;
+        this.barChartDataMonth = [
+            { data: [0, 2, 5, 8], label: 'Augenbeschwerden' },
+            { data: [2, 6, 6, 10], label: 'Nasenbeschwerden' },
+            { data: [2, 4, 5, 7,], label: 'Atembeschwerden' },
+        ];
+        this.barChartLabelsWeek = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'];
+        this.barChartTypeWeek = 'bar';
+        this.barChartLegendWeek = true;
+        this.barChartDataWeek = [
+            { data: [5, 6, 8, 7, 5, 5, 7], label: 'Augenbeschwerden' },
+            { data: [2, 6, 6, 10, 0, 2, 1], label: 'Nasenbeschwerden' },
+            { data: [2, 4, 5, 7, 3, 4, 2], label: 'Atembeschwerden' },
+        ];
     }
+    // events
+    OverviewPage.prototype.chartClicked = function (e) {
+        console.log(e);
+    };
+    OverviewPage.prototype.chartHovered = function (e) {
+        console.log(e);
+    };
     return OverviewPage;
 }());
 OverviewPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-overview',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\overview\overview.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Übersicht</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <button ion-button block>\n\n      Test</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\overview\overview.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-overview',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/overview/overview.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Übersicht</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <div padding>\n  <ion-segment [(ngModel)]="season">\n    <ion-segment-button value="week">\n      Woche\n    </ion-segment-button>\n    <ion-segment-button value="month" click="showMonth()">\n      Monat\n    </ion-segment-button>\n    <ion-segment-button value="year">\n      Jahr\n    </ion-segment-button>\n  </ion-segment>\n</div>\n  <div [ngSwitch]="season">\n    <ion-list *ngSwitchCase="\'week\'">\n      <div style="display: block">\n        <canvas baseChart width="300" height="400"\n                [datasets]="barChartDataWeek"\n                [labels]="barChartLabelsWeek"\n                [options]="barChartOptions"\n                [legend]="barChartLegendWeek"\n                [chartType]="barChartTypeWeek"\n                (chartHover)="chartHovered($event)"\n                (chartClick)="chartClicked($event)"></canvas>\n      </div>\n    </ion-list>\n    <ion-list *ngSwitchCase="\'month\'">\n      <div style="display: block">\n        <canvas baseChart width="300" height="400"\n                [datasets]="barChartDataMonth"\n                [labels]="barChartLabelsMonth"\n                [options]="barChartOptions"\n                [legend]="barChartLegendMonth"\n                [chartType]="barChartTypeMonth"\n                (chartHover)="chartHovered($event)"\n                (chartClick)="chartClicked($event)"></canvas>\n      </div>\n    </ion-list>\n    <ion-list *ngSwitchCase="\'year\'">\n      <div style="display: block">\n        <canvas baseChart width="300" height="400"\n                [datasets]="barChartData"\n                [labels]="barChartLabels"\n                [options]="barChartOptions"\n                [legend]="barChartLegend"\n                [chartType]="barChartType"\n                (chartHover)="chartHovered($event)"\n                (chartClick)="chartClicked($event)"></canvas>\n      </div>\n    </ion-list>\n\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/overview/overview.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _a || Object])
 ], OverviewPage);
 
+var _a;
 //# sourceMappingURL=overview.js.map
 
 /***/ }),
@@ -1379,8 +1415,8 @@ var CommunityPage = (function () {
     return CommunityPage;
 }());
 CommunityPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-community',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\community\community.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Community</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <button ion-button block>\n\n      Test</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\community\community.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-community',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/community/community.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Community</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <button ion-button block>\n      Test</button>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/community/community.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], CommunityPage);
@@ -1419,8 +1455,8 @@ var IntroductionPage = (function () {
     return IntroductionPage;
 }());
 IntroductionPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-introduction',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\introduction\introduction.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Registration</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <p>\n\n    <ion-card>\n\n  <img src="img/nin-live.png"/>\n\n  <ion-card-content>\n\n    <ion-card-title>\n\n      Hallo Tim\n\n      </ion-card-title>\n\n    <p>\n\n      Ich bin Dr. Ally, vielen Dank, dass Du mir mit deinem Beitrag hilfst, Allergien zu untersuchen.\n\n      Lass uns kurz deine Persönichen Einstellungen speichern.\n\n    </p>\n\n  </ion-card-content>\n\n</ion-card>\n\n  </p>\n\n\n\n\n\n  <button ion-button (click)="pushRewardPage()">weiter</button>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\introduction\introduction.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-introduction',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/introduction.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Registration</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>\n    <ion-card>\n  <img src="img/nin-live.png"/>\n  <ion-card-content>\n    <ion-card-title>\n      Hallo Tim\n      </ion-card-title>\n    <p>\n      Ich bin Dr. Ally, vielen Dank, dass Du mir mit deinem Beitrag hilfst, Allergien zu untersuchen.\n      Lass uns kurz deine Persönichen Einstellungen speichern.\n    </p>\n  </ion-card-content>\n</ion-card>\n  </p>\n\n\n  <button ion-button (click)="pushRewardPage()">weiter</button>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/introduction.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], IntroductionPage);
@@ -1459,8 +1495,8 @@ var RewardPage = (function () {
     return RewardPage;
 }());
 RewardPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-reward',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\introduction\reward\reward.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Belohnung</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <p>\n\n    <ion-card>\n\n  <img src="img/nin-live.png"/>\n\n  <ion-card-content>\n\n    <p>\n\n  Wähle Deine Belohnung für die Teilnahme für die Erfassung Deiner Allergie aus\n\n    </p>\n\n  </ion-card-content>\n\n</ion-card>\n\n  </p>\n\n    <ion-list radio-group [(ngModel)]="questionWhichReward">\n\n      <ion-item>\n\n        <ion-label>Gratis-Allergietest</ion-label>\n\n        <ion-radio value="allergietest" checked></ion-radio>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Gratis-Medikament</ion-label>\n\n        <ion-radio value="medikament"></ion-radio>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Gratis-Allergieberatung</ion-label>\n\n        <ion-radio value="allergieberatung"></ion-radio>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Spende für eine Allergie-Institution</ion-label>\n\n        <ion-radio value="spende"></ion-radio>\n\n      </ion-item>\n\n    </ion-list>\n\n\n\n  <button ion-button (click)="pushHeightWeightPage()">weiter</button>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\introduction\reward\reward.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-reward',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/reward/reward.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Belohnung</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>\n    <ion-card>\n  <img src="img/nin-live.png"/>\n  <ion-card-content>\n    <p>\n  Wähle Deine Belohnung für die Teilnahme für die Erfassung Deiner Allergie aus\n    </p>\n  </ion-card-content>\n</ion-card>\n  </p>\n    <ion-list radio-group [(ngModel)]="questionWhichReward">\n      <ion-item>\n        <ion-label>Gratis-Allergietest</ion-label>\n        <ion-radio value="allergietest" checked></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>Gratis-Medikament</ion-label>\n        <ion-radio value="medikament"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>Gratis-Allergieberatung</ion-label>\n        <ion-radio value="allergieberatung"></ion-radio>\n      </ion-item>\n      <ion-item>\n        <ion-label>Spende für eine Allergie-Institution</ion-label>\n        <ion-radio value="spende"></ion-radio>\n      </ion-item>\n    </ion-list>\n\n  <button ion-button (click)="pushHeightWeightPage()">weiter</button>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/reward/reward.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], RewardPage);
@@ -1499,8 +1535,8 @@ var HeightWeightPage = (function () {
     return HeightWeightPage;
 }());
 HeightWeightPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-heightweight',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\introduction\heightweight\heightweight.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Grösse und Gewicht</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <p>\n\n    <ion-card>\n\n  <img src="img/nin-live.png"/>\n\n  <ion-card-content>\n\n    <ion-card-title>\n\n      </ion-card-title>\n\n    <p>\n\n  Erfasse Deine Grösse und Dein Gewicht\n\n    </p>\n\n  </ion-card-content>\n\n</ion-card>\n\n  </p>\n\n\n\n  <ion-item>\n\n      <ion-label>Grösse in cm</ion-label>\n\n      <ion-range min="100" max="250" step="1" snaps="true" color="secondary"></ion-range>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label>Gewicht in m</ion-label>\n\n      <ion-range min="40" max="150" step="1" snaps="true" color="secondary"></ion-range>\n\n    </ion-item>\n\n\n\n    <button ion-button (click)="pushJobPage()">weiter</button>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\introduction\heightweight\heightweight.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-heightweight',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/heightweight/heightweight.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Grösse und Gewicht</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>\n    <ion-card>\n  <img src="img/nin-live.png"/>\n  <ion-card-content>\n    <ion-card-title>\n      </ion-card-title>\n    <p>\n  Erfasse Deine Grösse und Dein Gewicht\n    </p>\n  </ion-card-content>\n</ion-card>\n  </p>\n\n  <ion-item>\n      <ion-label>Grösse in cm</ion-label>\n      <ion-range min="100" max="250" step="1" snaps="true" color="secondary"></ion-range>\n    </ion-item>\n    <ion-item>\n      <ion-label>Gewicht in m</ion-label>\n      <ion-range min="40" max="150" step="1" snaps="true" color="secondary"></ion-range>\n    </ion-item>\n\n    <button ion-button (click)="pushJobPage()">weiter</button>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/heightweight/heightweight.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], HeightWeightPage);
@@ -1539,8 +1575,8 @@ var JobPage = (function () {
     return JobPage;
 }());
 JobPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-job',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\introduction\job\job.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Beruf & Arbeitsort</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <p>\n\n    <ion-card>\n\n  <img src="img/nin-live.png"/>\n\n  <ion-card-content>\n\n    <ion-card-title>\n\n      </ion-card-title>\n\n    <p>\n\n  Was machst Du beruflich?\n\n  </ion-card-content>\n\n</ion-card>\n\n  </p>\n\n\n\n  <ion-item>\n\n    <ion-label>Beruf</ion-label>\n\n    <ion-select [(ngModel)]="berufe">\n\n      <ion-option>Bauer</ion-option>\n\n      <ion-option>Büroangestellter</ion-option>\n\n      <ion-option>Zimmermann</ion-option>\n\n      <ion-option>Lokführer</ion-option>\n\n      <ion-option>Medizininformatiker</ion-option>\n\n      <ion-option>Physiotherapeut</ion-option>\n\n    </ion-select>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label>Arbeitsumgebung</ion-label>\n\n    <ion-select [(ngModel)]="arbeitsumgebung" multiple="true">\n\n      <ion-option>draussen</ion-option>\n\n      <ion-option>drinnen</ion-option>\n\n      <ion-option>in der Natur</ion-option>\n\n      <ion-option>in einer Fabrik</ion-option>\n\n      <ion-option>zu Hause</ion-option>\n\n      <ion-option>unterschiedlich</ion-option>\n\n    </ion-select>\n\n  </ion-item>\n\n\n\n  <button ion-button (click)="pushAllergyPage()">weiter</button>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\introduction\job\job.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-job',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/job/job.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Beruf & Arbeitsort</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>\n    <ion-card>\n  <img src="img/nin-live.png"/>\n  <ion-card-content>\n    <ion-card-title>\n      </ion-card-title>\n    <p>\n  Was machst Du beruflich?\n  </ion-card-content>\n</ion-card>\n  </p>\n\n  <ion-item>\n    <ion-label>Beruf</ion-label>\n    <ion-select [(ngModel)]="berufe">\n      <ion-option>Bauer</ion-option>\n      <ion-option>Büroangestellter</ion-option>\n      <ion-option>Zimmermann</ion-option>\n      <ion-option>Lokführer</ion-option>\n      <ion-option>Medizininformatiker</ion-option>\n      <ion-option>Physiotherapeut</ion-option>\n    </ion-select>\n  </ion-item>\n  <ion-item>\n    <ion-label>Arbeitsumgebung</ion-label>\n    <ion-select [(ngModel)]="arbeitsumgebung" multiple="true">\n      <ion-option>draussen</ion-option>\n      <ion-option>drinnen</ion-option>\n      <ion-option>in der Natur</ion-option>\n      <ion-option>in einer Fabrik</ion-option>\n      <ion-option>zu Hause</ion-option>\n      <ion-option>unterschiedlich</ion-option>\n    </ion-select>\n  </ion-item>\n\n  <button ion-button (click)="pushAllergyPage()">weiter</button>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/job/job.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], JobPage);
@@ -1579,8 +1615,8 @@ var AllergyPage = (function () {
     return AllergyPage;
 }());
 AllergyPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-allergy',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\introduction\allergy\allergy.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Allergien</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <p>\n\n    <ion-card>\n\n  <img src="img/nin-live.png"/>\n\n  <ion-card-content>\n\n    <ion-card-title>\n\n      </ion-card-title>\n\n    <p>\n\n  Sind bei Dir Allergien bekannt?\n\n  </ion-card-content>\n\n</ion-card>\n\n  </p>\n\n\n\n  <ion-list radio-group [(ngModel)]="questionAllergy">\n\n    <ion-item>\n\n      <ion-label ion-label-small>Ja</ion-label>\n\n      <ion-radio value="yes" checked></ion-radio>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label>Nein</ion-label>\n\n      <ion-radio value="no"></ion-radio>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label>Ich weiss es nicht</ion-label>\n\n      <ion-radio value="unkwown"></ion-radio>\n\n    </ion-item>\n\n  </ion-list>\n\n  <ion-item>\n\n    <ion-label>Bekannte Allergien</ion-label>\n\n    <ion-select [(ngModel)]="bekannteAllergien" multiple="true">\n\n      <ion-option>Ambrosia</ion-option>\n\n      <ion-option>Ampfer</ion-option>\n\n      <ion-option>Beifuss</ion-option>\n\n      <ion-option>Birke</ion-option>\n\n      <ion-option>Buche</ion-option>\n\n      <ion-option>Edelkastanie</ion-option>\n\n      <ion-option>Eiche</ion-option>\n\n      <ion-option>Erle</ion-option>\n\n      <ion-option>Esche</ion-option>\n\n      <ion-option>Gräser</ion-option>\n\n      <ion-option>Hagebuche</ion-option>\n\n      <ion-option>Hasel</ion-option>\n\n      <ion-option>Platane</ion-option>\n\n      <ion-option>Wegerich</ion-option>\n\n    </ion-select>\n\n  </ion-item>\n\n\n\n      <button ion-button (click)="pushTakingDrugPage()">weiter</button>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\introduction\allergy\allergy.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-allergy',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/allergy/allergy.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Allergien</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>\n    <ion-card>\n  <img src="img/nin-live.png"/>\n  <ion-card-content>\n    <ion-card-title>\n      </ion-card-title>\n    <p>\n  Sind bei Dir Allergien bekannt?\n  </ion-card-content>\n</ion-card>\n  </p>\n\n  <ion-list radio-group [(ngModel)]="questionAllergy">\n    <ion-item>\n      <ion-label ion-label-small>Ja</ion-label>\n      <ion-radio value="yes" checked></ion-radio>\n    </ion-item>\n    <ion-item>\n      <ion-label>Nein</ion-label>\n      <ion-radio value="no"></ion-radio>\n    </ion-item>\n    <ion-item>\n      <ion-label>Ich weiss es nicht</ion-label>\n      <ion-radio value="unkwown"></ion-radio>\n    </ion-item>\n  </ion-list>\n  <ion-item>\n    <ion-label>Bekannte Allergien</ion-label>\n    <ion-select [(ngModel)]="bekannteAllergien" multiple="true">\n      <ion-option>Ambrosia</ion-option>\n      <ion-option>Ampfer</ion-option>\n      <ion-option>Beifuss</ion-option>\n      <ion-option>Birke</ion-option>\n      <ion-option>Buche</ion-option>\n      <ion-option>Edelkastanie</ion-option>\n      <ion-option>Eiche</ion-option>\n      <ion-option>Erle</ion-option>\n      <ion-option>Esche</ion-option>\n      <ion-option>Gräser</ion-option>\n      <ion-option>Hagebuche</ion-option>\n      <ion-option>Hasel</ion-option>\n      <ion-option>Platane</ion-option>\n      <ion-option>Wegerich</ion-option>\n    </ion-select>\n  </ion-item>\n\n      <button ion-button (click)="pushTakingDrugPage()">weiter</button>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/allergy/allergy.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], AllergyPage);
@@ -1619,8 +1655,8 @@ var TakingDrugPage = (function () {
     return TakingDrugPage;
 }());
 TakingDrugPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-takingdrug',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\introduction\takingdrug\takingdrug.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Medikamente</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <p>\n\n    <ion-card>\n\n  <img src="img/nin-live.png"/>\n\n  <ion-card-content>\n\n    <p>\n\nHier kannst Du Deine Medikamente erfassen\n\n    </p>\n\n  </ion-card-content>\n\n</ion-card>\n\n  </p>\n\n\n\n<button ion-button full (click)="scanMedBox()">Barcode scannen</button>\n\n<button ion-button full (click)="setMedicationWithoutScanning()">ohne Scanning erfassen</button>\n\n\n\n<button ion-button (click)="pushDrugPage()">weiter</button>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\introduction\takingdrug\takingdrug.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-takingdrug',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/takingdrug/takingdrug.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Medikamente</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>\n    <ion-card>\n  <img src="img/nin-live.png"/>\n  <ion-card-content>\n    <p>\nHier kannst Du Deine Medikamente erfassen\n    </p>\n  </ion-card-content>\n</ion-card>\n  </p>\n\n<button ion-button full (click)="scanMedBox()">Barcode scannen</button>\n<button ion-button full (click)="setMedicationWithoutScanning()">ohne Scanning erfassen</button>\n\n<button ion-button (click)="pushDrugPage()">weiter</button>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/takingdrug/takingdrug.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], TakingDrugPage);
@@ -1659,8 +1695,8 @@ var DrugPage = (function () {
     return DrugPage;
 }());
 DrugPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-drug',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\introduction\drug\drug.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Dosierung der Medikamente</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <p>\n\n    <ion-card>\n\n  <img src="img/nin-live.png"/>\n\n  <ion-card-content>\n\n    <p>\n\nHier kannst Du die Dosierung Deiner Medikamente erfassen\n\n    </p>\n\n  </ion-card-content>\n\n</ion-card>\n\n  </p>\n\n\n\n<ion-list radio-group [(ngModel)]="useMedication">\n\n     <ion-item>\n\n       <ion-label ion-label-small>täglich</ion-label>\n\n       <ion-radio value="everyDay" checked></ion-radio>\n\n     </ion-item>\n\n     <ion-item>\n\n       <ion-label>Nach Bedarf</ion-label>\n\n       <ion-radio value="uponNeed"></ion-radio>\n\n     </ion-item>\n\n     <ion-item>\n\n       <ion-label>Nie</ion-label>\n\n       <ion-radio value="never"></ion-radio>\n\n     </ion-item>\n\n     <ion-item>\n\n       <ion-label>Dossierung</ion-label>\n\n       <ion-select [(ngModel)]="bekannteAllergien" multiple="true">\n\n         <ion-option>morgens</ion-option>\n\n         <ion-option>mittags</ion-option>\n\n         <ion-option>abends</ion-option>\n\n         <ion-option>nachts</ion-option>\n\n       </ion-select>\n\n     </ion-item>\n\n   </ion-list>\n\n\n\n   <button ion-button (click)="pushReminderTimePage()">weiter</button>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\introduction\drug\drug.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-drug',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/drug/drug.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Dosierung der Medikamente</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>\n    <ion-card>\n  <img src="img/nin-live.png"/>\n  <ion-card-content>\n    <p>\nHier kannst Du die Dosierung Deiner Medikamente erfassen\n    </p>\n  </ion-card-content>\n</ion-card>\n  </p>\n\n<ion-list radio-group [(ngModel)]="useMedication">\n     <ion-item>\n       <ion-label ion-label-small>täglich</ion-label>\n       <ion-radio value="everyDay" checked></ion-radio>\n     </ion-item>\n     <ion-item>\n       <ion-label>Nach Bedarf</ion-label>\n       <ion-radio value="uponNeed"></ion-radio>\n     </ion-item>\n     <ion-item>\n       <ion-label>Nie</ion-label>\n       <ion-radio value="never"></ion-radio>\n     </ion-item>\n     <ion-item>\n       <ion-label>Dossierung</ion-label>\n       <ion-select [(ngModel)]="bekannteAllergien" multiple="true">\n         <ion-option>morgens</ion-option>\n         <ion-option>mittags</ion-option>\n         <ion-option>abends</ion-option>\n         <ion-option>nachts</ion-option>\n       </ion-select>\n     </ion-item>\n   </ion-list>\n\n   <button ion-button (click)="pushReminderTimePage()">weiter</button>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/drug/drug.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], DrugPage);
@@ -1699,8 +1735,8 @@ var ReminderTimePage = (function () {
     return ReminderTimePage;
 }());
 ReminderTimePage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-remindertime',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\introduction\remindertime\remindertime.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Dosierung der Medikamente</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <p>\n\n    <ion-card>\n\n  <img src="img/nin-live.png"/>\n\n  <ion-card-content>\n\n    <p>\n\nIch bin da, um Dir zu helfen, Deine täglichen Einträge zu erfassen\n\n    </p>\n\n     <p>Wann darf ich Dich daran erinnern?</p>\n\n  </ion-card-content>\n\n</ion-card>\n\n  </p>\n\n  <ion-item>\n\n       <ion-label>Zeit</ion-label>\n\n       <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>\n\n     </ion-item>\n\n\n\n       <button ion-button (click)="pushFinishPage()">weiter</button>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\introduction\remindertime\remindertime.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-remindertime',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/remindertime/remindertime.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Dosierung der Medikamente</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>\n    <ion-card>\n  <img src="img/nin-live.png"/>\n  <ion-card-content>\n    <p>\nIch bin da, um Dir zu helfen, Deine täglichen Einträge zu erfassen\n    </p>\n     <p>Wann darf ich Dich daran erinnern?</p>\n  </ion-card-content>\n</ion-card>\n  </p>\n  <ion-item>\n       <ion-label>Zeit</ion-label>\n       <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>\n     </ion-item>\n\n       <button ion-button (click)="pushFinishPage()">weiter</button>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/remindertime/remindertime.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], ReminderTimePage);
@@ -1734,8 +1770,8 @@ var FinishPage = (function () {
     return FinishPage;
 }());
 FinishPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-finish',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\introduction\finish\finish.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Abschluss Registration</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <p>\n\n    <ion-card>\n\n  <img src="img/nin-live.png"/>\n\n  <ion-card-content>\n\n    <h5>Geschafft!</h5>\n\n      <p>Jetzt kannst Du die App nutzen!</p>\n\n      <p>Viel Spass und ich freue mich auf deine Einträge!</p>\n\n      <p>Übrigens, jederzeit kannst Du in den Einstellungen\n\n         deine Anpassungen vornehmen</p>\n\n  </ion-card-content>\n\n</ion-card>\n\n  </p>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\introduction\finish\finish.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-finish',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/finish/finish.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Abschluss Registration</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>\n    <ion-card>\n  <img src="img/nin-live.png"/>\n  <ion-card-content>\n    <h5>Geschafft!</h5>\n      <p>Jetzt kannst Du die App nutzen!</p>\n      <p>Viel Spass und ich freue mich auf deine Einträge!</p>\n      <p>Übrigens, jederzeit kannst Du in den Einstellungen\n         deine Anpassungen vornehmen</p>\n  </ion-card-content>\n</ion-card>\n  </p>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/introduction/finish/finish.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], FinishPage);
@@ -1751,6 +1787,8 @@ FinishPage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewEntryPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__newEntry_dateTime_dateTime__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(53);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1762,15 +1800,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 var NewEntryPage = (function () {
     function NewEntryPage(navCtrl) {
         this.navCtrl = navCtrl;
     }
+    NewEntryPage.prototype.pushDateTimePage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__newEntry_dateTime_dateTime__["a" /* DateTimePage */]);
+    };
+    NewEntryPage.prototype.pushHomePage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */]);
+    };
     return NewEntryPage;
 }());
 NewEntryPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-newEntry',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\newEntry\newEntry.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Neuer Eintrag</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n    <button id="btnX" ion-button color="light" round icon-only>\n\n      <ion-icon name=\'close\'></ion-icon>\n\n    </button>\n\n\n\n    <ion-item>\n\n      <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n\n    </ion-item>\n\n\n\n    <h4 id="h4HalloTim">Hallo Tim!</h4>\n\n       <p id="pHalloTim">Mit jedem Eintrag, den Du\n\n         machst, hilfst Du uns eine\n\n         bessere Übersicht über die\n\n         aktuelle Pollenbelastung in\n\n         der Schweiz zu erhalten.</p>\n\n\n\n  <button id="btnForward" ion-button secondary>Weiter</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\newEntry\newEntry.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-newEntry',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/newEntry.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Neuer Eintrag</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n    <button id="btnX" (click)="pushHomePage()" ion-button color="light" round icon-only>\n      <ion-icon name=\'close\'></ion-icon>\n    </button>\n\n    <ion-item>\n      <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n    </ion-item>\n\n    <h4 id="h4HalloTim">Hallo Tim!</h4>\n       <p id="pHalloTim">Mit jedem Eintrag, den Du\n         machst, hilfst Du uns eine\n         bessere Übersicht über die\n         aktuelle Pollenbelastung in\n         der Schweiz zu erhalten.</p>\n\n  <button id="btnForward" (click)="pushDateTimePage()" ion-button secondary>Weiter</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/newEntry.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], NewEntryPage);
@@ -1780,6 +1826,288 @@ NewEntryPage = __decorate([
 /***/ }),
 
 /***/ 337:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DateTimePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__complaints_complaints__ = __webpack_require__(338);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+//import { HomePage } from '@home/home';
+var DateTimePage = (function () {
+    function DateTimePage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    DateTimePage.prototype.pushComplaintsPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__complaints_complaints__["a" /* ComplaintsPage */]);
+    };
+    return DateTimePage;
+}());
+DateTimePage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-dateTime',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/dateTime/dateTime.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Neuer Eintrag</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <button id="btnX" (click)="pushHomePage()" ion-button color="light" round icon-only>\n    <ion-icon name=\'close\'></ion-icon>\n  </button>\n\n  <ion-item>\n        <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n    </ion-item>\n      <p>Wann sind deine Beschwerden aufgetreten?\n      </p>\n      <ion-item>\n        <ion-label>Datum</ion-label>\n        <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="myDate">\n        </ion-datetime>\n      </ion-item>\n      <ion-item>\n        <ion-label>Zeit</ion-label>\n        <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>\n      </ion-item>\n      <button id="btnForward" (click)="pushComplaintsPage()" ion-button secondary>Weiter</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/dateTime/dateTime.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
+], DateTimePage);
+
+//# sourceMappingURL=dateTime.js.map
+
+/***/ }),
+
+/***/ 338:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComplaintsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__physicalActivity_physicalActivity__ = __webpack_require__(339);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+//import { HomePage } from '../home/home';
+var ComplaintsPage = (function () {
+    function ComplaintsPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    ComplaintsPage.prototype.pushPhysicalActivityPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__physicalActivity_physicalActivity__["a" /* PhysicalActivityPage */]);
+    };
+    return ComplaintsPage;
+}());
+ComplaintsPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-complaints',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/complaints/complaints.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Neuer Eintrag</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <button id="btnX" (click)="pushHomePage()" ion-button color="light" round icon-only>\n    <ion-icon name=\'close\'></ion-icon>\n  </button>\n\n  <ion-item>\n        <!-- img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;" -->\n    </ion-item>\n\n    <p>Gib bitte spontan an, wie stark deine Beschwerden sind?</p>\n          <h5>Augenbeschwerden</h5>\n          <p>(Brennen, Jucken, Tränen)</p>\n            <ion-item>\n            <ion-range min="0" max="10" [(ngModel)]="Augenbeschwerden">\n              <ion-label range-left>0</ion-label>\n              <ion-label range-right>10</ion-label>\n            </ion-range>\n          </ion-item>\n          <h5>Nasenbeschwerden</h5>\n          <p>(Schnupfen, Juckreiz)</p>\n          <ion-item>\n            <ion-range min="0" max="10" [(ngModel)]="Nasenbeschwerden">\n              <ion-label range-left>0</ion-label>\n              <ion-label range-right>10</ion-label>\n            </ion-range>\n          </ion-item>\n          <h5>Atembeschwerden</h5>\n          <p>(Atemnot, Husten)</p>\n          <ion-item>\n            <ion-range min="0" max="10" [(ngModel)]="Atembeschwerden">\n              <ion-label range-left>0</ion-label>\n              <ion-label range-right>10</ion-label>\n            </ion-range>\n          </ion-item>\n      <button id="btnForward" (click)="pushPhysicalActivityPage()" ion-button secondary>Weiter</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/complaints/complaints.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
+], ComplaintsPage);
+
+//# sourceMappingURL=complaints.js.map
+
+/***/ }),
+
+/***/ 339:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PhysicalActivityPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__medication_medication__ = __webpack_require__(340);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+//import { HomePage } from '../home/home';
+var PhysicalActivityPage = (function () {
+    function PhysicalActivityPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    PhysicalActivityPage.prototype.pushMedicationPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__medication_medication__["a" /* MedicationPage */]);
+    };
+    return PhysicalActivityPage;
+}());
+PhysicalActivityPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-physicalActivity',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/physicalActivity/physicalActivity.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Neuer Eintrag</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <button id="btnX" ion-button (click)="pushHomePage()" color="light" round icon-only>\n    <ion-icon name=\'close\'></ion-icon>\n  </button>\n\n  <ion-item>\n        <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n    </ion-item>\n\n  <p>Wie stark hast Du dich körperlich betätigt?</p>\n\n  <ion-item>\n    <ion-range min="0" max="10" [(ngModel)]="physicalActivity">\n      <ion-label range-left>0</ion-label>\n      <ion-label range-right>10</ion-label>\n    </ion-range>\n  </ion-item>\n\n  <button id="btnForward" (click)="pushMedicationPage()" ion-button secondary>Weiter</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/physicalActivity/physicalActivity.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
+], PhysicalActivityPage);
+
+//# sourceMappingURL=physicalActivity.js.map
+
+/***/ }),
+
+/***/ 340:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MedicationPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__totalPoints_totalPoints__ = __webpack_require__(341);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+//import { HomePage } from '../home/home';
+var MedicationPage = (function () {
+    function MedicationPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    MedicationPage.prototype.pushTotalPointsPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__totalPoints_totalPoints__["a" /* TotalPointsPage */]);
+    };
+    return MedicationPage;
+}());
+MedicationPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-medication',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/medication/medication.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Neuer Eintrag</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <button id="btnX" (click)="pushHomePage()" ion-button color="light" round icon-only>\n    <ion-icon name=\'close\'></ion-icon>\n  </button>\n\n  <ion-item>\n        <img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;">\n    </ion-item>\n\n    <p>Hast Du Medikamente eingenommen?</p>\n          <ion-list radio-group [(ngModel)]="MedisEingenommen">\n            <ion-item>\n              <ion-label>Ja</ion-label>\n              <ion-radio value="Ja"></ion-radio>\n            </ion-item>\n            <ion-item>\n              <ion-label>Nein</ion-label>\n              <ion-radio value="Nein"></ion-radio>\n            </ion-item>\n          </ion-list>\n          <p>Wenn ja ...</p>\n          <ion-list radio-group [(ngModel)]="VorbeugendBeschwerden">\n            <ion-item>\n              <ion-label>Vorbeugend</ion-label>\n              <ion-radio value="Vorbeugend"></ion-radio>\n            </ion-item>\n            <ion-item>\n              <ion-label>Wegen Beschwerden</ion-label>\n              <ion-radio value="wegen Beschwerden"></ion-radio>\n            </ion-item>\n          </ion-list>\n\n    <button id="btnForward" (click)="pushTotalPointsPage()" ion-button secondary>Weiter</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/medication/medication.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
+], MedicationPage);
+
+//# sourceMappingURL=medication.js.map
+
+/***/ }),
+
+/***/ 341:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TotalPointsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__additionalReward_additionalReward__ = __webpack_require__(342);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+//import { HomePage } from '../home/home';
+var TotalPointsPage = (function () {
+    function TotalPointsPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    TotalPointsPage.prototype.pushAdditionalRewardPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__additionalReward_additionalReward__["a" /* AdditionalRewardPage */]);
+    };
+    return TotalPointsPage;
+}());
+TotalPointsPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-totalPoints',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/totalPoints/totalPoints.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Neuer Eintrag</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <button id="btnX" (click)="pushHomePage()" ion-button color="light" round icon-only>\n    <ion-icon name=\'close\'></ion-icon>\n  </button>\n\n  <ion-item>\n        <!-- img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n    </ion-item>\n\n  <p>Vielen Dank! Du hast soeben einen Punkt erhalten. :)</p>\n\n  <button id="btnForward" (click)="pushAdditionalRewardPage()" ion-button secondary>Weiter</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/totalPoints/totalPoints.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
+], TotalPointsPage);
+
+//# sourceMappingURL=totalPoints.js.map
+
+/***/ }),
+
+/***/ 342:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdditionalRewardPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tips_tips__ = __webpack_require__(343);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+//import { HomePage } from '../home/home';
+var AdditionalRewardPage = (function () {
+    function AdditionalRewardPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    AdditionalRewardPage.prototype.pushTipsPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__tips_tips__["a" /* TipsPage */]);
+    };
+    return AdditionalRewardPage;
+}());
+AdditionalRewardPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-additionalReward',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/additionalReward/additionalReward.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Neuer Eintrag</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <button id="btnX" (click)="pushHomePage()" ion-button color="light" round icon-only>\n    <ion-icon name=\'close\'></ion-icon>\n  </button>\n\n  <ion-item>\n        <!-- img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n    </ion-item>\n\n  <p>Öffne eine Truhe und hole dir zusätzliche Punkte und einen Tipp.</p>\n\n  <button id="btnForward" (click)="pushTipsPage()" ion-button secondary>Weiter</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/additionalReward/additionalReward.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
+], AdditionalRewardPage);
+
+//# sourceMappingURL=additionalReward.js.map
+
+/***/ }),
+
+/***/ 343:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TipsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+//import { HomePage } from '../home/home';
+var TipsPage = (function () {
+    function TipsPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    return TipsPage;
+}());
+TipsPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-tips',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/tips/tips.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Neuer Eintrag</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <button id="btnX" (click)="pushHomePage()" ion-button color="light" round icon-only>\n    <ion-icon name=\'close\'></ion-icon>\n  </button>\n\n  <ion-item>\n        <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n    </ion-item>\n\n    <p>Ich habe deine Daten analysiert. Deine Beschwerden entsprechen\n           am ehesten einer Gräserpollenallergie!</p>\n         <h1>Mein Tipp:</h1>\n         <p>Halte dich wenig draussen auf.</p>\n         <p>Wasche dir täglich die Haare.</p>\n\n    <button id="btnForward" (click)="pushHomePage()" ion-button secondary>Eintrag bestätigen</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/newEntry/tips/tips.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
+], TipsPage);
+
+//# sourceMappingURL=tips.js.map
+
+/***/ }),
+
+/***/ 344:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1801,11 +2129,17 @@ var PollenPage = (function () {
     function PollenPage(navCtrl) {
         this.navCtrl = navCtrl;
     }
+    PollenPage.prototype.selectedCurrentLocation = function () {
+    };
+    PollenPage.prototype.selectedBern = function () {
+    };
+    PollenPage.prototype.selectedBiel = function () {
+    };
     return PollenPage;
 }());
 PollenPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-pollen',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\pollen\pollen.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>aktuelle Pollenbelastung und Wetter</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n<ion-grid>\n\n  <ion-row>\n\n      <ion-col>\n\n        <strong>aktueller Standort</strong>\n\n      </ion-col>\n\n      <ion-col>\n\n        <strong>Bümpliz</strong>\n\n      </ion-col>\n\n      <ion-col>\n\n        <strong>Biel</strong>\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <p>bilder</p>\n\n    </ion-row>\n\n<ion-row>\n\n  <ion-col>\n\n    <strong>Morgen</strong>\n\n  </ion-col>\n\n  <ion-col>\n\n    <strong>Mittag</strong>\n\n  </ion-col>\n\n  <ion-col>\n\n    <strong>Abend</strong>\n\n  </ion-col>\n\n</ion-row>\n\n  <ion-row>\n\n    <p>bilder</p>\n\n  </ion-row>\n\n</ion-grid>\n\n<footer>\n\n  <button ion-button>Tim spiel mit uns und komm ins nächste Level</button>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\pollen\pollen.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-pollen',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/pollen/pollen.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>aktuelle Pollenbelastung und Wetter</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n<!-- Segment buttons with text -->\n  <ion-segment [(ngModel)]="orte" color="primary">\n    <ion-segment-button value="aktuellerOrt"\n    (ionSelect)="selectedCurrentLocation()">Aktueller Ort</ion-segment-button>\n    <ion-segment-button value="bern"\n    (ionSelect)="selectedBern()">Bern</ion-segment-button>\n    <ion-segment-button value="biel"\n    (ionSelect)="selectedBiel()">Biel</ion-segment-button>\n  </ion-segment>\n  <div [ngSwitch]="orte">\n    <ion-list *ngSwitchCase="\'aktuellerOrt\'">\n      <ion-item>\n        <p>aktueller Ort, wird aber noch bearbeitet...</p>\n      </ion-item>\n    </ion-list>\n    <ion-list *ngSwitchCase="\'bern\'">\n      <ion-item>\n        <p>Bern, wird aber noch bearbeitet...</p>\n      </ion-item>\n    </ion-list>\n    <ion-list *ngSwitchCase="\'biel\'">\n      <ion-item>\n        <p>Biel, wird aber noch bearbeitet...</p>\n      </ion-item>\n    </ion-list>\n  </div>\n  <button ion-button>Tim, spiel mit uns und komm ins nächste Level</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/pollen/pollen.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
 ], PollenPage);
@@ -1814,16 +2148,16 @@ PollenPage = __decorate([
 
 /***/ }),
 
-/***/ 380:
+/***/ 387:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blood_blood__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__impressum_impressum__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__profile_profile__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__profile_profile__ = __webpack_require__(132);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1848,7 +2182,7 @@ var TabsPage = (function () {
     return TabsPage;
 }());
 TabsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Pinnwand" tabIcon="clipboard"></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="Profil" tabIcon="person"></ion-tab>\n\n  <ion-tab [root]="tab4Root" tabTitle="Einstellungen" tabIcon="settings"></ion-tab>\n\n\n\n</ion-tabs>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\tabs\tabs.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Pinnwand" tabIcon="clipboard"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Profil" tabIcon="person"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Einstellungen" tabIcon="settings"></ion-tab>\n\n</ion-tabs>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/tabs/tabs.html"*/
     }),
     __metadata("design:paramtypes", [])
 ], TabsPage);
@@ -1857,7 +2191,7 @@ TabsPage = __decorate([
 
 /***/ }),
 
-/***/ 381:
+/***/ 388:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -1870,17 +2204,17 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 381;
+webpackEmptyAsyncContext.id = 388;
 
 /***/ }),
 
-/***/ 384:
+/***/ 391:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(385);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(392);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(405);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1888,70 +2222,73 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 398:
+/***/ 405:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pages_advance_directives_advance_directives__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_advance_directives_QuestionsModal_questions__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pages_advance_directives_advance_directives__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_advance_directives_QuestionsModal_questions__ = __webpack_require__(135);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_diagnostic__ = __webpack_require__(318);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_app_version__ = __webpack_require__(320);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_impressum_impressum__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_globalization__ = __webpack_require__(377);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_storage__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_globalization__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_storage__ = __webpack_require__(385);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_storage__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_storage__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ngx_translate_core__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_MidataConnectionService__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_InBrowserBrowser__ = __webpack_require__(518);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_camera__ = __webpack_require__(379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_tabs_tabs__ = __webpack_require__(380);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__app_component__ = __webpack_require__(521);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_home_home__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_profile_profile__ = __webpack_require__(131);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_blood_blood__ = __webpack_require__(70);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_blood_pulse_measure_pulse_measure__ = __webpack_require__(136);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_blood_pulseDailyData_pulseDailyData__ = __webpack_require__(135);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_overview_overview__ = __webpack_require__(325);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_community_community__ = __webpack_require__(326);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_introduction_introduction__ = __webpack_require__(327);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_introduction_allergy_allergy__ = __webpack_require__(331);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_introduction_drug_drug__ = __webpack_require__(333);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_introduction_finish_finish__ = __webpack_require__(335);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_introduction_heightweight_heightweight__ = __webpack_require__(329);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_introduction_job_job__ = __webpack_require__(330);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_introduction_remindertime_remindertime__ = __webpack_require__(334);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_introduction_reward_reward__ = __webpack_require__(328);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_introduction_takingdrug_takingdrug__ = __webpack_require__(332);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_newEntry_newEntry__ = __webpack_require__(336);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pages_newEntry_dateTime_dateTime__ = __webpack_require__(522);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_newEntry_complaints_complaints__ = __webpack_require__(523);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pages_newEntry_physicalActivity_physicalActivity__ = __webpack_require__(524);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__pages_newEntry_medication_medication__ = __webpack_require__(525);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__pages_newEntry_totalPoints_totalPoints__ = __webpack_require__(526);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__pages_newEntry_additionalReward_additionalReward__ = __webpack_require__(527);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__pages_newEntry_tips_tips__ = __webpack_require__(528);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_pollen_pollen__ = __webpack_require__(337);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__ionic_native_status_bar__ = __webpack_require__(382);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__ionic_native_splash_screen__ = __webpack_require__(383);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__util__ = __webpack_require__(529);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__services_languageService_languageService__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__services_parametersService_parametersService__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pages_login_login__ = __webpack_require__(137);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__ionic_native_secure_storage__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__ionic_native_in_app_browser__ = __webpack_require__(321);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__ionic_native_network__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__angular_common_http__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__services_ModalService__ = __webpack_require__(324);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_MidataConnectionService__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_InBrowserBrowser__ = __webpack_require__(525);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ng2_charts__ = __webpack_require__(526);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ng2_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_ng2_charts__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_camera__ = __webpack_require__(386);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_tabs_tabs__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__app_component__ = __webpack_require__(530);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_home_home__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_profile_profile__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_blood_blood__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_blood_pulse_measure_pulse_measure__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_blood_pulseDailyData_pulseDailyData__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_overview_overview__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_community_community__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_introduction_introduction__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_introduction_allergy_allergy__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_introduction_drug_drug__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_introduction_finish_finish__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_introduction_heightweight_heightweight__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_introduction_job_job__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_introduction_remindertime_remindertime__ = __webpack_require__(334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_introduction_reward_reward__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_introduction_takingdrug_takingdrug__ = __webpack_require__(332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pages_newEntry_newEntry__ = __webpack_require__(336);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_newEntry_dateTime_dateTime__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pages_newEntry_complaints_complaints__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__pages_newEntry_physicalActivity_physicalActivity__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__pages_newEntry_medication_medication__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__pages_newEntry_totalPoints_totalPoints__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__pages_newEntry_additionalReward_additionalReward__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_newEntry_tips_tips__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__pages_pollen_pollen__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__ionic_native_status_bar__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__ionic_native_splash_screen__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__util__ = __webpack_require__(531);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__services_languageService_languageService__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__services_parametersService_parametersService__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__pages_login_login__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__ionic_native_secure_storage__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__ionic_native_in_app_browser__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__ionic_native_network__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__angular_common_http__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__services_ModalService__ = __webpack_require__(324);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -2011,43 +2348,45 @@ var AppModule = (function () {
     return AppModule;
 }());
 AppModule = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_8__angular_core__["L" /* NgModule */])({
+    Object(__WEBPACK_IMPORTED_MODULE_8__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_16__app_component__["a" /* MyApp */],
-            __WEBPACK_IMPORTED_MODULE_17__pages_home_home__["a" /* HomePage */],
-            __WEBPACK_IMPORTED_MODULE_19__pages_blood_blood__["a" /* BloodPage */],
-            __WEBPACK_IMPORTED_MODULE_20__pages_blood_pulse_measure_pulse_measure__["a" /* PulseMeasurePage */],
-            __WEBPACK_IMPORTED_MODULE_21__pages_blood_pulseDailyData_pulseDailyData__["a" /* PulseDailyDataPage */],
+            __WEBPACK_IMPORTED_MODULE_17__app_component__["a" /* MyApp */],
+            __WEBPACK_IMPORTED_MODULE_18__pages_home_home__["a" /* HomePage */],
+            __WEBPACK_IMPORTED_MODULE_20__pages_blood_blood__["a" /* BloodPage */],
+            __WEBPACK_IMPORTED_MODULE_21__pages_blood_pulse_measure_pulse_measure__["a" /* PulseMeasurePage */],
+            __WEBPACK_IMPORTED_MODULE_22__pages_blood_pulseDailyData_pulseDailyData__["a" /* PulseDailyDataPage */],
             __WEBPACK_IMPORTED_MODULE_4__pages_impressum_impressum__["a" /* ImpressumPage */],
-            __WEBPACK_IMPORTED_MODULE_47__pages_login_login__["a" /* LoginPage */],
+            __WEBPACK_IMPORTED_MODULE_48__pages_login_login__["a" /* LoginPage */],
             __WEBPACK_IMPORTED_MODULE_0__pages_advance_directives_advance_directives__["a" /* AdvanceDirectivesPage */],
             __WEBPACK_IMPORTED_MODULE_1__pages_advance_directives_QuestionsModal_questions__["a" /* QuestionsPage */],
-            __WEBPACK_IMPORTED_MODULE_18__pages_profile_profile__["a" /* ProfilePage */],
-            __WEBPACK_IMPORTED_MODULE_22__pages_overview_overview__["a" /* OverviewPage */],
-            __WEBPACK_IMPORTED_MODULE_23__pages_community_community__["a" /* CommunityPage */],
-            __WEBPACK_IMPORTED_MODULE_24__pages_introduction_introduction__["a" /* IntroductionPage */],
-            __WEBPACK_IMPORTED_MODULE_25__pages_introduction_allergy_allergy__["a" /* AllergyPage */],
-            __WEBPACK_IMPORTED_MODULE_26__pages_introduction_drug_drug__["a" /* DrugPage */],
-            __WEBPACK_IMPORTED_MODULE_27__pages_introduction_finish_finish__["a" /* FinishPage */],
-            __WEBPACK_IMPORTED_MODULE_28__pages_introduction_heightweight_heightweight__["a" /* HeightWeightPage */],
-            __WEBPACK_IMPORTED_MODULE_29__pages_introduction_job_job__["a" /* JobPage */],
-            __WEBPACK_IMPORTED_MODULE_30__pages_introduction_remindertime_remindertime__["a" /* ReminderTimePage */],
-            __WEBPACK_IMPORTED_MODULE_31__pages_introduction_reward_reward__["a" /* RewardPage */],
-            __WEBPACK_IMPORTED_MODULE_32__pages_introduction_takingdrug_takingdrug__["a" /* TakingDrugPage */],
-            __WEBPACK_IMPORTED_MODULE_33__pages_newEntry_newEntry__["a" /* NewEntryPage */],
-            __WEBPACK_IMPORTED_MODULE_34__pages_newEntry_dateTime_dateTime__["a" /* DateTimePage */],
-            __WEBPACK_IMPORTED_MODULE_35__pages_newEntry_complaints_complaints__["a" /* ComplaintsPage */],
-            __WEBPACK_IMPORTED_MODULE_36__pages_newEntry_physicalActivity_physicalActivity__["a" /* PhysicalActivityPage */],
-            __WEBPACK_IMPORTED_MODULE_37__pages_newEntry_medication_medication__["a" /* MedicationPage */],
-            __WEBPACK_IMPORTED_MODULE_38__pages_newEntry_totalPoints_totalPoints__["a" /* TotalPointsPage */],
-            __WEBPACK_IMPORTED_MODULE_39__pages_newEntry_additionalReward_additionalReward__["a" /* AdditionalRewardPage */],
-            __WEBPACK_IMPORTED_MODULE_40__pages_newEntry_tips_tips__["a" /* TipsPage */],
-            __WEBPACK_IMPORTED_MODULE_41__pages_pollen_pollen__["a" /* PollenPage */],
-            __WEBPACK_IMPORTED_MODULE_15__pages_tabs_tabs__["a" /* TabsPage */]
+            __WEBPACK_IMPORTED_MODULE_19__pages_profile_profile__["a" /* ProfilePage */],
+            __WEBPACK_IMPORTED_MODULE_23__pages_overview_overview__["a" /* OverviewPage */],
+            __WEBPACK_IMPORTED_MODULE_24__pages_community_community__["a" /* CommunityPage */],
+            __WEBPACK_IMPORTED_MODULE_25__pages_introduction_introduction__["a" /* IntroductionPage */],
+            __WEBPACK_IMPORTED_MODULE_26__pages_introduction_allergy_allergy__["a" /* AllergyPage */],
+            __WEBPACK_IMPORTED_MODULE_27__pages_introduction_drug_drug__["a" /* DrugPage */],
+            __WEBPACK_IMPORTED_MODULE_28__pages_introduction_finish_finish__["a" /* FinishPage */],
+            __WEBPACK_IMPORTED_MODULE_29__pages_introduction_heightweight_heightweight__["a" /* HeightWeightPage */],
+            __WEBPACK_IMPORTED_MODULE_30__pages_introduction_job_job__["a" /* JobPage */],
+            __WEBPACK_IMPORTED_MODULE_31__pages_introduction_remindertime_remindertime__["a" /* ReminderTimePage */],
+            __WEBPACK_IMPORTED_MODULE_32__pages_introduction_reward_reward__["a" /* RewardPage */],
+            __WEBPACK_IMPORTED_MODULE_33__pages_introduction_takingdrug_takingdrug__["a" /* TakingDrugPage */],
+            __WEBPACK_IMPORTED_MODULE_34__pages_newEntry_newEntry__["a" /* NewEntryPage */],
+            __WEBPACK_IMPORTED_MODULE_35__pages_newEntry_dateTime_dateTime__["a" /* DateTimePage */],
+            __WEBPACK_IMPORTED_MODULE_36__pages_newEntry_complaints_complaints__["a" /* ComplaintsPage */],
+            __WEBPACK_IMPORTED_MODULE_37__pages_newEntry_physicalActivity_physicalActivity__["a" /* PhysicalActivityPage */],
+            __WEBPACK_IMPORTED_MODULE_38__pages_newEntry_medication_medication__["a" /* MedicationPage */],
+            __WEBPACK_IMPORTED_MODULE_39__pages_newEntry_totalPoints_totalPoints__["a" /* TotalPointsPage */],
+            __WEBPACK_IMPORTED_MODULE_40__pages_newEntry_additionalReward_additionalReward__["a" /* AdditionalRewardPage */],
+            __WEBPACK_IMPORTED_MODULE_41__pages_newEntry_tips_tips__["a" /* TipsPage */],
+            __WEBPACK_IMPORTED_MODULE_42__pages_pollen_pollen__["a" /* PollenPage */],
+            __WEBPACK_IMPORTED_MODULE_16__pages_tabs_tabs__["a" /* TabsPage */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_16__app_component__["a" /* MyApp */], {}, {
+            __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_17__app_component__["a" /* MyApp */], {
+                backButtonText: 'Zurück'
+            }, {
                 links: [
                     { loadChildren: '../pages/advance-directives/advance-directives.module#AdvanceDirectivesPageModule', name: 'AdvanceDirectivesPage', segment: 'advance-directives', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/advance-directives/QuestionsModal/questions.module#QuestionsPageModule', name: 'QuestionsPage', segment: 'questions', priority: 'low', defaultHistory: [] },
@@ -2056,8 +2395,8 @@ AppModule = __decorate([
                     { loadChildren: '../pages/blood/pulseDailyData/pulseDailyData.module#PulseDailyDataPageModule', name: 'PulseDailyDataPage', segment: 'pulseDailyData', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/game/false/false.module#FalsePageModule', name: 'FalsePage', segment: 'false', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/game/question1/question1.module#Question1PageModule', name: 'Question1Page', segment: 'question1', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/game/question2/question2.module#Question2PageModule', name: 'Question2Page', segment: 'question2', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/game/question3/question3.module#Question3PageModule', name: 'Question3Page', segment: 'question3', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/game/question2/question2.module#Question2PageModule', name: 'Question2Page', segment: 'question2', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/game/question4/question4.module#Question4PageModule', name: 'Question4Page', segment: 'question4', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/game/quizhello/quizhello.module#QuizhelloPageModule', name: 'QuizhelloPage', segment: 'quizhello', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/game/right/right.module#RightPageModule', name: 'RightPage', segment: 'right', priority: 'low', defaultHistory: [] },
@@ -2065,67 +2404,68 @@ AppModule = __decorate([
                     { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] }
                 ]
             }),
-            __WEBPACK_IMPORTED_MODULE_51__angular_common_http__["b" /* HttpClientModule */],
+            __WEBPACK_IMPORTED_MODULE_52__angular_common_http__["b" /* HttpClientModule */],
             __WEBPACK_IMPORTED_MODULE_10__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_14_ng2_charts__["ChartsModule"],
             __WEBPACK_IMPORTED_MODULE_11__ngx_translate_core__["b" /* TranslateModule */].forRoot({
                 loader: {
                     provide: __WEBPACK_IMPORTED_MODULE_11__ngx_translate_core__["a" /* TranslateLoader */],
-                    useFactory: (__WEBPACK_IMPORTED_MODULE_44__util__["a" /* createTranslateLoader */]),
-                    deps: [__WEBPACK_IMPORTED_MODULE_51__angular_common_http__["a" /* HttpClient */]]
+                    useFactory: (__WEBPACK_IMPORTED_MODULE_45__util__["a" /* createTranslateLoader */]),
+                    deps: [__WEBPACK_IMPORTED_MODULE_52__angular_common_http__["a" /* HttpClient */]]
                 }
             })
         ],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_9_ionic_angular__["d" /* IonicApp */]],
         entryComponents: [
-            __WEBPACK_IMPORTED_MODULE_16__app_component__["a" /* MyApp */],
-            __WEBPACK_IMPORTED_MODULE_17__pages_home_home__["a" /* HomePage */],
-            __WEBPACK_IMPORTED_MODULE_19__pages_blood_blood__["a" /* BloodPage */],
-            __WEBPACK_IMPORTED_MODULE_20__pages_blood_pulse_measure_pulse_measure__["a" /* PulseMeasurePage */],
-            __WEBPACK_IMPORTED_MODULE_21__pages_blood_pulseDailyData_pulseDailyData__["a" /* PulseDailyDataPage */],
+            __WEBPACK_IMPORTED_MODULE_17__app_component__["a" /* MyApp */],
+            __WEBPACK_IMPORTED_MODULE_18__pages_home_home__["a" /* HomePage */],
+            __WEBPACK_IMPORTED_MODULE_20__pages_blood_blood__["a" /* BloodPage */],
+            __WEBPACK_IMPORTED_MODULE_21__pages_blood_pulse_measure_pulse_measure__["a" /* PulseMeasurePage */],
+            __WEBPACK_IMPORTED_MODULE_22__pages_blood_pulseDailyData_pulseDailyData__["a" /* PulseDailyDataPage */],
             __WEBPACK_IMPORTED_MODULE_4__pages_impressum_impressum__["a" /* ImpressumPage */],
-            __WEBPACK_IMPORTED_MODULE_47__pages_login_login__["a" /* LoginPage */],
+            __WEBPACK_IMPORTED_MODULE_48__pages_login_login__["a" /* LoginPage */],
             __WEBPACK_IMPORTED_MODULE_0__pages_advance_directives_advance_directives__["a" /* AdvanceDirectivesPage */],
             __WEBPACK_IMPORTED_MODULE_1__pages_advance_directives_QuestionsModal_questions__["a" /* QuestionsPage */],
-            __WEBPACK_IMPORTED_MODULE_18__pages_profile_profile__["a" /* ProfilePage */],
-            __WEBPACK_IMPORTED_MODULE_22__pages_overview_overview__["a" /* OverviewPage */],
-            __WEBPACK_IMPORTED_MODULE_23__pages_community_community__["a" /* CommunityPage */],
-            __WEBPACK_IMPORTED_MODULE_24__pages_introduction_introduction__["a" /* IntroductionPage */],
-            __WEBPACK_IMPORTED_MODULE_25__pages_introduction_allergy_allergy__["a" /* AllergyPage */],
-            __WEBPACK_IMPORTED_MODULE_26__pages_introduction_drug_drug__["a" /* DrugPage */],
-            __WEBPACK_IMPORTED_MODULE_27__pages_introduction_finish_finish__["a" /* FinishPage */],
-            __WEBPACK_IMPORTED_MODULE_28__pages_introduction_heightweight_heightweight__["a" /* HeightWeightPage */],
-            __WEBPACK_IMPORTED_MODULE_29__pages_introduction_job_job__["a" /* JobPage */],
-            __WEBPACK_IMPORTED_MODULE_30__pages_introduction_remindertime_remindertime__["a" /* ReminderTimePage */],
-            __WEBPACK_IMPORTED_MODULE_31__pages_introduction_reward_reward__["a" /* RewardPage */],
-            __WEBPACK_IMPORTED_MODULE_32__pages_introduction_takingdrug_takingdrug__["a" /* TakingDrugPage */],
-            __WEBPACK_IMPORTED_MODULE_33__pages_newEntry_newEntry__["a" /* NewEntryPage */],
-            __WEBPACK_IMPORTED_MODULE_34__pages_newEntry_dateTime_dateTime__["a" /* DateTimePage */],
-            __WEBPACK_IMPORTED_MODULE_35__pages_newEntry_complaints_complaints__["a" /* ComplaintsPage */],
-            __WEBPACK_IMPORTED_MODULE_36__pages_newEntry_physicalActivity_physicalActivity__["a" /* PhysicalActivityPage */],
-            __WEBPACK_IMPORTED_MODULE_37__pages_newEntry_medication_medication__["a" /* MedicationPage */],
-            __WEBPACK_IMPORTED_MODULE_38__pages_newEntry_totalPoints_totalPoints__["a" /* TotalPointsPage */],
-            __WEBPACK_IMPORTED_MODULE_39__pages_newEntry_additionalReward_additionalReward__["a" /* AdditionalRewardPage */],
-            __WEBPACK_IMPORTED_MODULE_40__pages_newEntry_tips_tips__["a" /* TipsPage */],
-            __WEBPACK_IMPORTED_MODULE_41__pages_pollen_pollen__["a" /* PollenPage */],
-            __WEBPACK_IMPORTED_MODULE_15__pages_tabs_tabs__["a" /* TabsPage */]
+            __WEBPACK_IMPORTED_MODULE_19__pages_profile_profile__["a" /* ProfilePage */],
+            __WEBPACK_IMPORTED_MODULE_23__pages_overview_overview__["a" /* OverviewPage */],
+            __WEBPACK_IMPORTED_MODULE_24__pages_community_community__["a" /* CommunityPage */],
+            __WEBPACK_IMPORTED_MODULE_25__pages_introduction_introduction__["a" /* IntroductionPage */],
+            __WEBPACK_IMPORTED_MODULE_26__pages_introduction_allergy_allergy__["a" /* AllergyPage */],
+            __WEBPACK_IMPORTED_MODULE_27__pages_introduction_drug_drug__["a" /* DrugPage */],
+            __WEBPACK_IMPORTED_MODULE_28__pages_introduction_finish_finish__["a" /* FinishPage */],
+            __WEBPACK_IMPORTED_MODULE_29__pages_introduction_heightweight_heightweight__["a" /* HeightWeightPage */],
+            __WEBPACK_IMPORTED_MODULE_30__pages_introduction_job_job__["a" /* JobPage */],
+            __WEBPACK_IMPORTED_MODULE_31__pages_introduction_remindertime_remindertime__["a" /* ReminderTimePage */],
+            __WEBPACK_IMPORTED_MODULE_32__pages_introduction_reward_reward__["a" /* RewardPage */],
+            __WEBPACK_IMPORTED_MODULE_33__pages_introduction_takingdrug_takingdrug__["a" /* TakingDrugPage */],
+            __WEBPACK_IMPORTED_MODULE_34__pages_newEntry_newEntry__["a" /* NewEntryPage */],
+            __WEBPACK_IMPORTED_MODULE_35__pages_newEntry_dateTime_dateTime__["a" /* DateTimePage */],
+            __WEBPACK_IMPORTED_MODULE_36__pages_newEntry_complaints_complaints__["a" /* ComplaintsPage */],
+            __WEBPACK_IMPORTED_MODULE_37__pages_newEntry_physicalActivity_physicalActivity__["a" /* PhysicalActivityPage */],
+            __WEBPACK_IMPORTED_MODULE_38__pages_newEntry_medication_medication__["a" /* MedicationPage */],
+            __WEBPACK_IMPORTED_MODULE_39__pages_newEntry_totalPoints_totalPoints__["a" /* TotalPointsPage */],
+            __WEBPACK_IMPORTED_MODULE_40__pages_newEntry_additionalReward_additionalReward__["a" /* AdditionalRewardPage */],
+            __WEBPACK_IMPORTED_MODULE_41__pages_newEntry_tips_tips__["a" /* TipsPage */],
+            __WEBPACK_IMPORTED_MODULE_42__pages_pollen_pollen__["a" /* PollenPage */],
+            __WEBPACK_IMPORTED_MODULE_16__pages_tabs_tabs__["a" /* TabsPage */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_42__ionic_native_status_bar__["a" /* StatusBar */],
-            __WEBPACK_IMPORTED_MODULE_43__ionic_native_splash_screen__["a" /* SplashScreen */],
-            __WEBPACK_IMPORTED_MODULE_45__services_languageService_languageService__["a" /* LanguageService */],
-            { provide: __WEBPACK_IMPORTED_MODULE_8__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["e" /* IonicErrorHandler */] },
+            __WEBPACK_IMPORTED_MODULE_43__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_44__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_46__services_languageService_languageService__["a" /* LanguageService */],
+            { provide: __WEBPACK_IMPORTED_MODULE_8__angular_core__["ErrorHandler"], useClass: __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["e" /* IonicErrorHandler */] },
             __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_storage__["a" /* NativeStorage */],
             __WEBPACK_IMPORTED_MODULE_5__ionic_native_globalization__["a" /* Globalization */],
             __WEBPACK_IMPORTED_MODULE_2__ionic_native_diagnostic__["a" /* Diagnostic */],
             __WEBPACK_IMPORTED_MODULE_3__ionic_native_app_version__["a" /* AppVersion */],
-            __WEBPACK_IMPORTED_MODULE_46__services_parametersService_parametersService__["a" /* ParametersService */],
-            __WEBPACK_IMPORTED_MODULE_48__ionic_native_secure_storage__["a" /* SecureStorage */],
-            __WEBPACK_IMPORTED_MODULE_50__ionic_native_network__["a" /* Network */],
-            __WEBPACK_IMPORTED_MODULE_49__ionic_native_in_app_browser__["a" /* InAppBrowser */],
+            __WEBPACK_IMPORTED_MODULE_47__services_parametersService_parametersService__["a" /* ParametersService */],
+            __WEBPACK_IMPORTED_MODULE_49__ionic_native_secure_storage__["a" /* SecureStorage */],
+            __WEBPACK_IMPORTED_MODULE_51__ionic_native_network__["a" /* Network */],
+            __WEBPACK_IMPORTED_MODULE_50__ionic_native_in_app_browser__["a" /* InAppBrowser */],
             __WEBPACK_IMPORTED_MODULE_13__services_InBrowserBrowser__["a" /* InBrowserBrowser */],
             __WEBPACK_IMPORTED_MODULE_12__services_MidataConnectionService__["a" /* MidataConnectionService */],
-            __WEBPACK_IMPORTED_MODULE_52__services_ModalService__["a" /* ModalService */],
-            __WEBPACK_IMPORTED_MODULE_14__ionic_native_camera__["a" /* Camera */]
+            __WEBPACK_IMPORTED_MODULE_53__services_ModalService__["a" /* ModalService */],
+            __WEBPACK_IMPORTED_MODULE_15__ionic_native_camera__["a" /* Camera */]
         ]
     })
 ], AppModule);
@@ -2134,7 +2474,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 399:
+/***/ 406:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2230,7 +2570,7 @@ var Question = (function () {
 
 /***/ }),
 
-/***/ 400:
+/***/ 407:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2269,240 +2609,240 @@ var Group = (function () {
 
 /***/ }),
 
-/***/ 423:
+/***/ 430:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 193,
-	"./af.js": 193,
-	"./ar": 194,
-	"./ar-dz": 195,
-	"./ar-dz.js": 195,
-	"./ar-kw": 196,
-	"./ar-kw.js": 196,
-	"./ar-ly": 197,
-	"./ar-ly.js": 197,
-	"./ar-ma": 198,
-	"./ar-ma.js": 198,
-	"./ar-sa": 199,
-	"./ar-sa.js": 199,
-	"./ar-tn": 200,
-	"./ar-tn.js": 200,
-	"./ar.js": 194,
-	"./az": 201,
-	"./az.js": 201,
-	"./be": 202,
-	"./be.js": 202,
-	"./bg": 203,
-	"./bg.js": 203,
-	"./bn": 204,
-	"./bn.js": 204,
-	"./bo": 205,
-	"./bo.js": 205,
-	"./br": 206,
-	"./br.js": 206,
-	"./bs": 207,
-	"./bs.js": 207,
-	"./ca": 208,
-	"./ca.js": 208,
-	"./cs": 209,
-	"./cs.js": 209,
-	"./cv": 210,
-	"./cv.js": 210,
-	"./cy": 211,
-	"./cy.js": 211,
-	"./da": 212,
-	"./da.js": 212,
-	"./de": 213,
-	"./de-at": 214,
-	"./de-at.js": 214,
-	"./de-ch": 215,
-	"./de-ch.js": 215,
-	"./de.js": 213,
-	"./dv": 216,
-	"./dv.js": 216,
-	"./el": 217,
-	"./el.js": 217,
-	"./en-au": 218,
-	"./en-au.js": 218,
-	"./en-ca": 219,
-	"./en-ca.js": 219,
-	"./en-gb": 220,
-	"./en-gb.js": 220,
-	"./en-ie": 221,
-	"./en-ie.js": 221,
-	"./en-nz": 222,
-	"./en-nz.js": 222,
-	"./eo": 223,
-	"./eo.js": 223,
-	"./es": 224,
-	"./es-do": 225,
-	"./es-do.js": 225,
-	"./es.js": 224,
-	"./et": 226,
-	"./et.js": 226,
-	"./eu": 227,
-	"./eu.js": 227,
-	"./fa": 228,
-	"./fa.js": 228,
-	"./fi": 229,
-	"./fi.js": 229,
-	"./fo": 230,
-	"./fo.js": 230,
-	"./fr": 231,
-	"./fr-ca": 232,
-	"./fr-ca.js": 232,
-	"./fr-ch": 233,
-	"./fr-ch.js": 233,
-	"./fr.js": 231,
-	"./fy": 234,
-	"./fy.js": 234,
-	"./gd": 235,
-	"./gd.js": 235,
-	"./gl": 236,
-	"./gl.js": 236,
-	"./gom-latn": 237,
-	"./gom-latn.js": 237,
-	"./he": 238,
-	"./he.js": 238,
-	"./hi": 239,
-	"./hi.js": 239,
-	"./hr": 240,
-	"./hr.js": 240,
-	"./hu": 241,
-	"./hu.js": 241,
-	"./hy-am": 242,
-	"./hy-am.js": 242,
-	"./id": 243,
-	"./id.js": 243,
-	"./is": 244,
-	"./is.js": 244,
-	"./it": 245,
-	"./it.js": 245,
-	"./ja": 246,
-	"./ja.js": 246,
-	"./jv": 247,
-	"./jv.js": 247,
-	"./ka": 248,
-	"./ka.js": 248,
-	"./kk": 249,
-	"./kk.js": 249,
-	"./km": 250,
-	"./km.js": 250,
-	"./kn": 251,
-	"./kn.js": 251,
-	"./ko": 252,
-	"./ko.js": 252,
-	"./ky": 253,
-	"./ky.js": 253,
-	"./lb": 254,
-	"./lb.js": 254,
-	"./lo": 255,
-	"./lo.js": 255,
-	"./lt": 256,
-	"./lt.js": 256,
-	"./lv": 257,
-	"./lv.js": 257,
-	"./me": 258,
-	"./me.js": 258,
-	"./mi": 259,
-	"./mi.js": 259,
-	"./mk": 260,
-	"./mk.js": 260,
-	"./ml": 261,
-	"./ml.js": 261,
-	"./mr": 262,
-	"./mr.js": 262,
-	"./ms": 263,
-	"./ms-my": 264,
-	"./ms-my.js": 264,
-	"./ms.js": 263,
-	"./my": 265,
-	"./my.js": 265,
-	"./nb": 266,
-	"./nb.js": 266,
-	"./ne": 267,
-	"./ne.js": 267,
-	"./nl": 268,
-	"./nl-be": 269,
-	"./nl-be.js": 269,
-	"./nl.js": 268,
-	"./nn": 270,
-	"./nn.js": 270,
-	"./pa-in": 271,
-	"./pa-in.js": 271,
-	"./pl": 272,
-	"./pl.js": 272,
-	"./pt": 273,
-	"./pt-br": 274,
-	"./pt-br.js": 274,
-	"./pt.js": 273,
-	"./ro": 275,
-	"./ro.js": 275,
-	"./ru": 276,
-	"./ru.js": 276,
-	"./sd": 277,
-	"./sd.js": 277,
-	"./se": 278,
-	"./se.js": 278,
-	"./si": 279,
-	"./si.js": 279,
-	"./sk": 280,
-	"./sk.js": 280,
-	"./sl": 281,
-	"./sl.js": 281,
-	"./sq": 282,
-	"./sq.js": 282,
-	"./sr": 283,
-	"./sr-cyrl": 284,
-	"./sr-cyrl.js": 284,
-	"./sr.js": 283,
-	"./ss": 285,
-	"./ss.js": 285,
-	"./sv": 286,
-	"./sv.js": 286,
-	"./sw": 287,
-	"./sw.js": 287,
-	"./ta": 288,
-	"./ta.js": 288,
-	"./te": 289,
-	"./te.js": 289,
-	"./tet": 290,
-	"./tet.js": 290,
-	"./th": 291,
-	"./th.js": 291,
-	"./tl-ph": 292,
-	"./tl-ph.js": 292,
-	"./tlh": 293,
-	"./tlh.js": 293,
-	"./tr": 294,
-	"./tr.js": 294,
-	"./tzl": 295,
-	"./tzl.js": 295,
-	"./tzm": 296,
-	"./tzm-latn": 297,
-	"./tzm-latn.js": 297,
-	"./tzm.js": 296,
-	"./uk": 298,
-	"./uk.js": 298,
-	"./ur": 299,
-	"./ur.js": 299,
-	"./uz": 300,
-	"./uz-latn": 301,
-	"./uz-latn.js": 301,
-	"./uz.js": 300,
-	"./vi": 302,
-	"./vi.js": 302,
-	"./x-pseudo": 303,
-	"./x-pseudo.js": 303,
-	"./yo": 304,
-	"./yo.js": 304,
-	"./zh-cn": 305,
-	"./zh-cn.js": 305,
-	"./zh-hk": 306,
-	"./zh-hk.js": 306,
-	"./zh-tw": 307,
-	"./zh-tw.js": 307
+	"./af": 194,
+	"./af.js": 194,
+	"./ar": 195,
+	"./ar-dz": 196,
+	"./ar-dz.js": 196,
+	"./ar-kw": 197,
+	"./ar-kw.js": 197,
+	"./ar-ly": 198,
+	"./ar-ly.js": 198,
+	"./ar-ma": 199,
+	"./ar-ma.js": 199,
+	"./ar-sa": 200,
+	"./ar-sa.js": 200,
+	"./ar-tn": 201,
+	"./ar-tn.js": 201,
+	"./ar.js": 195,
+	"./az": 202,
+	"./az.js": 202,
+	"./be": 203,
+	"./be.js": 203,
+	"./bg": 204,
+	"./bg.js": 204,
+	"./bn": 205,
+	"./bn.js": 205,
+	"./bo": 206,
+	"./bo.js": 206,
+	"./br": 207,
+	"./br.js": 207,
+	"./bs": 208,
+	"./bs.js": 208,
+	"./ca": 209,
+	"./ca.js": 209,
+	"./cs": 210,
+	"./cs.js": 210,
+	"./cv": 211,
+	"./cv.js": 211,
+	"./cy": 212,
+	"./cy.js": 212,
+	"./da": 213,
+	"./da.js": 213,
+	"./de": 214,
+	"./de-at": 215,
+	"./de-at.js": 215,
+	"./de-ch": 216,
+	"./de-ch.js": 216,
+	"./de.js": 214,
+	"./dv": 217,
+	"./dv.js": 217,
+	"./el": 218,
+	"./el.js": 218,
+	"./en-au": 219,
+	"./en-au.js": 219,
+	"./en-ca": 220,
+	"./en-ca.js": 220,
+	"./en-gb": 221,
+	"./en-gb.js": 221,
+	"./en-ie": 222,
+	"./en-ie.js": 222,
+	"./en-nz": 223,
+	"./en-nz.js": 223,
+	"./eo": 224,
+	"./eo.js": 224,
+	"./es": 225,
+	"./es-do": 226,
+	"./es-do.js": 226,
+	"./es.js": 225,
+	"./et": 227,
+	"./et.js": 227,
+	"./eu": 228,
+	"./eu.js": 228,
+	"./fa": 229,
+	"./fa.js": 229,
+	"./fi": 230,
+	"./fi.js": 230,
+	"./fo": 231,
+	"./fo.js": 231,
+	"./fr": 232,
+	"./fr-ca": 233,
+	"./fr-ca.js": 233,
+	"./fr-ch": 234,
+	"./fr-ch.js": 234,
+	"./fr.js": 232,
+	"./fy": 235,
+	"./fy.js": 235,
+	"./gd": 236,
+	"./gd.js": 236,
+	"./gl": 237,
+	"./gl.js": 237,
+	"./gom-latn": 238,
+	"./gom-latn.js": 238,
+	"./he": 239,
+	"./he.js": 239,
+	"./hi": 240,
+	"./hi.js": 240,
+	"./hr": 241,
+	"./hr.js": 241,
+	"./hu": 242,
+	"./hu.js": 242,
+	"./hy-am": 243,
+	"./hy-am.js": 243,
+	"./id": 244,
+	"./id.js": 244,
+	"./is": 245,
+	"./is.js": 245,
+	"./it": 246,
+	"./it.js": 246,
+	"./ja": 247,
+	"./ja.js": 247,
+	"./jv": 248,
+	"./jv.js": 248,
+	"./ka": 249,
+	"./ka.js": 249,
+	"./kk": 250,
+	"./kk.js": 250,
+	"./km": 251,
+	"./km.js": 251,
+	"./kn": 252,
+	"./kn.js": 252,
+	"./ko": 253,
+	"./ko.js": 253,
+	"./ky": 254,
+	"./ky.js": 254,
+	"./lb": 255,
+	"./lb.js": 255,
+	"./lo": 256,
+	"./lo.js": 256,
+	"./lt": 257,
+	"./lt.js": 257,
+	"./lv": 258,
+	"./lv.js": 258,
+	"./me": 259,
+	"./me.js": 259,
+	"./mi": 260,
+	"./mi.js": 260,
+	"./mk": 261,
+	"./mk.js": 261,
+	"./ml": 262,
+	"./ml.js": 262,
+	"./mr": 263,
+	"./mr.js": 263,
+	"./ms": 264,
+	"./ms-my": 265,
+	"./ms-my.js": 265,
+	"./ms.js": 264,
+	"./my": 266,
+	"./my.js": 266,
+	"./nb": 267,
+	"./nb.js": 267,
+	"./ne": 268,
+	"./ne.js": 268,
+	"./nl": 269,
+	"./nl-be": 270,
+	"./nl-be.js": 270,
+	"./nl.js": 269,
+	"./nn": 271,
+	"./nn.js": 271,
+	"./pa-in": 272,
+	"./pa-in.js": 272,
+	"./pl": 273,
+	"./pl.js": 273,
+	"./pt": 274,
+	"./pt-br": 275,
+	"./pt-br.js": 275,
+	"./pt.js": 274,
+	"./ro": 276,
+	"./ro.js": 276,
+	"./ru": 277,
+	"./ru.js": 277,
+	"./sd": 278,
+	"./sd.js": 278,
+	"./se": 279,
+	"./se.js": 279,
+	"./si": 280,
+	"./si.js": 280,
+	"./sk": 281,
+	"./sk.js": 281,
+	"./sl": 282,
+	"./sl.js": 282,
+	"./sq": 283,
+	"./sq.js": 283,
+	"./sr": 284,
+	"./sr-cyrl": 285,
+	"./sr-cyrl.js": 285,
+	"./sr.js": 284,
+	"./ss": 286,
+	"./ss.js": 286,
+	"./sv": 287,
+	"./sv.js": 287,
+	"./sw": 288,
+	"./sw.js": 288,
+	"./ta": 289,
+	"./ta.js": 289,
+	"./te": 290,
+	"./te.js": 290,
+	"./tet": 291,
+	"./tet.js": 291,
+	"./th": 292,
+	"./th.js": 292,
+	"./tl-ph": 293,
+	"./tl-ph.js": 293,
+	"./tlh": 294,
+	"./tlh.js": 294,
+	"./tr": 295,
+	"./tr.js": 295,
+	"./tzl": 296,
+	"./tzl.js": 296,
+	"./tzm": 297,
+	"./tzm-latn": 298,
+	"./tzm-latn.js": 298,
+	"./tzm.js": 297,
+	"./uk": 299,
+	"./uk.js": 299,
+	"./ur": 300,
+	"./ur.js": 300,
+	"./uz": 301,
+	"./uz-latn": 302,
+	"./uz-latn.js": 302,
+	"./uz.js": 301,
+	"./vi": 303,
+	"./vi.js": 303,
+	"./x-pseudo": 304,
+	"./x-pseudo.js": 304,
+	"./yo": 305,
+	"./yo.js": 305,
+	"./zh-cn": 306,
+	"./zh-cn.js": 306,
+	"./zh-hk": 307,
+	"./zh-hk.js": 307,
+	"./zh-tw": 308,
+	"./zh-tw.js": 308
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -2518,11 +2858,11 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 423;
+webpackContext.id = 430;
 
 /***/ }),
 
-/***/ 469:
+/***/ 476:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2560,7 +2900,7 @@ var PulseValidator = (function () {
 
 /***/ }),
 
-/***/ 500:
+/***/ 507:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2568,10 +2908,10 @@ var PulseValidator = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Midata__ = __webpack_require__(322);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Midata___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_Midata__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_secure_storage__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_secure_storage__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(110);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2695,7 +3035,7 @@ var MidataConnectionWrapper = (function () {
     return MidataConnectionWrapper;
 }());
 MidataConnectionWrapper = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_Midata__["Midata"],
         __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */],
         __WEBPACK_IMPORTED_MODULE_2__ionic_native_secure_storage__["a" /* SecureStorage */],
@@ -2708,7 +3048,7 @@ MidataConnectionWrapper = __decorate([
 
 /***/ }),
 
-/***/ 518:
+/***/ 525:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2749,7 +3089,7 @@ var InBrowserBrowser = (function () {
     return InBrowserBrowser;
 }());
 InBrowserBrowser = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])()
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])()
     /**
      * Service to manage the alert this.popups
      */
@@ -2886,7 +3226,7 @@ var InBrowserBrowserObject = (function () {
         if (event) {
             return event;
         }
-        event = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        event = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
         this._events[name] = event;
         return event;
     };
@@ -2951,7 +3291,7 @@ var InBrowserBrowserObject = (function () {
 
 /***/ }),
 
-/***/ 520:
+/***/ 529:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2983,27 +3323,87 @@ var MEDIA = {
 
 /***/ }),
 
-/***/ 521:
+/***/ 53:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__overview_overview__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__community_community__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__introduction_introduction__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__newEntry_newEntry__ = __webpack_require__(336);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pollen_pollen__ = __webpack_require__(344);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var HomePage = (function () {
+    function HomePage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    HomePage.prototype.pushOverviewPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__overview_overview__["a" /* OverviewPage */]);
+    };
+    HomePage.prototype.pushCommunityPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__community_community__["a" /* CommunityPage */]);
+    };
+    HomePage.prototype.pushIntroductionPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__introduction_introduction__["a" /* IntroductionPage */]);
+    };
+    HomePage.prototype.pushNewEntryPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__newEntry_newEntry__["a" /* NewEntryPage */]);
+    };
+    HomePage.prototype.pushPollenPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__pollen_pollen__["a" /* PollenPage */]);
+    };
+    return HomePage;
+}());
+HomePage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-home',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <button ion-button block (click)="pushNewEntryPage()">\n    Neuer Eintrag</button>\n  <button ion-button block (click)="pushOverviewPage()">\n    Übersicht</button>\n  <button ion-button block (click)="pushPollenPage()">\n   Pollenprognose</button>\n  <button ion-button block (click)="pushCommunityPage()">\n    Community</button>\n    <button ion-button block (click)="pushGamePage()">\n      Game</button>\n    <button ion-button block (click)="pushIntroductionPage()">\n        Einführung</button>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/home/home.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
+], HomePage);
+
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 530:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pages_advance_directives_advance_directives__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pages_advance_directives_advance_directives__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_impressum_impressum__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_languageService_languageService__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_parametersService_parametersService__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_languageService_languageService__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_parametersService_parametersService__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(382);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__ = __webpack_require__(390);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_core__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__ = __webpack_require__(380);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_home_home__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_home_home__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_blood_blood__ = __webpack_require__(70);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_login_login__ = __webpack_require__(137);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_profile_profile__ = __webpack_require__(131);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_MidataConnectionService__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_network__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_login_login__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_profile_profile__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_MidataConnectionService__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_network__ = __webpack_require__(64);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3149,12 +3549,12 @@ var MyApp = (function () {
     return MyApp;
 }());
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_4__angular_core__["_14" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_5_ionic_angular__["j" /* Nav */]),
+    Object(__WEBPACK_IMPORTED_MODULE_4__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_5_ionic_angular__["j" /* Nav */]),
     __metadata("design:type", __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["j" /* Nav */])
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_4__angular_core__["n" /* Component */])({
-        selector: 'page-app',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-content>\n\n    <ion-item>\n\n      <div class="userBadge" (click)=\'openModal(profilePage.value)\'>\n\n        <img class="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Danica_2010_cropped.jpg" />\n\n        <img class="editImage" src="http://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/pen-icon.png"/>\n\n        <h3>Elisabeth Brönnimann</h3>\n\n      </div>\n\n    </ion-item>\n\n    <ion-list>\n\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n\n        <ion-icon class="iconMenu" name="{{p.icon}}"></ion-icon>{{p.title}}\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\app\app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_4__angular_core__["Component"])({
+        selector: 'page-app',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-content>\n    <ion-item>\n      <div class="userBadge" (click)=\'openModal(profilePage.value)\'>\n        <img class="profile-picture" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Danica_2010_cropped.jpg" />\n        <img class="editImage" src="http://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/pen-icon.png"/>\n        <h3>Elisabeth Brönnimann</h3>\n      </div>\n    </ion-item>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        <ion-icon class="iconMenu" name="{{p.icon}}"></ion-icon>{{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n</ion-menu>\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/app/app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5_ionic_angular__["m" /* Platform */],
         __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["i" /* ModalController */],
@@ -3172,257 +3572,12 @@ MyApp = __decorate([
 
 /***/ }),
 
-/***/ 522:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DateTimePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var DateTimePage = (function () {
-    function DateTimePage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    return DateTimePage;
-}());
-DateTimePage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-dateTime',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\newEntry\dateTime\dateTime.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Neuer Eintrag</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <button id="btnX" ion-button color="light" round icon-only>\n\n    <ion-icon name=\'close\'></ion-icon>\n\n  </button>\n\n\n\n  <ion-item>\n\n        <img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;">\n\n    </ion-item>\n\n      <p>Wann sind deine Beschwerden aufgetreten?\n\n      </p>\n\n      <ion-item>\n\n        <ion-label>Datum</ion-label>\n\n        <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="myDate">\n\n        </ion-datetime>\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label>Zeit</ion-label>\n\n        <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>\n\n      </ion-item>\n\n      <button id="btnForward" ion-button secondary>Weiter</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\newEntry\dateTime\dateTime.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
-], DateTimePage);
-
-//# sourceMappingURL=dateTime.js.map
-
-/***/ }),
-
-/***/ 523:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComplaintsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var ComplaintsPage = (function () {
-    function ComplaintsPage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    return ComplaintsPage;
-}());
-ComplaintsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-complaints',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\newEntry\complaints\complaints.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Neuer Eintrag</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <button id="btnX" ion-button color="light" round icon-only>\n\n    <ion-icon name=\'close\'></ion-icon>\n\n  </button>\n\n\n\n  <ion-item>\n\n        <!-- img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;" -->\n\n    </ion-item>\n\n\n\n    <p>Gib bitte spontan an, wie stark deine Beschwerden sind?</p>\n\n          <h5>Augenbeschwerden</h5>\n\n          <p>(Brennen, Jucken, Tränen)</p>\n\n            <ion-item>\n\n            <ion-range min="0" max="10" [(ngModel)]="Augenbeschwerden">\n\n              <ion-label range-left>0</ion-label>\n\n              <ion-label range-right>10</ion-label>\n\n            </ion-range>\n\n          </ion-item>\n\n          <h5>Nasenbeschwerden</h5>\n\n          <p>(Schnupfen, Juckreiz)</p>\n\n          <ion-item>\n\n            <ion-range min="0" max="10" [(ngModel)]="Nasenbeschwerden">\n\n              <ion-label range-left>0</ion-label>\n\n              <ion-label range-right>10</ion-label>\n\n            </ion-range>\n\n          </ion-item>\n\n          <h5>Atembeschwerden</h5>\n\n          <p>(Atemnot, Husten)</p>\n\n          <ion-item>\n\n            <ion-range min="0" max="10" [(ngModel)]="Atembeschwerden">\n\n              <ion-label range-left>0</ion-label>\n\n              <ion-label range-right>10</ion-label>\n\n            </ion-range>\n\n          </ion-item>\n\n      <button id="btnForward" ion-button secondary>Weiter</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\newEntry\complaints\complaints.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
-], ComplaintsPage);
-
-//# sourceMappingURL=complaints.js.map
-
-/***/ }),
-
-/***/ 524:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PhysicalActivityPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var PhysicalActivityPage = (function () {
-    function PhysicalActivityPage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    return PhysicalActivityPage;
-}());
-PhysicalActivityPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-physicalActivity',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\newEntry\physicalActivity\physicalActivity.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Neuer Eintrag</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <button id="btnX" ion-button color="light" round icon-only>\n\n    <ion-icon name=\'close\'></ion-icon>\n\n  </button>\n\n\n\n  <ion-item>\n\n        <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n\n    </ion-item>\n\n\n\n  <p>Wie stark hast Du dich körperlich betätigt?</p>\n\n\n\n  <ion-item>\n\n    <ion-range min="0" max="10" [(ngModel)]="physicalActivity">\n\n      <ion-label range-left>0</ion-label>\n\n      <ion-label range-right>10</ion-label>\n\n    </ion-range>\n\n  </ion-item>\n\n\n\n  <button id="btnForward" ion-button secondary>Weiter</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\newEntry\physicalActivity\physicalActivity.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
-], PhysicalActivityPage);
-
-//# sourceMappingURL=physicalActivity.js.map
-
-/***/ }),
-
-/***/ 525:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MedicationPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var MedicationPage = (function () {
-    function MedicationPage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    return MedicationPage;
-}());
-MedicationPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-medication',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\newEntry\medication\medication.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Neuer Eintrag</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <button id="btnX" ion-button color="light" round icon-only>\n\n    <ion-icon name=\'close\'></ion-icon>\n\n  </button>\n\n\n\n  <ion-item>\n\n        <img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;">\n\n    </ion-item>\n\n\n\n    <p>Hast Du Medikamente eingenommen?</p>\n\n          <ion-list radio-group [(ngModel)]="MedisEingenommen">\n\n            <ion-item>\n\n              <ion-label>Ja</ion-label>\n\n              <ion-radio value="Ja"></ion-radio>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label>Nein</ion-label>\n\n              <ion-radio value="Nein"></ion-radio>\n\n            </ion-item>\n\n          </ion-list>\n\n          <p>Wenn ja ...</p>\n\n          <ion-list radio-group [(ngModel)]="VorbeugendBeschwerden">\n\n            <ion-item>\n\n              <ion-label>Vorbeugend</ion-label>\n\n              <ion-radio value="Vorbeugend"></ion-radio>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label>Wegen Beschwerden</ion-label>\n\n              <ion-radio value="wegen Beschwerden"></ion-radio>\n\n            </ion-item>\n\n          </ion-list>\n\n\n\n    <button id="btnForward" ion-button secondary>Weiter</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\newEntry\medication\medication.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
-], MedicationPage);
-
-//# sourceMappingURL=medication.js.map
-
-/***/ }),
-
-/***/ 526:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TotalPointsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var TotalPointsPage = (function () {
-    function TotalPointsPage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    return TotalPointsPage;
-}());
-TotalPointsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-totalPoints',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\newEntry\totalPoints\totalPoints.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Neuer Eintrag</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <button id="btnX" ion-button color="light" round icon-only>\n\n    <ion-icon name=\'close\'></ion-icon>\n\n  </button>\n\n\n\n  <ion-item>\n\n        <!-- img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n\n    </ion-item>\n\n\n\n  <p>Vielen Dank! Du hast soeben einen Punkt erhalten. :)</p>\n\n\n\n  <button id="btnForward" ion-button secondary>Weiter</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\newEntry\totalPoints\totalPoints.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
-], TotalPointsPage);
-
-//# sourceMappingURL=totalPoints.js.map
-
-/***/ }),
-
-/***/ 527:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdditionalRewardPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var AdditionalRewardPage = (function () {
-    function AdditionalRewardPage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    return AdditionalRewardPage;
-}());
-AdditionalRewardPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-additionalReward',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\newEntry\additionalReward\additionalReward.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Neuer Eintrag</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <button id="btnX" ion-button color="light" round icon-only>\n\n    <ion-icon name=\'close\'></ion-icon>\n\n  </button>\n\n\n\n  <ion-item>\n\n        <!-- img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n\n    </ion-item>\n\n\n\n  <p>Öffne eine Truhe und hole dir zusätzliche Punkte und einen Tipp.</p>\n\n\n\n  <button id="btnForward" ion-button secondary>Weiter</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\newEntry\additionalReward\additionalReward.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
-], AdditionalRewardPage);
-
-//# sourceMappingURL=additionalReward.js.map
-
-/***/ }),
-
-/***/ 528:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TipsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var TipsPage = (function () {
-    function TipsPage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    return TipsPage;
-}());
-TipsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-tips',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\newEntry\tips\tips.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Neuer Eintrag</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n  <button id="btnX" ion-button color="light" round icon-only>\n\n    <ion-icon name=\'close\'></ion-icon>\n\n  </button>\n\n\n\n  <ion-item>\n\n        <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->\n\n    </ion-item>\n\n\n\n    <p>Ich habe deine Daten analysiert. Deine Beschwerden entsprechen\n\n           am ehesten einer Gräserpollenallergie!</p>\n\n         <h1>Mein Tipp:</h1>\n\n         <p>Halte dich wenig draussen auf.</p>\n\n         <p>Wasche dir täglich die Haare.</p>\n\n\n\n    <button id="btnForward" ion-button secondary>Weiter</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\newEntry\tips\tips.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
-], TipsPage);
-
-//# sourceMappingURL=tips.js.map
-
-/***/ }),
-
-/***/ 529:
+/***/ 531:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = createTranslateLoader;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ngx_translate_http_loader__ = __webpack_require__(530);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ngx_translate_http_loader__ = __webpack_require__(532);
 
 function createTranslateLoader(http) {
     return new __WEBPACK_IMPORTED_MODULE_0__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, './assets/i18n/', '.json');
@@ -3431,13 +3586,13 @@ function createTranslateLoader(http) {
 
 /***/ }),
 
-/***/ 61:
+/***/ 62:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ParametersService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -3479,7 +3634,7 @@ var ParametersService = (function () {
     return ParametersService;
 }());
 ParametersService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]])
 ], ParametersService);
 
@@ -3487,25 +3642,25 @@ ParametersService = __decorate([
 
 /***/ }),
 
-/***/ 62:
+/***/ 63:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MidataConnectionService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_network__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_secure_storage__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_network__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_secure_storage__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_fromPromise__ = __webpack_require__(497);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_fromPromise__ = __webpack_require__(504);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_fromPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_Midata__ = __webpack_require__(322);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_Midata___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_Midata__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__MidataConnectionWrapper__ = __webpack_require__(500);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__MidataConnectionWrapper__ = __webpack_require__(507);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -3675,7 +3830,7 @@ var MidataConnectionService = (function (_super) {
     return MidataConnectionService;
 }(__WEBPACK_IMPORTED_MODULE_9__MidataConnectionWrapper__["a" /* MidataConnectionWrapper */]));
 MidataConnectionService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])()
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])()
     /**
      * Service to manage the Connection to midata server.
      */
@@ -3691,80 +3846,20 @@ MidataConnectionService = __decorate([
 
 /***/ }),
 
-/***/ 65:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__overview_overview__ = __webpack_require__(325);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__community_community__ = __webpack_require__(326);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__introduction_introduction__ = __webpack_require__(327);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__newEntry_newEntry__ = __webpack_require__(336);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pollen_pollen__ = __webpack_require__(337);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-var HomePage = (function () {
-    function HomePage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    HomePage.prototype.pushOverviewPage = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__overview_overview__["a" /* OverviewPage */]);
-    };
-    HomePage.prototype.pushCommunityPage = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__community_community__["a" /* CommunityPage */]);
-    };
-    HomePage.prototype.pushIntroductionPage = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__introduction_introduction__["a" /* IntroductionPage */]);
-    };
-    HomePage.prototype.pushNewEntryPage = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__newEntry_newEntry__["a" /* NewEntryPage */]);
-    };
-    HomePage.prototype.pushPollenPage = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__pollen_pollen__["a" /* PollenPage */]);
-    };
-    return HomePage;
-}());
-HomePage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Home</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <button ion-button block (click)="pushNewEntryPage()">\n\n    Neuer Eintrag</button>\n\n  <button ion-button block (click)="pushOverviewPage()">\n\n    Übersicht</button>\n\n  <button ion-button block (click)="pushPollenPage()">\n\n   Pollenprognose</button>\n\n  <button ion-button block (click)="pushCommunityPage()">\n\n    Community</button>\n\n    <button ion-button block (click)="pushGamePage()">\n\n      Game</button>\n\n    <button ion-button block (click)="pushIntroductionPage()">\n\n        Einführung</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\home\home.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]])
-], HomePage);
-
-//# sourceMappingURL=home.js.map
-
-/***/ }),
-
 /***/ 70:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BloodPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pulseDailyData_pulseDailyData__ = __webpack_require__(135);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__validators_pulseValidator__ = __webpack_require__(469);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pulseDailyData_pulseDailyData__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__validators_pulseValidator__ = __webpack_require__(476);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pulse_measure_pulse_measure__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pulse_measure_pulse_measure__ = __webpack_require__(137);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_moment__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_chart_js__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_chart_js__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_chart_js__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4035,12 +4130,12 @@ var BloodPage = (function () {
     return BloodPage;
 }());
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["_14" /* ViewChild */])('chartCanvas'),
+    Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["ViewChild"])('chartCanvas'),
     __metadata("design:type", Object)
 ], BloodPage.prototype, "chartCanvas", void 0);
 BloodPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["n" /* Component */])({
-        selector: 'page-blood',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\blood\blood.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>{{ \'BLOOD.TITLE\' | translate }}</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content has-footer no-bounce overflow-scroll=\'false\'>\n\n  <ion-fab right bottom #fab>\n\n    <button ion-fab mini><ion-icon name="add"></ion-icon></button>\n\n    <ion-fab-list side="top">\n\n      <button ion-fab (click)="showPromptMeasure(fab)"><ion-icon name="create"></ion-icon></button>\n\n      <button ion-fab (click)="showTakeMeasure(fab)"><ion-icon name="pulse"></ion-icon></button>\n\n    </ion-fab-list>\n\n  </ion-fab>\n\n  <ion-item>\n\n    <ion-label>{{ \'BLOOD.MYGROUP\' | translate }}</ion-label>\n\n    <ion-select interface="popover">\n\n      <ion-option value="a+">A+</ion-option>\n\n      <ion-option value="a-">A-</ion-option>\n\n      <ion-option value="b+">A+</ion-option>\n\n      <ion-option value="b-">A-</ion-option>\n\n      <ion-option value="o+">O+</ion-option>\n\n      <ion-option value="o-">O-</ion-option>\n\n      <ion-option value="ab">AB-</ion-option>\n\n    </ion-select>\n\n  </ion-item>\n\n  <ion-card>\n\n    <ion-card-content>\n\n      <canvas #chartCanvas></canvas>\n\n    </ion-card-content>\n\n  </ion-card>\n\n  <ion-item>\n\n    <ion-label>{{ \'BLOOD.MYMEASURE\' | translate }}</ion-label>\n\n  </ion-item>\n\n    <ion-list [virtualScroll]="dayToBeDisplayed" [headerFn]="getWeeklyHeader" [approxItemHeight]="\'49px\'">\n\n      <ion-item-divider color="light" *virtualHeader="let header">\n\n        {{ header }}\n\n      </ion-item-divider>\n\n      <button ion-item *virtualItem="let day" (click)="showDate(day)">\n\n        <ion-icon name="heart-outline" item-start color="danger"></ion-icon>\n\n        <ion-label>{{formatDate(day)}}</ion-label>\n\n      </button>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\blood\blood.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["Component"])({
+        selector: 'page-blood',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/blood/blood.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>{{ \'BLOOD.TITLE\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content has-footer no-bounce overflow-scroll=\'false\'>\n  <ion-fab right bottom #fab>\n    <button ion-fab mini><ion-icon name="add"></ion-icon></button>\n    <ion-fab-list side="top">\n      <button ion-fab (click)="showPromptMeasure(fab)"><ion-icon name="create"></ion-icon></button>\n      <button ion-fab (click)="showTakeMeasure(fab)"><ion-icon name="pulse"></ion-icon></button>\n    </ion-fab-list>\n  </ion-fab>\n  <ion-item>\n    <ion-label>{{ \'BLOOD.MYGROUP\' | translate }}</ion-label>\n    <ion-select interface="popover">\n      <ion-option value="a+">A+</ion-option>\n      <ion-option value="a-">A-</ion-option>\n      <ion-option value="b+">A+</ion-option>\n      <ion-option value="b-">A-</ion-option>\n      <ion-option value="o+">O+</ion-option>\n      <ion-option value="o-">O-</ion-option>\n      <ion-option value="ab">AB-</ion-option>\n    </ion-select>\n  </ion-item>\n  <ion-card>\n    <ion-card-content>\n      <canvas #chartCanvas></canvas>\n    </ion-card-content>\n  </ion-card>\n  <ion-item>\n    <ion-label>{{ \'BLOOD.MYMEASURE\' | translate }}</ion-label>\n  </ion-item>\n    <ion-list [virtualScroll]="dayToBeDisplayed" [headerFn]="getWeeklyHeader" [approxItemHeight]="\'49px\'">\n      <ion-item-divider color="light" *virtualHeader="let header">\n        {{ header }}\n      </ion-item-divider>\n      <button ion-item *virtualItem="let day" (click)="showDate(day)">\n        <ion-icon name="heart-outline" item-start color="danger"></ion-icon>\n        <ion-label>{{formatDate(day)}}</ion-label>\n      </button>\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/blood/blood.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["l" /* NavParams */],
@@ -4061,7 +4156,7 @@ BloodPage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImpressumPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_app_version__ = __webpack_require__(320);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_parametersService_parametersService__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_parametersService_parametersService__ = __webpack_require__(62);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4087,8 +4182,8 @@ var ImpressumPage = (function () {
     return ImpressumPage;
 }());
 ImpressumPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-impressum',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\impressum\impressum.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>{{ \'IMPRESSUM.TITLE\' | translate }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <div style="margin-left: 5%; margin-right: 5%; text-align:center;">\n\n      <h3>{{ \'IMPRESSUM.VERSION\' | translate }}</h3>\n\n      <p>{{appVersionNumber}}</p>\n\n      <hr>\n\n\n\n      <h3>{{ \'IMPRESSUM.PUBLISHER\' | translate }}</h3>\n\n      <p>{{ \'IMPRESSUM.PUBLISHERNAME\' | translate }}</p>\n\n      <hr>\n\n\n\n      <h3>{{ \'IMPRESSUM.IMPLEMENTATION\' | translate }}</h3>\n\n      <p><i>{{ \'IMPRESSUM.APP\' | translate }}</i><br>\n\n        {{ \'IMPRESSUM.BFH\' | translate }}<br>\n\n        {{ \'IMPRESSUM.i4mi\' | translate }}</p>\n\n      <p>&nbsp;</p>\n\n      <p><i>{{ \'IMPRESSUM.PLATFORM\' | translate }}</i><br>\n\n        {{ \'IMPRESSUM.ETH\' | translate }}<br>\n\n        {{ \'IMPRESSUM.iis\' | translate }}\n\n      </p>\n\n      <hr>\n\n\n\n      <h3>{{ \'IMPRESSUM.DATA_RETENTION\' | translate }}</h3>\n\n      <p><a href="{{parameters.midataPlatformURL}}">{{parameters.midataPlatformURL}}</a></p>\n\n\n\n      <br>\n\n\n\n      <div style="width: 90%" style="border: 0px;">\n\n        <table>\n\n          <tr>\n\n            <td style="width: 33%">\n\n              <img [src]="parameters.pathLogoBFH">\n\n            </td>\n\n            <td style="width: 33%">\n\n              <img [src]="parameters.pathLogoPublisher">\n\n            </td>\n\n            <td style="width: 33%">\n\n              <img [src]="parameters.pathLogoETH">\n\n            </td>\n\n          </tr>\n\n          <tr>\n\n            <td colspan="3">\n\n              <img [src]="parameters.pathLogoMIDATA">\n\n            </td>\n\n          </tr>\n\n        </table>\n\n      </div>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\impressum\impressum.html"*/,
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-impressum',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/impressum/impressum.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>{{ \'IMPRESSUM.TITLE\' | translate }}</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <div style="margin-left: 5%; margin-right: 5%; text-align:center;">\n      <h3>{{ \'IMPRESSUM.VERSION\' | translate }}</h3>\n      <p>{{appVersionNumber}}</p>\n      <hr>\n\n      <h3>{{ \'IMPRESSUM.PUBLISHER\' | translate }}</h3>\n      <p>{{ \'IMPRESSUM.PUBLISHERNAME\' | translate }}</p>\n      <hr>\n\n      <h3>{{ \'IMPRESSUM.IMPLEMENTATION\' | translate }}</h3>\n      <p><i>{{ \'IMPRESSUM.APP\' | translate }}</i><br>\n        {{ \'IMPRESSUM.BFH\' | translate }}<br>\n        {{ \'IMPRESSUM.i4mi\' | translate }}</p>\n      <p>&nbsp;</p>\n      <p><i>{{ \'IMPRESSUM.PLATFORM\' | translate }}</i><br>\n        {{ \'IMPRESSUM.ETH\' | translate }}<br>\n        {{ \'IMPRESSUM.iis\' | translate }}\n      </p>\n      <hr>\n\n      <h3>{{ \'IMPRESSUM.DATA_RETENTION\' | translate }}</h3>\n      <p><a href="{{parameters.midataPlatformURL}}">{{parameters.midataPlatformURL}}</a></p>\n\n      <br>\n\n      <div style="width: 90%" style="border: 0px;">\n        <table>\n          <tr>\n            <td style="width: 33%">\n              <img [src]="parameters.pathLogoBFH">\n            </td>\n            <td style="width: 33%">\n              <img [src]="parameters.pathLogoPublisher">\n            </td>\n            <td style="width: 33%">\n              <img [src]="parameters.pathLogoETH">\n            </td>\n          </tr>\n          <tr>\n            <td colspan="3">\n              <img [src]="parameters.pathLogoMIDATA">\n            </td>\n          </tr>\n        </table>\n      </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/impressum/impressum.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_native_app_version__["a" /* AppVersion */], __WEBPACK_IMPORTED_MODULE_2__services_parametersService_parametersService__["a" /* ParametersService */]])
 ], ImpressumPage);
@@ -4097,5 +4192,5 @@ ImpressumPage = __decorate([
 
 /***/ })
 
-},[384]);
+},[391]);
 //# sourceMappingURL=main.js.map

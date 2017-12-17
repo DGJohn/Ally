@@ -5,6 +5,56 @@
 </ion-header>
 
 <ion-content padding>
-    <button ion-button block>
-      Test</button>
+  <div padding>
+  <ion-segment [(ngModel)]="season">
+    <ion-segment-button value="week">
+      Woche
+    </ion-segment-button>
+    <ion-segment-button value="month" click="showMonth()">
+      Monat
+    </ion-segment-button>
+    <ion-segment-button value="year">
+      Jahr
+    </ion-segment-button>
+  </ion-segment>
+</div>
+  <div [ngSwitch]="season">
+    <ion-list *ngSwitchCase="'week'">
+      <div style="display: block">
+        <canvas baseChart width="300" height="400"
+                [datasets]="barChartDataWeek"
+                [labels]="barChartLabelsWeek"
+                [options]="barChartOptions"
+                [legend]="barChartLegendWeek"
+                [chartType]="barChartTypeWeek"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </ion-list>
+    <ion-list *ngSwitchCase="'month'">
+      <div style="display: block">
+        <canvas baseChart width="300" height="400"
+                [datasets]="barChartDataMonth"
+                [labels]="barChartLabelsMonth"
+                [options]="barChartOptions"
+                [legend]="barChartLegendMonth"
+                [chartType]="barChartTypeMonth"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </ion-list>
+    <ion-list *ngSwitchCase="'year'">
+      <div style="display: block">
+        <canvas baseChart width="300" height="400"
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [legend]="barChartLegend"
+                [chartType]="barChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </ion-list>
+
+  </div>
 </ion-content>
