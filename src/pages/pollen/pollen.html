@@ -3,36 +3,16 @@
     <ion-title>aktuelle Pollenbelastung und Wetter</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding>
-<ion-grid>
-  <ion-row>
-      <ion-col>
-        <strong>aktueller Standort</strong>
-      </ion-col>
-      <ion-col>
-        <strong>Bümpliz</strong>
-      </ion-col>
-      <ion-col>
-        <strong>Biel</strong>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <p>bilder</p>
-    </ion-row>
-<ion-row>
-  <ion-col>
-    <strong>Morgen</strong>
-  </ion-col>
-  <ion-col>
-    <strong>Mittag</strong>
-  </ion-col>
-  <ion-col>
-    <strong>Abend</strong>
-  </ion-col>
-</ion-row>
-  <ion-row>
-    <p>bilder</p>
-  </ion-row>
-</ion-grid>
-<footer>
-  <button ion-button>Tim spiel mit uns und komm ins nächste Level</button>
+
+<ion-content>
+<!-- Segment buttons with text -->
+  <ion-segment [(ngModel)]="orte" color="primary">
+    <ion-segment-button value="aktuellerOrt"
+    (ionSelect)="selectedCurrentLocation()">Aktueller Ort</ion-segment-button>
+    <ion-segment-button value="bern"
+    (ionSelect)="selectedBern()">Bern</ion-segment-button>
+    <ion-segment-button value="biel"
+    (ionSelect)="selectedBiel()">Biel</ion-segment-button>
+  </ion-segment>
+  <button ion-button>Tim, spiel mit uns und komm ins nächste Level</button>
+</ion-content>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ComplaintsPage } from '../complaints/complaints';
-//import { HomePage } from '../pages/home/home';
+//import { HomePage } from '@home/home';
 
 @Component({
   selector: 'page-dateTime',
@@ -19,5 +19,5 @@ export class DateTimePage {
   pushHomePage() {
     this.navCtrl.push(HomePage)
   }
-  */
+*/
 }

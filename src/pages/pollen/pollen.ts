@@ -8,6 +8,17 @@ import { NavController } from 'ionic-angular';
 export class PollenPage {
 
   constructor(public navCtrl: NavController) {
+  }
+
+  selectedCurrentLocation() {
+    
+  }
+
+  selectedBern() {
+
+  }
+
+  selectedBiel() {
 
   }
 }
