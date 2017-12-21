@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { DrugPage } from '../drug/drug';
+import { HCIService } from '../../../services/HCIService';
 
 @Component({
   selector: 'page-takingdrug',
@@ -8,7 +9,16 @@ import { DrugPage } from '../drug/drug';
 })
 export class TakingDrugPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private hciService: HCIService) {
+
+  }
+
+  _getProduct(){
+    this.hciService.getProduct().then(response=>{
+      console.log(response);
+    }, error=>{
+      console.log(error);
+    });
   }
 
   pushDrugPage() {

@@ -8,6 +8,7 @@ import { LoadingController, Nav, NavParams, Platform, ModalController } from 'io
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TranslateService } from '@ngx-translate/core';
+import { HCIService } from '../services/HCIService';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';

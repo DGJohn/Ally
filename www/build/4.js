@@ -1,6 +1,6 @@
 webpackJsonp([4],{
 
-/***/ 545:
+/***/ 547:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RightPageModule", function() { return RightPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__right__ = __webpack_require__(548);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__right__ = __webpack_require__(550);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ RightPageModule = __decorate([
 
 /***/ }),
 
-/***/ 548:
+/***/ 550:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74,7 +74,7 @@ var RightPage = (function () {
 }());
 RightPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'page-right',template:/*ion-inline-start:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/game/right/right.html"*/'<ion-row Padding>\n  <ion-col>\n    <div>\n      <ion-col>\n      </ion-col>\n      <ion-col>\n        <img class="ally" src="assets/imgs/Ally-M.jpg" style="float:right;" alt="Lights" style="width:30%;max-width:400px">\n      </ion-col>\n    </div>\n  </ion-col>\n</ion-row>\n\n<ion-row>\n\n  <ion-col>\n    <div>\n      <p>Super Tim!</p>\n      <p>Deine Antwort war korrekt - weiter so!</p>\n    </div>\n  </ion-col>\n</ion-row>\n\n<ion-col>\n  <div>\n\n  </div>\n</ion-col>'/*ion-inline-end:"/Users/tanjanedovic/Documents/workspace/Ally/src/pages/game/right/right.html"*/,
+        selector: 'page-right',template:/*ion-inline-start:"C:\Users\uasne\Ally\src\pages\game\right\right.html"*/'<ion-row Padding>\n\n  <ion-col>\n\n    <div>\n\n      <ion-col>\n\n      </ion-col>\n\n      <ion-col>\n\n        <img class="ally" src="assets/imgs/Ally-M.jpg" style="float:right;" alt="Lights" style="width:30%;max-width:400px">\n\n      </ion-col>\n\n    </div>\n\n  </ion-col>\n\n</ion-row>\n\n\n\n<ion-row>\n\n\n\n  <ion-col>\n\n    <div>\n\n      <p>Super Tim!</p>\n\n      <p>Deine Antwort war korrekt - weiter so!</p>\n\n    </div>\n\n  </ion-col>\n\n</ion-row>\n\n\n\n<ion-col>\n\n  <div>\n\n\n\n  </div>\n\n</ion-col>'/*ion-inline-end:"C:\Users\uasne\Ally\src\pages\game\right\right.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
 ], RightPage);

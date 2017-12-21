@@ -51,6 +51,7 @@
     "cordova-plugin-statusbar": "^2.2.3",
     "cordova-plugin-whitelist": "^1.3.2",
     "cordova.plugins.diagnostic": "^3.7.1",
+    "hci-hospindex-api": "^1.0.0",
     "heartbeat-cordova-plugin": "git+https://github.com/alexandreMonterrosoBFH/heartbeat-cordova-plugin.git",
     "ionic-angular": "^3.8.0",
     "ionic-plugin-keyboard": "^2.2.1",

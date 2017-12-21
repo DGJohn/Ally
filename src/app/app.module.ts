@@ -1,6 +1,7 @@
 
 import { AdvanceDirectivesPage } from './../pages/advance-directives/advance-directives';
 import { QuestionsPage } from "../pages/advance-directives/QuestionsModal/questions";
+import { HCIService } from '../services/HCIService';
 
 import { Diagnostic } from '@ionic-native/diagnostic';
 import { AppVersion } from '@ionic-native/app-version';
@@ -162,7 +163,8 @@ import { ModalService } from '../services/ModalService';
     InBrowserBrowser,
     MidataConnectionService,
     ModalService,
-    Camera
+    Camera,
+    HCIService
   ]
 })
 export class AppModule { }
