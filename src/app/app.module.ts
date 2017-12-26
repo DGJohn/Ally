@@ -46,6 +46,19 @@ import { TotalPointsPage } from '../pages/newEntry/totalPoints/totalPoints';
 import { AdditionalRewardPage } from '../pages/newEntry/additionalReward/additionalReward';
 import { TipsPage } from '../pages/newEntry/tips/tips';
 import { PollenPage } from '../pages/pollen/pollen';
+import { GamePage } from '../pages/game/game';
+import { False1Page } from '../pages/game/false1/false1';
+import { False2Page } from '../pages/game/false2/false2';
+import { False3Page } from '../pages/game/false3/false3';
+import { False4Page } from '../pages/game/false4/false4';
+import { Right1Page } from '../pages/game/right1/right1';
+import { Right2Page } from '../pages/game/right2/right2';
+import { Right3Page } from '../pages/game/right3/right3';
+import { Right4Page } from '../pages/game/right4/right4';
+import { Question1Page } from '../pages/game/question1/question1';
+import { Question2Page } from '../pages/game/question2/question2';
+import { Question3Page } from '../pages/game/question3/question3';
+import { Question4Page } from '../pages/game/question4/question4';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -95,6 +108,19 @@ import { ModalService } from '../services/ModalService';
     AdditionalRewardPage,
     TipsPage,
     PollenPage,
+    GamePage,
+    False1Page,
+    False2Page,
+    False3Page,
+    False4Page,
+    Question1Page,
+    Question2Page,
+    Question3Page,
+    Question4Page,
+    Right1Page,
+    Right2Page,
+    Right3Page,
+    Right4Page,
     TabsPage
   ],
   imports: [
@@ -145,6 +171,19 @@ import { ModalService } from '../services/ModalService';
     AdditionalRewardPage,
     TipsPage,
     PollenPage,
+    GamePage,
+    False1Page,
+    False2Page,
+    False3Page,
+    False4Page,
+    Question1Page,
+    Question2Page,
+    Question3Page,
+    Question4Page,
+    Right1Page,
+    Right2Page,
+    Right3Page,
+    Right4Page,
     TabsPage
   ],
   providers: [

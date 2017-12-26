@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { RightPage } from '../right/right';
+import { Right4Page } from '../right4/right4';
+import { False4Page } from '../false4/false4';
 
-@IonicPage()
+
+
 @Component({
   selector: 'page-question4',
   templateUrl: 'question4.html',
@@ -10,7 +12,7 @@ import { RightPage } from '../right/right';
 export class Question4Page {
 
   frage: string = "Welche Pollenallergie tritt am häufigsten auf?";
-  rightAnswer : string = "answer1"
+  rightAnswer: string = "answer1"
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -19,21 +21,23 @@ export class Question4Page {
     console.log('ionViewDidLoad QuestionPage');
   }
 
-  onClick(){
+  onClick() {
     console.log("TEST");
     this.navCtrl.pop();
 
   }
 
-  onSelect(selected: any){
-console.log(selected);
-if(selected.value === this.rightAnswer){
-  console.log("RICHTIG");
-  this.navCtrl.push(RightPage);
+  onSelect(selected: any) {
+    console.log(selected);
+    if (selected.value === this.rightAnswer) {
+      console.log("RICHTIG");
+      this.navCtrl.push(Right4Page);
     } else {
-  console.log("FALSCH");
-  // TODO: Push other Page
+      console.log("FALSCH");
+      this.navCtrl.push(False4Page);
     }
   }
 
 }
+
+

@@ -5,6 +5,7 @@ import { CommunityPage } from '../community/community';
 import { IntroductionPage } from '../introduction/introduction';
 import { NewEntryPage } from '../newEntry/newEntry';
 import { PollenPage } from '../pollen/pollen';
+import { GamePage } from '../game/game';
 
 @Component({
   selector: 'page-home',
@@ -33,5 +34,9 @@ pushNewEntryPage() {
 
 pushPollenPage() {
   this.navCtrl.push(PollenPage)
+}
+
+pushGamePage() {
+  this.navCtrl.push(GamePage)
 }
 }
