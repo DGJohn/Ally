@@ -22,6 +22,11 @@
         <ion-datetime displayFormat="DD MMM, HH:mm" [(ngModel)]="date"></ion-datetime>
       </ion-item>
 
-      <button id="btnForward" (click)="pushComplaintsPage()" ion-button secondary>Weiter</button>
+      <button (click)="pushHomePage()" ion-button secondary icon-left>
+        <ion-icon name='close'></ion-icon>Abbrechen
+      </button>
+      <button (click)="pushComplaintsPage()" ion-button icon-right secondary>Weiter
+        <ion-icon name="ios-arrow-forward"></ion-icon>
+      </button>
 
 </ion-content>
