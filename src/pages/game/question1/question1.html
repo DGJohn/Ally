@@ -1,37 +1,30 @@
 <ion-content padding>
 
 
-    <ion-row>
-      <ion-col>
-        <div>
-          <ion-col>
-          </ion-col>
-          <ion-col>
-            <img class="ally" src="assets/imgs/Ally-M.jpg" style="float:right;" alt="Lights" style="width:30%;max-width:400px">
-          </ion-col>
-        </div>
-      </ion-col>
-    </ion-row>
-  
-    <ion-row>
+  <ion-card>
+    <img class="full-image" src="assets/img/AllyAchtung.png" />
+    <ion-card-content>
+
       <p>{{frage}}</p>
-    </ion-row>
-  
-    <ion-scroll scrollX="false" scrollY="false" style="height: 180px;">
-  
-      <ion-list radio-group>
-        <ion-item>
-          <ion-label>Antihistaminika</ion-label>
-          <ion-radio checked="false" value="answer1" #answer1 (ionSelect)="onSelect(answer1)"></ion-radio>
-        </ion-item>
-        <ion-item>
-          <ion-label>Antirheumatika</ion-label>
-          <ion-radio checked="false" value="answer2" #answer2 (ionSelect)="onSelect(answer2)"></ion-radio>
-        </ion-item>
-        <ion-item>
-          <ion-label>Antitussiva</ion-label>
-          <ion-radio checked="false" value="answer3" #answer3 (ionSelect)="onSelect(answer3)"></ion-radio>
-        </ion-item>
-      </ion-list>
-    </ion-scroll>
-  </ion-content>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-scroll scrollX="false" scrollY="false" style="height: 180px;">
+
+    <ion-list radio-group>
+      <ion-item>
+        <ion-label>Antihistaminika</ion-label>
+        <ion-radio checked="false" value="answer1" #answer1 (ionSelect)="onSelect(answer1)"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Antirheumatika</ion-label>
+        <ion-radio checked="false" value="answer2" #answer2 (ionSelect)="onSelect(answer2)"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Antitussiva</ion-label>
+        <ion-radio checked="false" value="answer3" #answer3 (ionSelect)="onSelect(answer3)"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </ion-scroll>
+</ion-content>
