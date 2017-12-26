@@ -11,14 +11,18 @@
   </button>
 
   <ion-item>
-        <img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;">
-    </ion-item>
+        <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->
+  </ion-item>
 
     <p>Hast Du Medikamente eingenommen?</p>
           <ion-list radio-group [(ngModel)]="MedisEingenommen">
             <ion-item>
               <ion-label>Ja</ion-label>
-              <ion-radio value="Ja" onclick="enableRB()"></ion-radio>
+              <ion-radio value="Ja"></ion-radio>
+              <ion-list radio-group [(ngModel)]="wenn">
+                <ion-option value="nes">NES</ion-option>
+                <ion-option value="n64">Nintendo64</ion-option>
+              </ion-list>
             </ion-item>
             <ion-item>
               <ion-label>Nein</ion-label>
@@ -38,6 +42,18 @@
               <ion-radio value="wegen Beschwerden"></ion-radio>
             </ion-item>
           </ion-list>
+
+          <p>test</p>
+          <ion-list>
+          <ion-item>
+            <ion-label>Ja</ion-label>
+            <ion-select [(ngModel)]="gaming">
+              <ion-option value="vorbeugend">Vorbeugend</ion-option>
+              <ion-option value="wegenBeschwerden">Wegen Beschwerden</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+
 
 
 

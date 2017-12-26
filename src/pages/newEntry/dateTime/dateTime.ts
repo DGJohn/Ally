@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ComplaintsPage } from '../complaints/complaints';
 //import { HomePage } from '@home/home';
@@ -9,14 +9,19 @@ import { ComplaintsPage } from '../complaints/complaints';
 })
 export class DateTimePage {
 
-  constructor(public navCtrl: NavController) {
+  date : any = new Date();
+
+  constructor(public navCtrl: NavController, private zone: NgZone) {
+
+    this.date.setHours(this.date.getHours() +1)
+    this.date = this.date.toISOString();
   }
 
   pushComplaintsPage() {
     this.navCtrl.push(ComplaintsPage)
   }
 
-  myDate: String = new Date().toISOString();
+
 /**
   pushHomePage() {
     this.navCtrl.push(HomePage)
