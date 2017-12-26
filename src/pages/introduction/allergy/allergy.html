@@ -1,13 +1,13 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Allergien</ion-title>
+    <ion-title>Einführung</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <p>
     <ion-card>
-  <img src="img/nin-live.png"/>
+  <img class="full-image" src="assets/img/AllyAchtung.png"/>
   <ion-card-content>
     <ion-card-title>
       </ion-card-title>
@@ -19,8 +19,23 @@
 
   <ion-list radio-group [(ngModel)]="questionAllergy">
     <ion-item>
-      <ion-label ion-label-small>Ja</ion-label>
-      <ion-radio value="yes" checked></ion-radio>
+      <ion-label>Ja</ion-label>
+      <ion-select [(ngModel)]="bekannteAllergien" multiple="true">
+        <ion-option>Ambrosia</ion-option>
+        <ion-option>Ampfer</ion-option>
+        <ion-option>Beifuss</ion-option>
+        <ion-option>Birke</ion-option>
+        <ion-option>Buche</ion-option>
+        <ion-option>Edelkastanie</ion-option>
+        <ion-option>Eiche</ion-option>
+        <ion-option>Erle</ion-option>
+        <ion-option>Esche</ion-option>
+        <ion-option>Gräser</ion-option>
+        <ion-option>Hagebuche</ion-option>
+        <ion-option>Hasel</ion-option>
+        <ion-option>Platane</ion-option>
+        <ion-option>Wegerich</ion-option>
+      </ion-select>
     </ion-item>
     <ion-item>
       <ion-label>Nein</ion-label>
@@ -31,24 +46,5 @@
       <ion-radio value="unkwown"></ion-radio>
     </ion-item>
   </ion-list>
-  <ion-item>
-    <ion-label>Bekannte Allergien</ion-label>
-    <ion-select [(ngModel)]="bekannteAllergien" multiple="true">
-      <ion-option>Ambrosia</ion-option>
-      <ion-option>Ampfer</ion-option>
-      <ion-option>Beifuss</ion-option>
-      <ion-option>Birke</ion-option>
-      <ion-option>Buche</ion-option>
-      <ion-option>Edelkastanie</ion-option>
-      <ion-option>Eiche</ion-option>
-      <ion-option>Erle</ion-option>
-      <ion-option>Esche</ion-option>
-      <ion-option>Gräser</ion-option>
-      <ion-option>Hagebuche</ion-option>
-      <ion-option>Hasel</ion-option>
-      <ion-option>Platane</ion-option>
-      <ion-option>Wegerich</ion-option>
-    </ion-select>
-  </ion-item>
 
       <button ion-button (click)="pushTakingDrugPage()">weiter</button>

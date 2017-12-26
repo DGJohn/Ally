@@ -1,13 +1,13 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Medikamente</ion-title>
+    <ion-title>Einführung</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <p>
     <ion-card>
-  <img src="img/nin-live.png"/>
+  <img class="full-image" src="assets/img/AllyAchtung.png"/>
   <ion-card-content>
     <p>
 Hier kannst Du Deine Medikamente erfassen
@@ -17,6 +17,6 @@ Hier kannst Du Deine Medikamente erfassen
   </p>
 
 <button ion-button full (click)="scanMedBox()">Barcode scannen</button>
-<button ion-button full (click)="setMedicationWithoutScanning()">ohne Scanning erfassen</button>
+<button ion-button full (click)="setMedicationWithoutScanning()">Nach Bezeichnung suchen</button>
 
 <button ion-button (click)="pushDrugPage()">weiter</button>
