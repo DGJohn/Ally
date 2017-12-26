@@ -39,6 +39,12 @@
               <ion-label range-right>10</ion-label>
             </ion-range>
           </ion-item>
-      <button id="btnForward" (click)="pushPhysicalActivityPage()" ion-button secondary>Weiter</button>
+          
+      <button (click)="pushHomePage()" ion-button secondary icon-left>
+        <ion-icon name='close'></ion-icon>Abbrechen
+      </button>
+      <button (click)="pushPhysicalActivityPage()" ion-button icon-right secondary>Weiter
+        <ion-icon name="ios-arrow-forward"></ion-icon>
+      </button>
 
 </ion-content>

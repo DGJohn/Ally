@@ -20,6 +20,10 @@
          <p>Halte dich wenig draussen auf.</p>
          <p>Wasche dir täglich die Haare.</p>
 
-    <button id="btnForward" (click)="pushHomePage()" ion-button secondary>Eintrag bestätigen</button>
-
+    <button (click)="pushHomePage()" ion-button secondary icon-left>
+      <ion-icon name='close'></ion-icon>Abbrechen
+    </button>
+    <button (click)="pushHomePage()" ion-button icon-right secondary>Weiter
+      <ion-icon name="ios-arrow-forward"></ion-icon>
+    </button>
 </ion-content>

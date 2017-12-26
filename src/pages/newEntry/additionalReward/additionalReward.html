@@ -16,6 +16,11 @@
 
   <p>Öffne eine Truhe und hole dir zusätzliche Punkte und einen Tipp.</p>
 
-  <button id="btnForward" (click)="pushTipsPage()" ion-button secondary>Weiter</button>
+  <button (click)="pushHomePage()" ion-button secondary icon-left>
+    <ion-icon name='close'></ion-icon>Abbrechen
+  </button>
+  <button (click)="pushTipsPage()" ion-button icon-right secondary>Weiter
+    <ion-icon name="ios-arrow-forward"></ion-icon>
+  </button>
 
 </ion-content>
