@@ -15,6 +15,8 @@ export class MedicationPage {
   pushTotalPointsPage() {
     this.navCtrl.push(TotalPointsPage)
   }
+
+
 /**
   pushHomePage() {
     this.navCtrl.push(HomePage)

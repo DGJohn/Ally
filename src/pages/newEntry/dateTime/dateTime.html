@@ -15,15 +15,13 @@
     </ion-item>
       <p>Wann sind deine Beschwerden aufgetreten?
       </p>
+
       <ion-item>
-        <ion-label>Datum</ion-label>
-        <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="myDate">
-        </ion-datetime>
+        <ion-label>Datum und Zeit</ion-label>
+        <!--set default time now-->
+        <ion-datetime displayFormat="DD MMM, HH:mm" [(ngModel)]="myDate"></ion-datetime>
       </ion-item>
-      <ion-item>
-        <ion-label>Zeit</ion-label>
-        <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>
-      </ion-item>
+
       <button id="btnForward" (click)="pushComplaintsPage()" ion-button secondary>Weiter</button>
 
 </ion-content>
