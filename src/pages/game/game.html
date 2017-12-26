@@ -1,10 +1,35 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Game</ion-title>
+    <ion-title>Quiz</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-    <button ion-button block>
-      Test</button>
+
+
+  <ion-col>
+    <div>
+      <ion-col>
+      </ion-col>
+      <ion-col>
+        <img class="ally" src="assets/imgs/Ally-M.jpg" style="float:right;" alt="Lights" style="width:30%;max-width:400px">
+      </ion-col>
+    </div>
+  </ion-col>
+
+
+
+  <ion-row padding="50">
+    <h2>Hallo Tim</h2>
+  </ion-row>
+  <ion-row>
+    <h5>Mit den Lernfragen zu Allergien kannst du Dein Wissen verbessern und so zusätzliche Punkte gewinnen.</h5>
+  </ion-row>
+
+  <div>
+    <ion-row>
+      <button ion-button (click)="onNext1()">Zum Spiel</button>
+    </ion-row>
+  </div>
+
 </ion-content>

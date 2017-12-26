@@ -36,6 +36,25 @@ import { PollenPage } from '../pages/pollen/pollen';
 import { MidataConnectionService } from "../services/MidataConnectionService";
 import { Network } from "@ionic-native/network";
 
+import { False1Page } from '../pages/game/false1/false1';
+import { False2Page } from '../pages/game/false2/false2';
+import { False3Page } from '../pages/game/false3/false3';
+import { False4Page } from '../pages/game/false4/false4';
+
+import { Right1Page } from '../pages/game/right1/right1';
+import { Right2Page } from '../pages/game/right2/right2';
+import { Right3Page } from '../pages/game/right3/right3';
+import { Right4Page } from '../pages/game/right4/right4';
+
+import { Question1Page } from '../pages/game/question1/question1';
+import { Question2Page } from '../pages/game/question2/question2';
+import { Question3Page } from '../pages/game/question3/question3';
+import { Question4Page } from '../pages/game/question4/question4';
+
+import { GamePage } from '../pages/game/game';
+
+
+
 @Component({
   selector: 'page-app',
   templateUrl: 'app.html'

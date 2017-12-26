@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { RightPage } from '../right/right';
+import { Right3Page } from '../right3/right3';
+import { False3Page } from '../false3/false3';
 
 
-@IonicPage()
+
 @Component({
   selector: 'page-question3',
   templateUrl: 'question3.html',
@@ -11,7 +12,7 @@ import { RightPage } from '../right/right';
 export class Question3Page {
 
   frage: string = "Was blüht im April und Mai?";
-  rightAnswer : string = "answer1"
+  rightAnswer: string = "answer1"
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -20,21 +21,23 @@ export class Question3Page {
     console.log('ionViewDidLoad QuestionPage');
   }
 
-  onClick(){
+  onClick() {
     console.log("TEST");
     this.navCtrl.pop();
 
   }
 
-  onSelect(selected: any){
-console.log(selected);
-if(selected.value === this.rightAnswer){
-  console.log("RICHTIG");
-  this.navCtrl.push(RightPage);
+  onSelect(selected: any) {
+    console.log(selected);
+    if (selected.value === this.rightAnswer) {
+      console.log("RICHTIG");
+      this.navCtrl.push(Right3Page);
     } else {
-  console.log("FALSCH");
-  // TODO: Push other Page
+      console.log("FALSCH");
+      this.navCtrl.push(False3Page);
     }
   }
 
 }
+
+
