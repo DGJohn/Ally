@@ -18,14 +18,16 @@
           <ion-list radio-group [(ngModel)]="MedisEingenommen">
             <ion-item>
               <ion-label>Ja</ion-label>
-              <ion-radio value="Ja"></ion-radio>
+              <ion-radio value="Ja" onclick="enableRB()"></ion-radio>
             </ion-item>
             <ion-item>
               <ion-label>Nein</ion-label>
               <ion-radio value="Nein"></ion-radio>
             </ion-item>
           </ion-list>
+
           <p>Wenn ja ...</p>
+
           <ion-list radio-group [(ngModel)]="VorbeugendBeschwerden">
             <ion-item>
               <ion-label>Vorbeugend</ion-label>
@@ -37,6 +39,10 @@
             </ion-item>
           </ion-list>
 
-    <button id="btnForward" (click)="pushTotalPointsPage()" ion-button secondary>Weiter</button>
+
+
+
+            <button id="btnForward" (click)="pushTotalPointsPage()" ion-button secondary>Weiter</button>
+
 
 </ion-content>

@@ -15,6 +15,8 @@ export class DateTimePage {
   pushComplaintsPage() {
     this.navCtrl.push(ComplaintsPage)
   }
+
+  myDate: String = new Date().toISOString();
 /**
   pushHomePage() {
     this.navCtrl.push(HomePage)
