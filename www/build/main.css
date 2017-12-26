@@ -25849,6 +25849,12 @@ page-impressum img {
   max-height: 40px;
 }
 
+.full-image {
+  width: 30%;
+  height: 30%;
+  margin: auto;
+}
+
 page-login ion-content {
   background: linear-gradient(120deg, #69d1c9, #467cff);
 }

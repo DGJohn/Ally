@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { RightPage } from '../right/right';
+import { Right2Page } from '../right2/right2';
+import { False2Page } from '../false2/false2';
 
 
-@IonicPage()
+
 @Component({
   selector: 'page-question2',
   templateUrl: 'question2.html',
@@ -11,7 +12,7 @@ import { RightPage } from '../right/right';
 export class Question2Page {
 
   frage: string = "Ist Heuschnupfen eine ansteckende Krankheit?";
-  rightAnswer : string = "answer1"
+  rightAnswer: string = "answer2"
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -20,21 +21,23 @@ export class Question2Page {
     console.log('ionViewDidLoad QuestionPage');
   }
 
-  onClick(){
+  onClick() {
     console.log("TEST");
     this.navCtrl.pop();
 
   }
 
-  onSelect(selected: any){
-console.log(selected);
-if(selected.value === this.rightAnswer){
-  console.log("RICHTIG");
-  this.navCtrl.push(RightPage);
+  onSelect(selected: any) {
+    console.log(selected);
+    if (selected.value === this.rightAnswer) {
+      console.log("RICHTIG");
+      this.navCtrl.push(Right2Page);
     } else {
-  console.log("FALSCH");
-  // TODO: Push other Page
+      console.log("FALSCH");
+      this.navCtrl.push(False2Page);
     }
   }
 
 }
+
+

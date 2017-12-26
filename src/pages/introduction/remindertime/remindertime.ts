@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FinishPage } from '../finish/finish';
 
@@ -8,7 +8,14 @@ import { FinishPage } from '../finish/finish';
 })
 export class ReminderTimePage {
 
-  constructor(public navCtrl: NavController) {
+date : any = new Date();
+
+  constructor(public navCtrl: NavController, private zone: NgZone) {
+
+    this.date.setHours(this.date.getHours() + 1)
+    this.date = this.date.toISOString();
+
+
   }
 
   pushFinishPage() {

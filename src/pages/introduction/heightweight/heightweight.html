@@ -1,13 +1,13 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Grösse und Gewicht</ion-title>
+    <ion-title>Einführung</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <p>
     <ion-card>
-  <img src="img/nin-live.png"/>
+  <img class="full-image" src="assets/img/AllyAchtung.png"/>
   <ion-card-content>
     <ion-card-title>
       </ion-card-title>
@@ -18,13 +18,16 @@
 </ion-card>
   </p>
 
+
   <ion-item>
-      <ion-label>Grösse in cm</ion-label>
-      <ion-range min="100" max="250" step="1" snaps="true" color="secondary"></ion-range>
-    </ion-item>
-    <ion-item>
-      <ion-label>Gewicht in m</ion-label>
-      <ion-range min="40" max="150" step="1" snaps="true" color="secondary"></ion-range>
-    </ion-item>
+    <ion-label color="primary">Grösse</ion-label>
+    <ion-input placeholder="in cm"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Gewicht</ion-label>
+    <ion-input placeholder="in kg"></ion-input>
+  </ion-item>
+
 
     <button ion-button (click)="pushJobPage()">weiter</button>
