@@ -1,37 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Quiz</ion-title>
+  </ion-navbar>
+</ion-header>
+
 <ion-content padding>
 
-  <ion-row>
-  </ion-row>
-  <ion-row>
+  <ion-card>
+    <img class="full-image" src="assets/img/AllyAchtung.png" />
+    <ion-card-content>
 
-    <ion-col>
-      <div>
-        <ion-col>
-        </ion-col>
-        <ion-col>
-          <img class="ally" src="assets/imgs/Ally-M.jpg" style="float:right;" alt="Lights" style="width:30%;max-width:400px">
-        </ion-col>
-      </div>
-    </ion-col>
-  </ion-row>
+      <p>{{frage}}</p>
 
-  <ion-row>
-    <p>{{frage}}</p>
-  </ion-row>
+    </ion-card-content>
+  </ion-card>
 
   <ion-scroll scrollX="false" scrollY="false" style="height: 180px;">
 
     <ion-list radio-group>
       <ion-item>
-        <ion-label>Pappel, Weide, Birke, Eiche, Buche</ion-label>
+        <ion-label>Pappel, Weide, Birke, Eiche</ion-label>
         <ion-radio checked="false" value="answer1" #answer1 (ionSelect)="onSelect(answer1)"></ion-radio>
       </ion-item>
       <ion-item>
-        <ion-label>Tanne, Weide, Birke, Eiche, Buche</ion-label>
+        <ion-label>Tanne, Weide, Birke, Eiche</ion-label>
         <ion-radio checked="false" value="answer2" #answer2 (ionSelect)="onSelect(answer2)"></ion-radio>
       </ion-item>
       <ion-item>
-        <ion-label>Kräuter, Weide, Birke, Eiche, Buche</ion-label>
+        <ion-label>Kräuter, Weide, Birke, Eiche</ion-label>
         <ion-radio checked="false" value="answer3" #answer3 (ionSelect)="onSelect(answer3)"></ion-radio>
       </ion-item>
     </ion-list>

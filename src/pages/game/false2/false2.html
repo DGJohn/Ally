@@ -1,29 +1,27 @@
-<ion-row Padding>
-    <ion-col>
-      <div>
-        <ion-col>
-        </ion-col>
-        <ion-col>
-          <img class="ally" src="assets/imgs/Ally-M.jpg" style="float:right;" alt="Lights" style="width:30%;max-width:400px">
-        </ion-col>
-      </div>
-    </ion-col>
-  </ion-row>
-  
-  <ion-row>
-  
-    <ion-col>
-      <div>
-        <p>Leider ist diese Antwort falsch!</p>
-        <p>Die Richtige Antwort ist: Screen 2!</p>
-        <p>Screen2</p>
-        <button ion-button (click)="onClick()">Weiter</button>
-      </div>
-    </ion-col>
-  </ion-row>
-  
-  <ion-col>
-    <div>
-  
-    </div>
-  </ion-col>
+<ion-header padding class="quiz-title">
+
+  <ion-title>Quiz</ion-title>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+    <img class="full-image" src="assets/img/AllySauer.png" />
+    <ion-card-content>
+
+      <p>Leider ist diese Antwort falsch!</p>
+      <p>Heuschnupen ist keine ansteckende Krankheit.</p>
+
+    </ion-card-content>
+  </ion-card>
+
+  <button (click)="onClick()" ion-button secondary icon-left>
+    <ion-icon name='close'></ion-icon>Abbrechen
+  </button>
+
+  <button (click)="onClick()" ion-button icon-right secondary>Weiter
+    <ion-icon name="ios-arrow-forward"></ion-icon>
+  </button>
+
+</ion-content>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { Right3Page } from '../right3/right3';
 import { False3Page } from '../false3/false3';
 
@@ -12,7 +12,7 @@ import { False3Page } from '../false3/false3';
 export class Question3Page {
 
   frage: string = "Was blüht im April und Mai?";
-  rightAnswer: string = "answer1"
+  rightAnswer: string = "answer2"
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

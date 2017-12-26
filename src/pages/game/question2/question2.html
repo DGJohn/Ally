@@ -1,23 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Quiz</ion-title>
+  </ion-navbar>
+</ion-header>
+
 <ion-content padding>
 
-  <ion-row>
-  </ion-row>
-  <ion-row>
+  <ion-card>
+    <img class="full-image" src="assets/img/AllyAchtung.png" />
+    <ion-card-content>
 
-    <ion-col>
-      <div>
-        <ion-col>
-        </ion-col>
-        <ion-col>
-          <img class="ally" src="assets/imgs/Ally-M.jpg" style="float:right;" alt="Lights" style="width:30%;max-width:400px">
-        </ion-col>
-      </div>
-    </ion-col>
-  </ion-row>
+      <p>{{frage}}</p>
 
-  <ion-row>
-    <p>{{frage}}</p>
-  </ion-row>
+    </ion-card-content>
+  </ion-card>
 
   <ion-scroll scrollX="false" scrollY="false" style="height: 180px;">
 

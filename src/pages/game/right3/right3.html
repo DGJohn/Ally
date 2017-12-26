@@ -1,29 +1,28 @@
-<ion-row Padding>
-    <ion-col>
-      <div>
-        <ion-col>
-        </ion-col>
-        <ion-col>
-          <img class="ally" src="assets/imgs/Ally-M.jpg" style="float:right;" alt="Lights" style="width:30%;max-width:400px">
-        </ion-col>
-      </div>
-    </ion-col>
-  </ion-row>
+<ion-header padding class="quiz-title">
+
+    <ion-title>Quiz</ion-title>
   
-  <ion-row>
-  
-    <ion-col>
-      <div>
-        <p>Super Tim!</p>
-        <p>Deine Antwort war korrekt - weiter so!</p>
-        <p>Screen3</p>
-        <button ion-button (click)="onClick()">Weiter</button>
-      </div>
-    </ion-col>
-  </ion-row>
-  
-  <ion-col>
-    <div>
-  
-    </div>
-  </ion-col>
+  </ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+    <img class="full-image" src="assets/img/AllyOk.png" />
+    <ion-card-content>
+
+      <p>Super Tim!</p>
+      <p>Deine Antwort war korrekt - weiter so!</p>
+      <p>Du hast ein Punkte erzielt.</p>
+
+    </ion-card-content>
+  </ion-card>
+
+  <button (click)="onClick()" ion-button secondary icon-left>
+    <ion-icon name='close'></ion-icon>Abbrechen
+  </button>
+
+  <button (click)="onClick()" ion-button icon-right secondary>Weiter
+    <ion-icon name="ios-arrow-forward"></ion-icon>
+  </button>
+
+</ion-content>
