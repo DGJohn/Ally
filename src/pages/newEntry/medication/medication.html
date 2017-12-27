@@ -30,7 +30,7 @@
         <button (click)="pushHomePage()" ion-button secondary icon-left>
           <ion-icon name='close'></ion-icon>Abbrechen
         </button>
-        <button (click)="pushTotalPointsPage()" ion-button icon-right secondary>Weiter
+        <button (click)="pushTotalPointsPage()" (click)="presentToast()" ion-button icon-right secondary>Weiter
           <ion-icon name="ios-arrow-forward"></ion-icon>
         </button>
 
