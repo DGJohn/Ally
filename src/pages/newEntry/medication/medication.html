@@ -6,51 +6,26 @@
 
 <ion-content padding>
 
-  <button id="btnX" (click)="pushHomePage()" ion-button color="light" round icon-only>
-    <ion-icon name='close'></ion-icon>
-  </button>
-
-
+  <ion-card>
+    <img class="full-image" src="assets/img/AllyNormal.png"/>
+  <ion-card-content>
     <p>Hast Du Medikamente eingenommen?</p>
-          <ion-list radio-group [(ngModel)]="MedisEingenommen">
-            <ion-item>
-              <ion-label>Ja</ion-label>
-              <ion-radio value="Ja"></ion-radio>
-              <ion-list radio-group [(ngModel)]="wenn">
-                <ion-option value="nes">NES</ion-option>
-                <ion-option value="n64">Nintendo64</ion-option>
-              </ion-list>
-            </ion-item>
-            <ion-item>
-              <ion-label>Nein</ion-label>
-              <ion-radio value="Nein"></ion-radio>
-            </ion-item>
-          </ion-list>
+  </ion-card-content>
+  </ion-card>
 
-          <p>Wenn ja ...</p>
-
-          <ion-list radio-group [(ngModel)]="VorbeugendBeschwerden">
-            <ion-item>
-              <ion-label>Vorbeugend</ion-label>
-              <ion-radio value="Vorbeugend"></ion-radio>
-            </ion-item>
-            <ion-item>
-              <ion-label>Wegen Beschwerden</ion-label>
-              <ion-radio value="wegen Beschwerden"></ion-radio>
-            </ion-item>
-          </ion-list>
-
-          <p>test</p>
-          <ion-list>
-          <ion-item>
-            <ion-label>Ja</ion-label>
-            <ion-select [(ngModel)]="gaming">
-              <ion-option value="vorbeugend">Vorbeugend</ion-option>
-              <ion-option value="wegenBeschwerden">Wegen Beschwerden</ion-option>
-            </ion-select>
-          </ion-item>
-        </ion-list>
-
+  <ion-list radio-group [(ngModel)]="questionMedication">
+    <ion-item>
+      <ion-label>Ja</ion-label>
+      <ion-select [(ngModel)]="questionMedicationWhy">
+        <ion-option>Vorbeugend</ion-option>
+        <ion-option>Wegen Beschwerden</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Nein</ion-label>
+      <ion-radio value="no"></ion-radio>
+    </ion-item>
+  </ion-list>
 
         <button (click)="pushHomePage()" ion-button secondary icon-left>
           <ion-icon name='close'></ion-icon>Abbrechen

@@ -6,15 +6,12 @@
 
 <ion-content padding>
 
-  <button id="btnX" ion-button (click)="pushHomePage()" color="light" round icon-only>
-    <ion-icon name='close'></ion-icon>
-  </button>
-
-  <ion-item>
-        <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->
-    </ion-item>
-
+  <ion-card>
+    <img class="full-image" src="assets/img/AllyNormal.png"/>
+  <ion-card-content>
   <p>Wie stark hast Du dich körperlich betätigt?</p>
+</ion-card-content>
+</ion-card>
 
   <ion-item>
     <ion-range min="0" max="10" [(ngModel)]="physicalActivity">
@@ -22,6 +19,7 @@
       <ion-label range-right>10</ion-label>
     </ion-range>
   </ion-item>
+
 
   <button (click)="pushHomePage()" ion-button secondary icon-left>
     <ion-icon name='close'></ion-icon>Abbrechen

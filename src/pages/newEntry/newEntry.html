@@ -6,22 +6,18 @@
 
 <ion-content padding>
 
-    <button id="btnX" (click)="pushHomePage()" ion-button color="light" round icon-only>
-      <ion-icon name='close'></ion-icon>
-    </button>
-
-    <ion-item>
-      <!--img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;"-->
-    </ion-item>
-
-    <h4 id="h4HalloTim">Hallo Tim!</h4>
-       <p id="pHalloTim">Mit jedem Eintrag, den Du
+    <ion-card>
+      <img class="full-image" src="assets/img/AllyNormal.png"/>
+    <ion-card-content>
+      <ion-card-title>Hallo Tim</ion-card-title>
+       <p>Mit jedem Eintrag, den Du
          machst, hilfst Du uns eine
          bessere Übersicht über die
          aktuelle Pollenbelastung in
          der Schweiz zu erhalten.</p>
-
-
+    </ion-card-content>
+    </ion-card>
+  
 
   <button (click)="pushHomePage()" ion-button secondary icon-left>
     <ion-icon name='close'></ion-icon>Abbrechen
@@ -29,7 +25,5 @@
   <button (click)="pushDateTimePage()" ion-button icon-right secondary>Weiter
     <ion-icon name="ios-arrow-forward"></ion-icon>
   </button>
-
-
 
 </ion-content>
