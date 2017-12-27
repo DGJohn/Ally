@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { AdditionalRewardPage } from '../additionalReward/additionalReward';
+import { TipsPage } from '../tips/tips';
 //import { HomePage } from '../home/home';
 
 @Component({
@@ -12,8 +12,8 @@ export class TotalPointsPage {
   constructor(public navCtrl: NavController) {
   }
 
-  pushAdditionalRewardPage() {
-    this.navCtrl.push(AdditionalRewardPage)
+  pushTipsPage() {
+    this.navCtrl.push(TipsPage)
   }
 
 /**  pushHomePage() {

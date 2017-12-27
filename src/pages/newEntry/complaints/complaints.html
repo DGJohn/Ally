@@ -10,12 +10,10 @@
     <ion-icon name='close'></ion-icon>
   </button>
 
-  <ion-item>
-        <!-- img id="imgAlly" align="middle" src="assets/img/ally.jpg" style="width:150px;height:200px;" -->
-    </ion-item>
+
 
     <p>Gib bitte spontan an, wie stark deine Beschwerden sind?</p>
-          <h5>Augenbeschwerden</h5>
+          <h5>Augenbeschwerden <ion-icon (click)="showInfoAugenbeschwerden()" name="md-information-circle"></ion-icon></h5>
           <p>(Brennen, Jucken, Tränen)</p>
             <ion-item>
             <ion-range min="0" max="10" [(ngModel)]="Augenbeschwerden">
@@ -23,7 +21,7 @@
               <ion-label range-right>10</ion-label>
             </ion-range>
           </ion-item>
-          <h5>Nasenbeschwerden</h5>
+          <h5>Nasenbeschwerden <ion-icon (click)="showInfoNasenbeschwerden()" name="md-information-circle"></ion-icon></h5>
           <p>(Schnupfen, Juckreiz)</p>
           <ion-item>
             <ion-range min="0" max="10" [(ngModel)]="Nasenbeschwerden">
@@ -31,7 +29,7 @@
               <ion-label range-right>10</ion-label>
             </ion-range>
           </ion-item>
-          <h5>Atembeschwerden</h5>
+          <h5>Atembeschwerden <ion-icon (click)="showInfoAtembeschwerden()" name="md-information-circle"></ion-icon></h5>
           <p>(Atemnot, Husten)</p>
           <ion-item>
             <ion-range min="0" max="10" [(ngModel)]="Atembeschwerden">
@@ -39,7 +37,7 @@
               <ion-label range-right>10</ion-label>
             </ion-range>
           </ion-item>
-          
+
       <button (click)="pushHomePage()" ion-button secondary icon-left>
         <ion-icon name='close'></ion-icon>Abbrechen
       </button>
