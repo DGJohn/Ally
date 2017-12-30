@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { MedicationPage } from '../medication/medication';
-//import { HomePage } from '../home/home';
+import { HomePage } from '../../../pages/home/home';
 
 @Component({
   selector: 'page-physicalActivity',
@@ -15,9 +15,9 @@ export class PhysicalActivityPage {
   pushMedicationPage() {
     this.navCtrl.push(MedicationPage)
   }
-/**
+
   pushHomePage() {
     this.navCtrl.push(HomePage)
   }
-*/
+
 }

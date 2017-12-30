@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
 import { TotalPointsPage } from '../totalPoints/totalPoints';
-//import { HomePage } from '../home/home';
+import { HomePage } from '../../../pages/home/home';
 
 @Component({
   selector: 'page-medication',
@@ -15,11 +15,11 @@ export class MedicationPage {
   pushTotalPointsPage() {
     this.navCtrl.push(TotalPointsPage)
   }
-/**
+
   pushHomePage() {
     this.navCtrl.push(HomePage)
   }
-*/
+
 presentToast() {
   let toast = this.toastCtrl.create({
     message: 'Dein neuer Eintrag wurde gespeichert!',

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { PhysicalActivityPage } from '../physicalActivity/physicalActivity';
-//import { HomePage } from '../home/home';
+import { HomePage } from '../../../pages/home/home';
 import { AlertController } from 'ionic-angular';
 
 @Component({
@@ -16,11 +16,11 @@ export class ComplaintsPage {
   pushPhysicalActivityPage() {
     this.navCtrl.push(PhysicalActivityPage)
   }
-/**
+
   pushHomePage() {
     this.navCtrl.push(HomePage)
   }
-*/
+
 showInfoAugenbeschwerden() {
   let confirm = this.alertCtrl.create({
     title: 'Augenbeschwerden',

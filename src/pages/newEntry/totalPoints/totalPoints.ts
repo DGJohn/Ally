@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { TipsPage } from '../tips/tips';
-//import { HomePage } from '../home/home';
+import { HomePage } from '../../../pages/home/home';
 
 @Component({
   selector: 'page-totalPoints',
@@ -16,8 +16,8 @@ export class TotalPointsPage {
     this.navCtrl.push(TipsPage)
   }
 
-/**  pushHomePage() {
+  pushHomePage() {
     this.navCtrl.push(HomePage)
   }
-*/
+
 }
