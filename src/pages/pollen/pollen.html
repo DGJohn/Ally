@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>aktuelle Pollenbelastung und Wetter</ion-title>
+    <ion-title>Pollenprognose</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -17,17 +17,294 @@
   <div [ngSwitch]="orte">
     <ion-list *ngSwitchCase="'aktuellerOrt'">
       <ion-item>
-        <p>aktueller Ort, wird aber noch bearbeitet...</p>
+        <p>aktueller Ort: Bümpliz</p>
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-card-title>Pollenbelastung</ion-card-title>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                Bäume
+              </ion-col>
+              <ion-col>
+                Gräser
+              </ion-col>
+              <ion-col>
+                Kräuter
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-icon name="ios-flower-outline"></ion-icon>
+              </ion-col>
+              <ion-col>
+                <ion-icon name="ios-flower-outline"></ion-icon>
+              </ion-col>
+              <ion-col>
+                <ion-icon name="ios-flower"></ion-icon>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                keine Pollen
+              </ion-col>
+              <ion-col>
+                keine Pollen
+              </ion-col>
+              <ion-col>
+                wenig Pollen
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+        <p>(Leeschlag)</p>
+
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-card-title>Wetter</ion-card-title>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                Morgen
+              </ion-col>
+              <ion-col>
+                Mittag
+              </ion-col>
+              <ion-col>
+                Abend
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-icon name="ios-cloud-outline"></ion-icon>
+              </ion-col>
+              <ion-col>
+                <ion-icon name="ios-sunny-outline"></ion-icon>
+              </ion-col>
+              <ion-col>
+                <ion-icon name="ios-moon-outline"></ion-icon>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                0°/-1°
+              </ion-col>
+              <ion-col>
+                4°/2°
+              </ion-col>
+              <ion-col>
+                2°/1°
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
       </ion-item>
     </ion-list>
+
     <ion-list *ngSwitchCase="'bern'">
       <ion-item>
-        <p>Bern, wird aber noch bearbeitet...</p>
+        <p>Bern</p>
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-card-title>Pollenbelastung</ion-card-title>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                Bäume
+              </ion-col>
+              <ion-col>
+                Gräser
+              </ion-col>
+              <ion-col>
+                Kräuter
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-icon name="ios-flower-outline"></ion-icon>
+              </ion-col>
+              <ion-col>
+                <ion-icon name="ios-flower"></ion-icon>
+              </ion-col>
+              <ion-col>
+                <ion-icon name="ios-flower"></ion-icon>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                keine Pollen
+              </ion-col>
+              <ion-col>
+                wenig Pollen
+              </ion-col>
+              <ion-col>
+                wenig Pollen
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+        <p>(Leeschlag)</p>
+
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-card-title>Wetter</ion-card-title>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                Morgen
+              </ion-col>
+              <ion-col>
+                Mittag
+              </ion-col>
+              <ion-col>
+                Abend
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-icon name="ios-cloud-outline"></ion-icon>
+              </ion-col>
+              <ion-col>
+                <ion-icon name="ios-sunny-outline"></ion-icon>
+              </ion-col>
+              <ion-col>
+                <ion-icon name="ios-moon-outline"></ion-icon>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                0°/-1°
+              </ion-col>
+              <ion-col>
+                4°/2°
+              </ion-col>
+              <ion-col>
+                2°/1°
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+
       </ion-item>
     </ion-list>
+
     <ion-list *ngSwitchCase="'biel'">
       <ion-item>
-        <p>Biel, wird aber noch bearbeitet...</p>
+        <p>Biel</p>
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-card-title>Pollenbelastung</ion-card-title>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                Bäume
+              </ion-col>
+              <ion-col>
+                Gräser
+              </ion-col>
+              <ion-col>
+                Kräuter
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-icon name="ios-flower-outline"></ion-icon>
+              </ion-col>
+              <ion-col>
+                <ion-icon name="ios-flower-outline"></ion-icon>
+              </ion-col>
+              <ion-col>
+                <ion-icon name="ios-flower"></ion-icon>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                keine Pollen
+              </ion-col>
+              <ion-col>
+                keine Pollen
+              </ion-col>
+              <ion-col>
+                wenig Pollen
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+        <p>(Leeschlag)</p>
+
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-card-title>Wetter</ion-card-title>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                Morgen
+              </ion-col>
+              <ion-col>
+                Mittag
+              </ion-col>
+              <ion-col>
+                Abend
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-icon name="ios-cloud-outline"></ion-icon>
+              </ion-col>
+              <ion-col>
+                <ion-icon name="ios-sunny-outline"></ion-icon>
+              </ion-col>
+              <ion-col>
+                <ion-icon name="ios-moon-outline"></ion-icon>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                0°/-1°
+              </ion-col>
+              <ion-col>
+                4°/2°
+              </ion-col>
+              <ion-col>
+                2°/1°
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+
       </ion-item>
     </ion-list>
   </div>

@@ -19,5 +19,4 @@ export class NewEntryPage {
   pushHomePage() {
     this.navCtrl.push(HomePage)
   }
-
 }
