@@ -19,7 +19,7 @@
 
   <ion-item>
     <ion-label>Beruf</ion-label>
-    <ion-select [(ngModel)]="berufe">
+    <ion-select [(ngModel)]="berufe" cancelText="Abbrechen">
       <ion-option>Bauer</ion-option>
       <ion-option>Büroangestellter</ion-option>
       <ion-option>Lokführer</ion-option>
@@ -30,7 +30,7 @@
   </ion-item>
   <ion-item>
     <ion-label>Arbeitsumgebung</ion-label>
-    <ion-select [(ngModel)]="arbeitsumgebung" multiple="true">
+    <ion-select [(ngModel)]="arbeitsumgebung" multiple="true" cancelText="Abbrechen">
       <ion-option>draussen</ion-option>
       <ion-option>drinnen</ion-option>
       <ion-option>in der Natur</ion-option>
