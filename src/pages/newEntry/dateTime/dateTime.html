@@ -16,7 +16,7 @@
       <ion-item>
         <ion-label>Datum und Zeit</ion-label>
         <!--set default time now-->
-        <ion-datetime displayFormat="DD MMM, HH:mm" [(ngModel)]="date"></ion-datetime>
+        <ion-datetime displayFormat="DD MMM, HH:mm" [(ngModel)]="date" cancelText="Abbrechen" doneText="Speichern"></ion-datetime>
       </ion-item>
 
       <button (click)="pushHomePage()" ion-button secondary icon-left>

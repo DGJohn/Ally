@@ -133,7 +133,8 @@ import { ModalService } from '../services/ModalService';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp, {
-      backButtonText: 'Zurück'
+      backButtonText: 'Zurück',
+      monthShortNames: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez' ],
     }),
     HttpClientModule,
     IonicStorageModule.forRoot(),
