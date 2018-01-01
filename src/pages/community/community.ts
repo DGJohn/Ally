@@ -1,5 +1,7 @@
 import { Component, ViewChild, ElementRef  } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
+
 
 declare var google:any;
 var icon = {
@@ -20,7 +22,7 @@ export class CommunityPage {
 
   @ViewChild('map') mapRef:ElementRef;
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
   }
   ionViewDidLoad() {
     this.DisplayMap();
@@ -98,5 +100,19 @@ export class CommunityPage {
         iconBlue,
       });
     }
-
+    showExplanation() {
+      let confirm = this.alertCtrl.create({
+        title: 'Erklärung',
+        message: 'In dieser Karte siehst du, wo es User gibt, die unter Allergie-Beschwerden leiden. Dabei werden die drei Allergie-Arten Augenbeschwerden, Nasenbeschwerden und Atembeschwerden farblich unterschieden.',
+        buttons: [
+          {
+            text: 'Verstanden',
+            handler: () => {
+              console.log('Disagree clicked');
+            }
+          },
+        ]
+      });
+      confirm.present();
+    }
 }
