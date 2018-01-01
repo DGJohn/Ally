@@ -16,7 +16,7 @@ public barChartType:string = 'bar';
 public barChartLegend:boolean = true;
 
 public barChartData:any[] = [
-  {data: [0, 2, 5, 8, 9, 7, 3], label: 'Augenbeschwerden'},
+  {data: [0, 2, 5, 15, 9, 7, 3], label: 'Augenbeschwerden'},
   {data: [2, 6, 6, 10, 8, 2, 0], label: 'Nasenbeschwerden'},
   {data: [2, 4, 5, 7, 9, 7, 3], label: 'Atembeschwerden'},
 ];
@@ -26,7 +26,7 @@ public barChartTypeMonth:string = 'bar';
 public barChartLegendMonth:boolean = true;
 
 public barChartDataMonth:any[] = [
-  {data: [0, 2, 5, 8], label: 'Augenbeschwerden'},
+  {data: [0, 2, 15, 8], label: 'Augenbeschwerden'},
   {data: [2, 6, 6, 10], label: 'Nasenbeschwerden'},
   {data: [2, 4, 5, 7,], label: 'Atembeschwerden'},
 ];
@@ -38,7 +38,7 @@ public barChartLegendWeek:boolean = true;
 public barChartDataWeek:any[] = [
   {data: [5, 6, 8, 7, 5, 5, 7], label: 'Augenbeschwerden'},
   {data: [2, 6, 6, 10, 0, 2, 1], label: 'Nasenbeschwerden'},
-  {data: [2, 4, 5, 7, 3, 4, 2], label: 'Atembeschwerden'},
+  {data: [2, 4, 5, 7, 3, 4, 15], label: 'Atembeschwerden'},
 ];
 
 // events
