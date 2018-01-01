@@ -53,7 +53,9 @@ import { Question4Page } from '../pages/game/question4/question4';
 
 import { GamePage } from '../pages/game/game';
 
-
+import { PinwallPage } from '../pages/pinwall/pinwall';
+import { ArticleOnePage } from '../pages/pinwall/articleOne/articleOne';
+import { ArticleTwoPage } from '../pages/pinwall/articleTwo/articleTwo';
 
 @Component({
   selector: 'page-app',

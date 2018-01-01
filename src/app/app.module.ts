@@ -60,6 +60,10 @@ import { Question2Page } from '../pages/game/question2/question2';
 import { Question3Page } from '../pages/game/question3/question3';
 import { Question4Page } from '../pages/game/question4/question4';
 
+import { PinwallPage } from '../pages/pinwall/pinwall';
+import { ArticleOnePage } from '../pages/pinwall/articleOne/articleOne';
+import { ArticleTwoPage } from '../pages/pinwall/articleTwo/articleTwo';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { createTranslateLoader } from '../util';
@@ -121,6 +125,9 @@ import { ModalService } from '../services/ModalService';
     Right2Page,
     Right3Page,
     Right4Page,
+    PinwallPage,
+    ArticleOnePage,
+    ArticleTwoPage,
     TabsPage
   ],
   imports: [
@@ -184,6 +191,9 @@ import { ModalService } from '../services/ModalService';
     Right2Page,
     Right3Page,
     Right4Page,
+    PinwallPage,
+    ArticleOnePage,
+    ArticleTwoPage,
     TabsPage
   ],
   providers: [

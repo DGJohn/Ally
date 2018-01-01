@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Pinnwand</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="assets/img/aha.jpg">
+    </ion-avatar>
+    <h6>aha! Allergiezentrum Schweiz</h6>
+  </ion-item>
+  <img src="assets/img/Artikel1.jpg">
+  <ion-card-content>
+    <h2>Allergiekarriere</h2>
+    <p>Folgt beim Säugling oder Kleinkind eine Allergieform auf die nächste,
+      spricht man von «Allergiekarriere». Die «Allergiekarriere» umschreibt
+      den Umstand, dass allergisch
+      veranlagte Kinder mit zunehmendem Alter aus einer allergischen
+      Erkrankung «herauswachsen», danach aber an einer nächsten
+      Allergieform zu leiden beginnen. Auf die Neurodermitis folgt
+      das Asthma bronchiale und später der Heuschnupfen.</p>
+    <button (click)="pushArticleOnePage()">Mehr lesen</button>
+  </ion-card-content>
+  <ion-row>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="thumbs-up"></ion-icon>
+        <div>12 Gefällt mir</div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="text"></ion-icon>
+        <div>4 Kommentare</div>
+      </button>
+    </ion-col>
+    <ion-col center text-center>
+      <ion-note>
+        vor 2 Stunden
+      </ion-note>
+    </ion-col>
+  </ion-row>
+</ion-card>
+
+<ion-card>
+<ion-item>
+  <ion-avatar item-start>
+    <img src="assets/img/aha.jpg">
+  </ion-avatar>
+  <h6>aha! Allergiezentrum Schweiz</h6>
+</ion-item>
+<img src="assets/img/Artikel2.jpg">
+<ion-card-content>
+  <h2>Allergie-Typen</h2>
+  <p>Treten die Symptome innerhalb von Minuten auf oder mit zeitlicher Verzögerung?
+    Fachleute unterscheiden hier nach Allergie-Typen. Die verschiedenen Allergene lösen
+    vier Mechanismen und Symptome aus. Die Reaktionen können unmittelbar oder mit einer zeitlichen Verzögerung auftreten.</p>
+  <button (click)="pushArticleTwoPage()">Mehr lesen</button>
+</ion-card-content>
+<ion-row>
+  <ion-col>
+    <button ion-button icon-left clear small>
+      <ion-icon name="thumbs-up"></ion-icon>
+      <div>1 Gefällt mir</div>
+    </button>
+  </ion-col>
+  <ion-col>
+    <button ion-button icon-left clear small>
+      <ion-icon name="text"></ion-icon>
+      <div>1 Kommentare</div>
+    </button>
+  </ion-col>
+  <ion-col center text-center>
+    <ion-note>
+      vor 10 Stunden
+    </ion-note>
+  </ion-col>
+</ion-row>
+</ion-card>
+</ion-content>
