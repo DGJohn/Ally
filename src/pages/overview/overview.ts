@@ -8,8 +8,8 @@ import { NavController } from 'ionic-angular';
 export class OverviewPage {
 
   public barChartOptions:any = {
-  scaleShowVerticalLines: false,
-  responsive: true
+  scaleShowVerticalLines: true,
+  responsive: true,
 };
 public barChartLabels:string[] = ['Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August'];
 public barChartType:string = 'bar';
@@ -50,8 +50,9 @@ public chartHovered(e:any):void {
   console.log(e);
 }
 
-
+  season:string = "week";
   constructor(public navCtrl: NavController) {
+
   }
 
 
