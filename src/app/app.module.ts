@@ -18,6 +18,7 @@ import { MidataConnectionService } from '../services/MidataConnectionService';
 import { InBrowserBrowser } from '../services/InBrowserBrowser';
 import { ChartsModule } from 'ng2-charts';
 import { Camera } from '@ionic-native/camera';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { MyApp } from './app.component';
@@ -214,6 +215,7 @@ import { ModalService } from '../services/ModalService';
     MidataConnectionService,
     ModalService,
     Camera,
+    BarcodeScanner,
     HCIService
   ]
 })

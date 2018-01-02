@@ -16,8 +16,8 @@ Hier kannst Du Deine Medikamente erfassen
 </ion-card>
   </p>
 
-<button ion-button full (click)="scanMedBox()">Barcode scannen</button>
-<button ion-button full (click)="setMedicationWithoutScanning()">Nach Bezeichnung suchen</button>
+  <ion-input placeholder="Produktbezeichnung eingeben" [(ngModel)]="description"></ion-input>
+  <button ion-button full (click)="scanBarcode()">Barcode einscannen</button>
 
 <button (click)="pushHomePage()" ion-button secondary icon-left><ion-icon name='close'></ion-icon>Abbrechen</button>
 

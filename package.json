@@ -22,6 +22,7 @@
     "@angular/platform-browser": "4.4.2",
     "@angular/platform-browser-dynamic": "4.4.2",
     "@ionic-native/app-version": "^4.3.0",
+    "@ionic-native/barcode-scanner": "^4.5.2",
     "@ionic-native/camera": "^4.3.0",
     "@ionic-native/core": "4.2.1",
     "@ionic-native/diagnostic": "^4.2.1",
@@ -58,6 +59,7 @@
     "ionicons": "3.0.0",
     "midata": "git+https://github.com/i4mi/midata.js.git",
     "ng2-charts": "^1.6.0",
+    "phonegap-plugin-barcodescanner": "^7.0.0",
     "regression": "^2.0.0",
     "rxjs": "5.4.0",
     "sw-toolbox": "3.6.0",
@@ -83,7 +85,8 @@
       "cordova-plugin-inappbrowser": {},
       "cordova-plugin-network-information": {},
       "cordova-plugin-secure-storage": {},
-      "heartbeat-cordova-plugin": {}
+      "heartbeat-cordova-plugin": {},
+      "phonegap-plugin-barcodescanner": {}
     },
     "platforms": [
       "android",
