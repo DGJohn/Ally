@@ -7,8 +7,6 @@ import { NavController } from 'ionic-angular';
 })
 export class PollenPage {
   orte:string = "aktuellerOrt";
-  constructor(public navCtrl: NavController) {
-  }
 
   selectedCurrentLocation() {
 
