@@ -36,4 +36,6 @@ Hier kannst Du die Dosierung Deiner Medikamente erfassen
      </ion-item>
    </ion-list>
 
-   <button ion-button (click)="pushReminderTimePage()">weiter</button>
+   <button (click)="pushHomePage()" ion-button secondary icon-left><ion-icon name='close'></ion-icon>Abbrechen</button>
+
+   <button ion-button icon-right secondary (click)="pushReminderTimePage()">Weiter<ion-icon name="ios-arrow-forward"></ion-icon></button>

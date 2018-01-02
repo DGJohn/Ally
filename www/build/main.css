@@ -25792,15 +25792,30 @@ page-pulse-daily-data h1 {
   text-align: center;
 }
 
-.ally {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 5px #4c7fa0;
-  box-shadow: 0 0 5px #4c7fa0;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+page-community #my-map {
+  height: 100%;
+  background-color: transparent;
+}
+
+page-community #info {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.quiz-title {
+  text-align: center;
+}
+
+.quiz-title {
+  text-align: center;
+}
+
+.quiz-title {
+  text-align: center;
+}
+
+.quiz-title {
+  text-align: center;
 }
 
 .ally {
@@ -25834,6 +25849,22 @@ page-pulse-daily-data h1 {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.quiz-title {
+  text-align: center;
+}
+
+.quiz-title {
+  text-align: center;
+}
+
+.quiz-title {
+  text-align: center;
+}
+
+.quiz-title {
+  text-align: center;
 }
 
 page-impressum p, page-impressum h3 {
@@ -25935,6 +25966,18 @@ page-login #btnZone {
   width: 100%;
   position: fixed;
   bottom: 5%;
+}
+
+page-articleOne #Abschnitt {
+  font-weight: bold;
+}
+
+page-articleTwo #Abschnitt {
+  font-weight: bold;
+}
+
+page-pollen ion-icon {
+  font-size: 20px;
 }
 
 page-profile #photoSectionWrapper {

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AllergyPage } from '../allergy/allergy';
+import { HomePage } from '../../../pages/home/home';
 
 @Component({
   selector: 'page-job',
@@ -14,5 +15,8 @@ export class JobPage {
 
   pushAllergyPage() {
     this.navCtrl.push(AllergyPage)
+}
+pushHomePage() {
+  this.navCtrl.push(HomePage)
 }
 }

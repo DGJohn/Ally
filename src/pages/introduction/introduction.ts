@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { RewardPage } from '../introduction/reward/reward';
+import { HomePage } from '../home/home';
 
 @Component({
   selector: 'page-introduction',
@@ -22,5 +23,9 @@ export class IntroductionPage {
 
   pushRewardPage() {
     this.navCtrl.push(RewardPage)
+  }
+
+  pushHomePage() {
+    this.navCtrl.push(HomePage)
   }
 }

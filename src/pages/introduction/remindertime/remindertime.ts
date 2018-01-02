@@ -1,6 +1,8 @@
 import { Component, NgZone } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FinishPage } from '../finish/finish';
+import { HomePage } from '../../../pages/home/home';
+
 
 @Component({
   selector: 'page-remindertime',
@@ -20,5 +22,8 @@ date : any = new Date();
 
   pushFinishPage() {
     this.navCtrl.push(FinishPage)
+}
+pushHomePage() {
+  this.navCtrl.push(HomePage)
 }
 }

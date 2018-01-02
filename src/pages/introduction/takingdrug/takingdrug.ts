@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { DrugPage } from '../drug/drug';
 import { HCIService } from '../../../services/HCIService';
+import { HomePage } from '../../../pages/home/home';
 
 @Component({
   selector: 'page-takingdrug',
@@ -23,5 +24,8 @@ export class TakingDrugPage {
 
   pushDrugPage() {
     this.navCtrl.push(DrugPage)
+  }
+  pushHomePage() {
+    this.navCtrl.push(HomePage)
   }
 }
