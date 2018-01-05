@@ -13,25 +13,49 @@
   </ion-card-content>
   </ion-card>
 
-  <ion-list radio-group [(ngModel)]="questionMedication">
+  <!--ion-list radio-group [(ngModel)]="questionMedication">
     <ion-item>
-      <ion-label>Ja</ion-label>
-      <ion-select [(ngModel)]="questionMedicationWhy" cancelText="Abbrechen">
+      <ion-select [(ngModel)]="questionMedicationWhy" cancelText="Abbrechen" (ionChange)="onSelectChange($event)">
+        <ion-option value="true">Ja</ion-option>
+        <ion-option value="false">Nein</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-select [(ngModel)]="questionMedicationWhy" cancelText="Abbrechen" [disabled]="isDisabled">
         <ion-option>Vorbeugend</ion-option>
         <ion-option>Wegen Beschwerden</ion-option>
       </ion-select>
     </ion-item>
+  </ion-list-->
+
+  <ion-list radio-group [(ngModel)]="questionMedication" >
+    <ion-item>
+      <ion-label>Ja</ion-label>
+      <ion-radio value="true" (ionSelect)="change(true)"></ion-radio>
+    </ion-item>
     <ion-item>
       <ion-label>Nein</ion-label>
-      <ion-radio value="no"></ion-radio>
+      <ion-radio value="false" (ionSelect)="change(false)"></ion-radio>
     </ion-item>
   </ion-list>
 
-        <button (click)="pushHomePage()" ion-button secondary icon-left>
-          <ion-icon name='close'></ion-icon>Abbrechen
-        </button>
-        <button (click)="pushTotalPointsPage()" (click)="presentToast()" ion-button icon-right secondary>Weiter
-          <ion-icon name="ios-arrow-forward"></ion-icon>
-        </button>
+  <ion-list radio-group [(ngModel)]="questionMedicationWhy" [disabled]="isDisabled">
+    <ion-item>
+      <ion-label>Vorbeugend</ion-label>
+      <ion-radio ></ion-radio>
+    </ion-item>
+    <ion-item >
+      <ion-label>Wegen Beschwerden</ion-label>
+      <ion-radio></ion-radio>
+    </ion-item>
+  </ion-list>
+
+
+  <button (click)="pushHomePage()" ion-button secondary icon-left>
+    <ion-icon name='close'></ion-icon>Abbrechen
+  </button>
+  <button (click)="pushTotalPointsPage()" (click)="presentToast()" ion-button icon-right secondary>Weiter
+    <ion-icon name="ios-arrow-forward"></ion-icon>
+  </button>
 
 </ion-content>
