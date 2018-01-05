@@ -8,16 +8,22 @@ export class HCIService {
 constructor(){}
 
 getData(keyVal, indexVal, keyTypeVal) {
-
-
     // Use Plugin for request
     HciHospAPI.hciQuery(this.getHciQueryRequest(keyVal, indexVal, keyTypeVal), this.getUserCredentials()).then(response => {
-        return response.body;
+        let attName = "";
+        console.log(response.body);
+
+        // GET ATTRIBUTE DSCRD FROM XML attName=...
+
+
+
+        // END
+        return attName;
+        //return response.body;
     }).catch((err) => {
         return err;
     });
-
-  }
+  };
 
   // Do it without the plugin
   test(keyVal, indexVal, keyTypeVal){

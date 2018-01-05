@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, AlertController } from 'ionic-angular';
 import { DrugPage } from '../drug/drug';
 import { HCIService } from '../../../services/HCIService';
 import { HomePage } from '../../../pages/home/home';
@@ -13,9 +13,8 @@ export class TakingDrugPage {
   description: String;
   val: any;
 
-  constructor(public navCtrl: NavController, private hciService: HCIService, private barcodeScanner: BarcodeScanner) {
+  constructor(public navCtrl: NavController, private hciService: HCIService, private barcodeScanner: BarcodeScanner, private alertCtrl: AlertController) {
     this.description = "";
-
   }
 
   // Search by name
@@ -27,8 +26,8 @@ export class TakingDrugPage {
      scanBarcode(){
        this.barcodeScanner.scan().then((barcodeData) => {
          // Success! Barcode data is here
-         console.log(barcodeData);
-         this.getBarCode(barcodeData);
+         this.getBarCode(barcodeData.text);
+         this.showProduct();
         }, (err) => {
           // Error appears
          console.log(err);
@@ -39,6 +38,32 @@ export class TakingDrugPage {
      getBarCode(barCodeVal){
        this.val = this.hciService.getData(barCodeVal, 'hospINDEX', 'ARTBAR');
      }
+
+
+
+
+     showProduct() {
+      let alert = this.alertCtrl.create({
+        title: 'Medikament',
+        message: 'Ist das Ihr Produkt ' + this.val + " ?",
+        buttons: [
+          {
+            text: 'Nein',
+            role: 'cancel',
+            handler: () => {
+              console.log('Cancel clicked');
+            }
+          },
+          {
+            text: 'Einverstanden',
+            handler: () => {
+              console.log('ok');
+            }
+          }
+        ]
+      });
+      alert.present();
+    }
 
 
   pushDrugPage() {

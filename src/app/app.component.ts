@@ -137,9 +137,9 @@ export class MyApp {
             this.midataConnectionService.refresh()
               .catch(() => {
                 console.log("NOT AUTHENTICATED ANYMORE! REDIRECTING BACK TO LOGIN PAGE");
-                this.nav.setRoot(LoginPage, undefined, undefined, () => {
-                  loading.dismiss().catch();
-                })
+                //this.nav.setRoot(LoginPage, undefined, undefined, () => {
+                  //loading.dismiss().catch();
+                //})
               });
           } else {
             console.log("NO INTERNET CONNECTION, NO REFRESH ON RESUME");
