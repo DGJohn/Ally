@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-/*import { HomePage } from '../home/home';*/
+import { HomePage } from '../../home/home';
 
 
 @Component({
@@ -12,8 +12,8 @@ export class Right4Page {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  /*onClick() {
+  onClick() {
     this.navCtrl.push(HomePage);
-  }*/
+  }
 
 }
