@@ -28,9 +28,9 @@
     </ion-item>
   </ion-list-->
 
-  <ion-list radio-group [(ngModel)]="questionMedication" >
+  <ion-list radio-group [(ngModel)]="questionMedication">
     <ion-item>
-      <ion-label>Ja</ion-label>
+      <ion-label>Vielleicht</ion-label>
       <ion-radio value="true" (ionSelect)="change(true)"></ion-radio>
     </ion-item>
     <ion-item>
@@ -39,7 +39,7 @@
     </ion-item>
   </ion-list>
 
-  <ion-list radio-group [(ngModel)]="questionMedicationWhy" [disabled]="isDisabled">
+  <!--ion-list radio-group [(ngModel)]="questionMedicationWhy" [disabled]="isDisabled">
     <ion-item>
       <ion-label>Vorbeugend</ion-label>
       <ion-radio ></ion-radio>
@@ -48,7 +48,7 @@
       <ion-label>Wegen Beschwerden</ion-label>
       <ion-radio></ion-radio>
     </ion-item>
-  </ion-list>
+  </ion-list-->
 
 
   <button (click)="pushHomePage()" ion-button secondary icon-left>

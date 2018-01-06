@@ -17,7 +17,7 @@
 </ion-card>
   </p>
 
-  <ion-list radio-group [(ngModel)]="questionAllergy">
+  <!--ion-list radio-group [(ngModel)]="questionAllergy">
     <ion-item>
       <ion-label>Ja</ion-label>
       <ion-select [(ngModel)]="bekannteAllergien" multiple="true" cancelText="Abbrechen">
@@ -45,7 +45,42 @@
       <ion-label>Ich weiss es nicht</ion-label>
       <ion-radio value="unkwown"></ion-radio>
     </ion-item>
+  </ion-list-->
+
+
+  <ion-list radio-group [(ngModel)]="questionAllergy">
+    <ion-item>
+      <ion-label>Ja</ion-label>
+      <ion-radio value="true" (ionSelect)="change(true)"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Nein</ion-label>
+      <ion-radio value="false" (ionSelect)="change(false)"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Ich weiss es nicht</ion-label>
+      <ion-radio value="false" (ionSelect)="change(false)"></ion-radio>
+    </ion-item>
   </ion-list>
+
+  <ion-select [(ngModel)]="questionKnownAllergy" multiple="true" [disabled]="isDisabled">
+    <ion-option>Ambrosia</ion-option>
+    <ion-option>Ampfer</ion-option>
+    <ion-option>Beifuss</ion-option>
+    <ion-option>Birke</ion-option>
+    <ion-option>Buche</ion-option>
+    <ion-option>Edelkastanie</ion-option>
+    <ion-option>Eiche</ion-option>
+    <ion-option>Erle</ion-option>
+    <ion-option>Esche</ion-option>
+    <ion-option>Gräser</ion-option>
+    <ion-option>Hagebuche</ion-option>
+    <ion-option>Hasel</ion-option>
+    <ion-option>Platane</ion-option>
+    <ion-option>Wegerich</ion-option>
+  </ion-select>
+
+
 
   <button (click)="pushHomePage()" ion-button secondary icon-left><ion-icon name='close'></ion-icon>Abbrechen</button>
 

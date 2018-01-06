@@ -1,5 +1,5 @@
-import { Component, NgZone } from '@angular/core';
-import { NavController, ToastController } from 'ionic-angular';
+import { Component } from '@angular/core';
+import { NavController, ToastController, AlertController } from 'ionic-angular';
 import { TotalPointsPage } from '../totalPoints/totalPoints';
 import { HomePage } from '../../../pages/home/home';
 
@@ -9,26 +9,44 @@ import { HomePage } from '../../../pages/home/home';
 })
 export class MedicationPage {
 
-  private isDisabled:boolean = true;
-  private questionMedication:any={};
-  private questionMedicationWhy:any={};
+  public isDisabled: boolean = true;
+  questionMedication: any = {};
 
-
-  constructor(private zone:NgZone, public navCtrl: NavController, private toastCtrl: ToastController) {
-    this.questionMedication = true;
-    this.questionMedicationWhy = true;
-    this.isDisabled = false;
+  constructor(public navCtrl: NavController, private toastCtrl: ToastController, private alertCtrl: AlertController) {
+    this.questionMedication = false;
   }
 
-  change(val: any) {
-    this.zone.run(()=>{
-      if(val)
-        this.isDisabled = false;
-      else
-        this.isDisabled = true;
-        console.log(this.isDisabled);
-    })
- }
+    change(val: any) {
+    if (val)
+      this.openRadioPopUp()
+    }
+
+  openRadioPopUp(){
+      let alert = this.alertCtrl.create();
+      alert.setTitle('Medikamente');
+
+      alert.addInput({
+        type: 'radio',
+        label: 'Vorbeugend',
+        value: 'vorbeugend',
+        checked: true
+      });
+
+      alert.addInput({
+        type: 'radio',
+        label: 'Wegen Beschwerden',
+        value: 'beschwerden'
+      });
+
+      alert.addButton('Abbrechen');
+      alert.addButton({
+        text: 'Ok',
+        handler: (data: any) => {
+          console.log('Radio data:', data);
+        }
+      });
+      alert.present();
+  }
 
   pushTotalPointsPage() {
     this.navCtrl.push(TotalPointsPage)
@@ -38,17 +56,17 @@ export class MedicationPage {
     this.navCtrl.push(HomePage)
   }
 
-presentToast() {
-  let toast = this.toastCtrl.create({
-    message: 'Dein neuer Eintrag wurde gespeichert!',
-    duration: 3000,
-    position: 'bottom'
-});
+  presentToast() {
+    let toast = this.toastCtrl.create({
+      message: 'Dein neuer Eintrag wurde gespeichert!',
+      duration: 3000,
+      position: 'bottom'
+    });
 
-toast.onDidDismiss(() => {
-  console.log('Dismissed toast');
-});
+    toast.onDidDismiss(() => {
+      console.log('Dismissed toast');
+    });
 
-toast.present();
-}
+    toast.present();
+  }
 }
