@@ -4,12 +4,20 @@ import { AlertController } from 'ionic-angular';
 
 
 declare var google:any;
+
+
 var icon = {
     url: "../assets/img/roterPunkt.png", // url
 };
+
+var iconRed = {
+    url: "../assets/img/roterPunkt.png", // url
+};
+
 var iconBlue = {
     url: "../assets/img/blauerPunkt.png", // url
 };
+
 var iconGreen = {
     url: "../assets/img/gruenerPunkt.png", // url
 };
@@ -58,48 +66,42 @@ export class CommunityPage {
 
     const map = new google.maps.Map(this.mapRef.nativeElement, options);
 
-    this.addMarker(location, map);
-    this.addMarker(jegenstorf, map);
-    this.addMarkerGreen(lindenhof, map);
-    this.addMarkerBlue(zurich, map);
-    this.addMarker(muenchenbuchsee, map);
-    this.addMarker(ostring, map);
-    this.addMarker(buempliz, map);
-    this.addMarker(solothurn, map);
-    this.addMarker(luzern, map);
-    this.addMarker(biberist, map);
-    this.addMarker(grafenried, map);
-    this.addMarker(oerlikon, map);
-    this.addMarker(doerfli, map);
-    this.addMarker(baden, map);
-    this.addMarker(lyss, map);
-    this.addMarker(kongres, map);
-    this.addMarker(ostermundigen, map);
-    this.addMarker(ittigen, map);
+    this.addMarker(location, map, 'red');
+    this.addMarker(jegenstorf, map, 'red');
+    this.addMarker(lindenhof, map, 'green');
+    this.addMarker(zurich, map, 'blue');
+    this.addMarker(muenchenbuchsee, map, 'red');
+    this.addMarker(ostring, map , 'red');
+    this.addMarker(buempliz, map, 'red');
+    this.addMarker(solothurn, map, 'red');
+    this.addMarker(luzern, map, 'red');
+    this.addMarker(biberist, map, 'red');
+    this.addMarker(grafenried, map, 'red');
+    this.addMarker(oerlikon, map, 'red');
+    this.addMarker(doerfli, map, 'red');
+    this.addMarker(baden, map, 'red');
+    this.addMarker(lyss, map, 'red');
+    this.addMarker(kongres, map, 'red');
+    this.addMarker(ostermundigen, map, 'red');
+    this.addMarker(ittigen, map, 'red');
   }
 
-  addMarker(position, map) {
+  addMarker(position, map, color?:String) {
+    if(color == 'green')
+      icon = iconGreen;
+    if(color == 'blue')
+      icon = iconBlue;
+    if(color == 'red')
+      icon = iconRed;
+
+    console.log(position);
+
     return new google.maps.Marker({
       position,
       map,
       icon,
     });
   }
-
-  addMarkerGreen(position, map) {
-    return new google.maps.Marker({
-      position,
-      map,
-      iconGreen,
-    });
-  }
-    addMarkerBlue(position, map) {
-      return new google.maps.Marker({
-        position,
-        map,
-        iconBlue,
-      });
-    }
     showExplanation() {
       let confirm = this.alertCtrl.create({
         title: 'Erklärung',

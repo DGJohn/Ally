@@ -4,57 +4,26 @@
   </ion-navbar>
 </ion-header>
 
+<ion-header>
+  <ion-navbar>
+    <ion-title>Übersicht</ion-title>
+  </ion-navbar>
+</ion-header>
+
 <ion-content padding>
-  <div padding>
-  <ion-segment [(ngModel)]="season">
-    <ion-segment-button value="week">
+  <ion-segment [(ngModel)]="season" color="primary">
+    <ion-segment-button value="week" (ionSelect)='pushPage("week")'>
       Woche
     </ion-segment-button>
-    <ion-segment-button value="month" click="showMonth()">
+    <ion-segment-button value="month" (ionSelect)='pushPage("month")'>
       Monat
     </ion-segment-button>
-    <ion-segment-button value="year">
+    <ion-segment-button value="year" (ionSelect)='pushPage("year")'>
       Jahr
     </ion-segment-button>
   </ion-segment>
-</div>
-  <div [ngSwitch]="season">
-    <ion-list *ngSwitchCase="'week'">
-      <div style="display: block">
-        <canvas baseChart width="300" height="400"
-                [datasets]="barChartDataWeek"
-                [labels]="barChartLabelsWeek"
-                [options]="barChartOptions"
-                [legend]="barChartLegendWeek"
-                [chartType]="barChartTypeWeek"
-                (chartHover)="chartHovered($event)"
-                (chartClick)="chartClicked($event)"></canvas>
-      </div>
-    </ion-list>
-    <ion-list *ngSwitchCase="'month'">
-      <div style="display: block">
-        <canvas baseChart width="300" height="400"
-                [datasets]="barChartDataMonth"
-                [labels]="barChartLabelsMonth"
-                [options]="barChartOptions"
-                [legend]="barChartLegendMonth"
-                [chartType]="barChartTypeMonth"
-                (chartHover)="chartHovered($event)"
-                (chartClick)="chartClicked($event)"></canvas>
-      </div>
-    </ion-list>
-    <ion-list *ngSwitchCase="'year'">
-      <div style="display: block">
-        <canvas baseChart width="300" height="400"
-                [datasets]="barChartData"
-                [labels]="barChartLabels"
-                [options]="barChartOptions"
-                [legend]="barChartLegend"
-                [chartType]="barChartType"
-                (chartHover)="chartHovered($event)"
-                (chartClick)="chartClicked($event)"></canvas>
-      </div>
-    </ion-list>
-
-  </div>
+    <div id="container" style="display: block" [hidden]="isWeek"></div>
+    <div id="containerMonth" style="display: block" [hidden]="isMonth"></div>
+    <div id="containerYear" style="display: block" [hidden]="isYear"></div>
+    <p>Durch Klicken auf eine Beschwerdeart, kann diese ausgeblendet werden. Durch erneutes Klicken auf die Beschwerdeart wird diese wieder eingeblendet.</p>
 </ion-content>
