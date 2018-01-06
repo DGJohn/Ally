@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { HomePage } from '../../../pages/home/home';
+import { TabsPage } from '../../../pages/tabs/tabs';
 
 @Component({
   selector: 'page-finish',
@@ -12,7 +12,7 @@ export class FinishPage {
   constructor(public navCtrl: NavController) {
 
 }
-pushHomePage() {
-  this.navCtrl.push(HomePage)
+pushTabsPage() {
+  this.navCtrl.push(TabsPage)
 }
 }
