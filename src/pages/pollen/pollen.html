@@ -4,20 +4,20 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
 <!-- Segment buttons with text -->
   <ion-segment [(ngModel)]="orte" color="primary">
     <ion-segment-button value="aktuellerOrt"
     (ionSelect)="selectedCurrentLocation()">Aktueller Ort</ion-segment-button>
     <ion-segment-button value="bern"
     (ionSelect)="selectedBern()">Bern</ion-segment-button>
-    <ion-segment-button value="biel"
-    (ionSelect)="selectedBiel()">Biel</ion-segment-button>
+    <ion-segment-button value="bümpliz"
+    (ionSelect)="selectedBiel()">Bümpliz</ion-segment-button>
   </ion-segment>
   <div [ngSwitch]="orte">
     <ion-list *ngSwitchCase="'aktuellerOrt'">
       <ion-item>
-        <p>aktueller Ort: Bümpliz</p>
+        <p>aktueller Ort: Biel, Donnerstag 11.01.2018</p>
         <ion-card>
           <ion-grid>
             <ion-row>
@@ -58,7 +58,7 @@
                 keine Pollen
               </ion-col>
               <ion-col>
-                wenig Pollen
+                wenige Pollen
               </ion-col>
             </ion-row>
           </ion-grid>
@@ -115,7 +115,7 @@
 
     <ion-list *ngSwitchCase="'bern'">
       <ion-item>
-        <p>Bern</p>
+        <p>Bern, Donnerstag 11.01.2018</p>
         <ion-card>
           <ion-grid>
             <ion-row>
@@ -138,10 +138,10 @@
 
             <ion-row>
               <ion-col>
-                <ion-icon name="ios-flower-outline" style="color:yellow;font-size:35px;"></ion-icon>
+                <ion-icon name="ios-flower-outline" style="color:green;font-size:35px;"></ion-icon>
               </ion-col>
               <ion-col>
-                <ion-icon name="ios-flower" style="color:green;font-size:35px;"></ion-icon>
+                <ion-icon name="ios-flower" style="color:gold;font-size:35px;"></ion-icon>
               </ion-col>
               <ion-col>
                 <ion-icon name="ios-flower" style="color:orange;font-size:35px;"></ion-icon>
@@ -153,10 +153,10 @@
                 keine Pollen
               </ion-col>
               <ion-col>
-                wenig Pollen
+                wenige Pollen
               </ion-col>
               <ion-col>
-                viel Pollen
+                viele Pollen
               </ion-col>
             </ion-row>
           </ion-grid>
@@ -211,9 +211,9 @@
       </ion-item>
     </ion-list>
 
-    <ion-list *ngSwitchCase="'biel'">
+    <ion-list *ngSwitchCase="'bümpliz'">
       <ion-item>
-        <p>Biel</p>
+        <p>Bümpliz, Donnerstag 11.01.2018</p>
         <ion-card>
           <ion-grid>
             <ion-row>
@@ -254,7 +254,7 @@
                 keine Pollen
               </ion-col>
               <ion-col>
-                wenig Pollen
+                wenige Pollen
               </ion-col>
             </ion-row>
           </ion-grid>

@@ -20,11 +20,18 @@
     </ion-range>
   </ion-item>
 
-
-  <button (click)="pushHomePage()" ion-button secondary icon-left>
-    <ion-icon name='close'></ion-icon>Abbrechen
-  </button>
-  <button (click)="pushMedicationPage()" ion-button icon-right secondary>Weiter
-    <ion-icon name="ios-arrow-forward"></ion-icon>
-  </button>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button (click)="pushHomePage()" ion-button secondary icon-left>
+          <ion-icon name='close'></ion-icon>Abbrechen
+        </button>
+      </ion-col>
+      <ion-col>
+        <button (click)="pushMedicationPage()" ion-button icon-right secondary>Weiter
+          <ion-icon name="ios-arrow-forward"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

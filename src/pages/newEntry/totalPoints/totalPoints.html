@@ -20,7 +20,7 @@
   <ion-grid>
     <ion-row justify-content-center>
       <ion-col col-3>
-        <ion-icon name="briefcase" style="font-size:55px;color:yellow"></ion-icon>
+        <ion-icon name="briefcase" style="font-size:55px;color:gold"></ion-icon>
       </ion-col>
       <ion-col col-3>
           <ion-icon name="briefcase" style="font-size:55px;color:blue"></ion-icon>
@@ -31,11 +31,19 @@
     </ion-row>
   </ion-grid>
 
-  <button (click)="pushHomePage()" ion-button secondary icon-left>
-    <ion-icon name='close'></ion-icon>Abbrechen
-  </button>
-  <button (click)="pushTipsPage()" ion-button icon-right secondary>Weiter
-    <ion-icon name="ios-arrow-forward"></ion-icon>
-  </button>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button (click)="pushHomePage()" ion-button secondary icon-left>
+          <ion-icon name='close'></ion-icon>Abbrechen
+        </button>
+      </ion-col>
+      <ion-col>
+        <button (click)="pushTipsPage()" ion-button icon-right secondary>Weiter
+          <ion-icon name="ios-arrow-forward"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>

@@ -13,36 +13,44 @@
   </ion-card-content>
   </ion-card>
 
-          <h5>Augenbeschwerden <ion-icon (click)="showInfoAugenbeschwerden()" name="md-information-circle"></ion-icon></h5>
-          <p>(Brennen, Jucken, Tränen)</p>
-            <ion-item>
-            <ion-range min="0" max="15" pin="true" [(ngModel)]="Augenbeschwerden">
-              <ion-label range-left>0</ion-label>
-              <ion-label range-right>15</ion-label>
-            </ion-range>
-          </ion-item>
-          <h5>Nasenbeschwerden <ion-icon (click)="showInfoNasenbeschwerden()" name="md-information-circle"></ion-icon></h5>
-          <p>(Schnupfen, Juckreiz)</p>
-          <ion-item>
-            <ion-range min="0" max="15" pin="true" [(ngModel)]="Nasenbeschwerden">
-              <ion-label range-left>0</ion-label>
-              <ion-label range-right>15</ion-label>
-            </ion-range>
-          </ion-item>
-          <h5>Atembeschwerden <ion-icon (click)="showInfoAtembeschwerden()" name="md-information-circle"></ion-icon></h5>
-          <p>(Atemnot, Husten)</p>
-          <ion-item>
-            <ion-range min="0" max="15" pin="true" [(ngModel)]="Atembeschwerden">
-              <ion-label range-left>0</ion-label>
-              <ion-label range-right>15</ion-label>
-            </ion-range>
-          </ion-item>
+  <h5>Augenbeschwerden <ion-icon (click)="showInfoAugenbeschwerden()" name="md-information-circle"></ion-icon></h5>
+  <p>(Brennen, Juckreiz, Tränen)</p>
+    <ion-item>
+    <ion-range min="0" max="15" pin="true" [(ngModel)]="Augenbeschwerden">
+      <ion-label range-left>0</ion-label>
+      <ion-label range-right>15</ion-label>
+    </ion-range>
+  </ion-item>
+  <h5>Nasenbeschwerden <ion-icon (click)="showInfoNasenbeschwerden()" name="md-information-circle"></ion-icon></h5>
+  <p>(Schnupfen, Juckreiz)</p>
+  <ion-item>
+    <ion-range min="0" max="15" pin="true" [(ngModel)]="Nasenbeschwerden">
+      <ion-label range-left>0</ion-label>
+      <ion-label range-right>15</ion-label>
+    </ion-range>
+  </ion-item>
+  <h5>Atembeschwerden <ion-icon (click)="showInfoAtembeschwerden()" name="md-information-circle"></ion-icon></h5>
+  <p>(Atemnot, Husten)</p>
+  <ion-item>
+    <ion-range min="0" max="15" pin="true" [(ngModel)]="Atembeschwerden">
+      <ion-label range-left>0</ion-label>
+      <ion-label range-right>15</ion-label>
+    </ion-range>
+  </ion-item>
 
-      <button (click)="pushHomePage()" ion-button secondary icon-left>
-        <ion-icon name='close'></ion-icon>Abbrechen
-      </button>
-      <button (click)="pushPhysicalActivityPage()" ion-button icon-right secondary>Weiter
-        <ion-icon name="ios-arrow-forward"></ion-icon>
-      </button>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button (click)="pushHomePage()" ion-button secondary icon-left>
+          <ion-icon name='close'></ion-icon>Abbrechen
+        </button>
+      </ion-col>
+      <ion-col>
+        <button (click)="pushPhysicalActivityPage()" ion-button icon-right secondary>Weiter
+          <ion-icon name="ios-arrow-forward"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>

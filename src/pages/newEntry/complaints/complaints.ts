@@ -24,7 +24,7 @@ export class ComplaintsPage {
 showInfoAugenbeschwerden() {
   let confirm = this.alertCtrl.create({
     title: 'Augenbeschwerden',
-    message: 'Brennende Augen können harmlose Ursachen haben, die (meist) von alleine wieder verschwinden. Augenbrennen ist mitunter aber auch Ausdruck verschiedener Erkrankungen, die einer Behandlung bedürfen. Wer bereits längere Zeit unter Augenbrennen leidet und zusätzlich andere Beschwerden oder Schmerzen hat, sollte deshalb zum Arzt gehen.',
+    message: '0 bedeutet keine Augenbeschwerden und 15 bedeutet stärkste vorstellbare Beschwerden',
     buttons: [
       {
         text: 'Verstanden',
@@ -40,7 +40,7 @@ showInfoAugenbeschwerden() {
 showInfoNasenbeschwerden() {
   let confirm = this.alertCtrl.create({
     title: 'Nasenbeschwerden',
-    message: 'Unsere Nase kann Gerüche aufnehmen und verarbeiten, Atemluft reinigen und befeuchten sowie eingeatmete Erreger und Partikel abtransportieren. Durch verschiedene Nasenbeschwerden wie Nasenscheidewandverkrümmung oder Nasenbruch sowie aufgrund von Allergien, kann es zu Einschränkungen dieser Funktionen kommen.',
+    message: '0 bedeutet keine Augenbeschwerden und 15 bedeutet stärkste vorstellbare Beschwerden',
     buttons: [
       {
         text: 'Verstanden',
@@ -56,7 +56,7 @@ showInfoNasenbeschwerden() {
 showInfoAtembeschwerden() {
   let confirm = this.alertCtrl.create({
     title: 'Atembeschwerden',
-    message: 'Es gibt viele Ursachen für akute und chronische Atembeschwerden. Die Behandlung dieses Symptoms gehört grundsätzlich in die Hand eines Arztes. Atembeschwerden können anfallartig oder auch permanent auftreten.',
+    message: '0 bedeutet keine Augenbeschwerden und 15 bedeutet stärkste vorstellbare Beschwerden',
     buttons: [
       {
         text: 'Verstanden',
