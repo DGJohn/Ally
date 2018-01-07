@@ -7,19 +7,19 @@ declare var google:any;
 
 
 var icon = {
-    url: "../assets/img/roterPunkt.png", // url
-};
-
-var iconRed = {
-    url: "../assets/img/roterPunkt.png", // url
+    url: "../assets/img/blauerPunkt.png", // url
 };
 
 var iconBlue = {
     url: "../assets/img/blauerPunkt.png", // url
 };
 
+var iconGrey = {
+    url: "../assets/img/grauerPunkt.png", // url
+};
+
 var iconGreen = {
-    url: "../assets/img/gruenerPunkt.png", // url
+    url: "../assets/img/grünerPunkt.png", // url
 };
 
 @Component({
@@ -66,33 +66,33 @@ export class CommunityPage {
 
     const map = new google.maps.Map(this.mapRef.nativeElement, options);
 
-    this.addMarker(location, map, 'red');
-    this.addMarker(jegenstorf, map, 'red');
+    this.addMarker(location, map, 'blue');
+    this.addMarker(jegenstorf, map, 'grey');
     this.addMarker(lindenhof, map, 'green');
     this.addMarker(zurich, map, 'blue');
-    this.addMarker(muenchenbuchsee, map, 'red');
-    this.addMarker(ostring, map , 'red');
-    this.addMarker(buempliz, map, 'red');
-    this.addMarker(solothurn, map, 'red');
-    this.addMarker(luzern, map, 'red');
-    this.addMarker(biberist, map, 'red');
-    this.addMarker(grafenried, map, 'red');
-    this.addMarker(oerlikon, map, 'red');
-    this.addMarker(doerfli, map, 'red');
-    this.addMarker(baden, map, 'red');
-    this.addMarker(lyss, map, 'red');
-    this.addMarker(kongres, map, 'red');
-    this.addMarker(ostermundigen, map, 'red');
-    this.addMarker(ittigen, map, 'red');
+    this.addMarker(muenchenbuchsee, map, 'blue');
+    this.addMarker(ostring, map , 'blue');
+    this.addMarker(buempliz, map, 'blue');
+    this.addMarker(solothurn, map, 'green');
+    this.addMarker(luzern, map, 'grey');
+    this.addMarker(biberist, map, 'grey');
+    this.addMarker(grafenried, map, 'blue');
+    this.addMarker(oerlikon, map, 'blue');
+    this.addMarker(doerfli, map, 'blue');
+    this.addMarker(baden, map, 'grey');
+    this.addMarker(lyss, map, 'grey');
+    this.addMarker(kongres, map, 'green');
+    this.addMarker(ostermundigen, map, 'green');
+    this.addMarker(ittigen, map, 'green');
   }
 
   addMarker(position, map, color?:String) {
     if(color == 'green')
       icon = iconGreen;
+    if(color == 'grey')
+      icon = iconGrey;
     if(color == 'blue')
       icon = iconBlue;
-    if(color == 'red')
-      icon = iconRed;
 
     console.log(position);
 
