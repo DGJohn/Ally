@@ -65,6 +65,7 @@ import { PinwallPage } from '../pages/pinwall/pinwall';
 import { ArticleOnePage } from '../pages/pinwall/articleOne/articleOne';
 import { ArticleTwoPage } from '../pages/pinwall/articleTwo/articleTwo';
 import { UserPage } from '../pages/user/user';
+import { SettingsPage } from '../pages/settings/settings';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -131,6 +132,7 @@ import { ModalService } from '../services/ModalService';
     ArticleOnePage,
     ArticleTwoPage,
     UserPage,
+    SettingsPage,
     TabsPage
   ],
   imports: [
@@ -199,6 +201,7 @@ import { ModalService } from '../services/ModalService';
     ArticleOnePage,
     ArticleTwoPage,
     UserPage,
+    SettingsPage,
     TabsPage
   ],
   providers: [

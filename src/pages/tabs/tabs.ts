@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { HomePage } from '../home/home';
 import { PinwallPage} from '../pinwall/pinwall';
-import { ImpressumPage} from '../impressum/impressum';
+import { SettingsPage} from '../settings/settings';
 import { UserPage} from '../user/user';
 // import { ProfilePage} from '../profile/profile';
 
@@ -14,9 +14,9 @@ export class TabsPage {
   tab1Root = HomePage;
   tab2Root = PinwallPage;
   tab3Root = UserPage;
-  tab4Root = ImpressumPage;
+  tab4Root = SettingsPage;
   //tab3Root = ProfilePage;
-  
+
 
   constructor() {
 

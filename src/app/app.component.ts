@@ -57,6 +57,7 @@ import { UserPage } from '../pages/user/user';
 import { PinwallPage } from '../pages/pinwall/pinwall';
 import { ArticleOnePage } from '../pages/pinwall/articleOne/articleOne';
 import { ArticleTwoPage } from '../pages/pinwall/articleTwo/articleTwo';
+import { SettingsPage } from '../pages/settings/settings';
 
 @Component({
   selector: 'page-app',
