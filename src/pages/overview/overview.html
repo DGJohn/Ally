@@ -4,12 +4,18 @@
   </ion-navbar>
 </ion-header>
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 <!--ion-header>
   <ion-navbar>
     <ion-title>Übersicht</ion-title>
   </ion-navbar>
 </ion-header-->
 
+>>>>>>> origin/master
 <ion-content padding>
   <ion-segment [(ngModel)]="season" color="primary">
     <ion-segment-button value="week" (ionSelect)='pushPage("week")'>
@@ -22,8 +28,12 @@
       Jahr
     </ion-segment-button>
   </ion-segment>
-    <div id="container" style="display: block" [hidden]="isWeek"></div>
-    <div id="containerMonth" style="display: block" [hidden]="isMonth"></div>
-    <div id="containerYear" style="display: block" [hidden]="isYear"></div>
-    <p>Durch Klicken auf eine Beschwerdeart, kann diese ausgeblendet werden. Durch erneutes Klicken auf die Beschwerdeart wird diese wieder eingeblendet.</p>
+    <div><div id="container" style="display: block" [hidden]="isWeek"></div>
+    </div>
+    <div><div id="containerMonth" style="display: block" [hidden]="isMonth"></div>
+    </div>
+    <div><div id="containerYear" style="display: block" [hidden]="isYear"></div>
+    <div id="containerYearTwo" style="display: block" [hidden]="isYear"></div>
+      <p>Durch Klicken auf eine Beschwerdeart, kann diese ausgeblendet werden. Durch erneutes Klicken auf die Beschwerdeart wird diese wieder eingeblendet.</p>
+    </div>
 </ion-content>

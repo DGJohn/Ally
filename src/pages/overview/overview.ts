@@ -30,10 +30,17 @@ export class OverviewPage {
       type: 'column'
       },
       title: {
-      text: 'Beschwerdeverlauf über die letzten 7 Tage'
+      text: 'Beschwerdeverlauf über die Woche',
+         style: {
+         fontSize: '15px'
+        }
+      },
+      credits: {
+      text: '',
+      href: ''
       },
       xAxis: {
-      categories: ['Freitag', 'Samstag', 'Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag']
+      categories: ['Donnerstag', 'Mittwoch', 'Dienstag', 'Montag', 'Sonntag', 'Samstag', 'Freitag']
       },
       yAxis: {
       min: 0,
@@ -44,13 +51,13 @@ export class OverviewPage {
       },
       series: [{
       name: 'Augenbeschwerden',
-      data: [10, 4, 6, 8, 2, 6, 7]
+      data: [10, 4, 6, 8, 2, 6, 7],
       }, {
       name: 'Nasenbeschwerden',
-      data: [5, 7, 3, 3, 1, 9, 12]
+      data: [5, 7, 3, 3, 1, 9, 12],
       }, {
       name: 'Atembeschwerden',
-      data: [5, 7, 3, 10, 9, 4, 6]
+      data: [5, 7, 3, 10, 9, 4, 6],
       }]
       });
 
@@ -59,10 +66,17 @@ export class OverviewPage {
         type: 'column'
         },
         title: {
-        text: 'Beschwerdeverlauf über die letzten 30 Tage'
+        text: 'Beschwerdeverlauf über den Monat',
+           style: {
+           fontSize: '15px'
+          }
+        },
+        credits: {
+        text: '',
+        href: ''
         },
         xAxis: {
-        categories: ['18.-24.12.2017', '25.-31.12.2017', '01.-07.01.2018', '08.-14.01.2018']
+        categories: ['08.-14.01.2018', '01.-07.01.2018', '25.-31.12.2017', '18.-24.12.2017']
         },
         yAxis: {
         min: 0,
@@ -73,13 +87,13 @@ export class OverviewPage {
         },
         series: [{
         name: 'Augenbeschwerden',
-        data: [10, 4, 6, 8]
+        data: [10, 4, 6, 8],
         }, {
         name: 'Nasenbeschwerden',
-        data: [5, 7, 3, 3]
+        data: [5, 7, 3, 3],
         }, {
         name: 'Atembeschwerden',
-        data: [5, 7, 3, 10]
+        data: [5, 7, 3, 10],
         }]
         });
 
@@ -88,10 +102,17 @@ export class OverviewPage {
           type: 'column'
           },
           title: {
-          text: 'Beschwerdeverlauf über das gesamte Jahr'
+          text: 'Beschwerdeverlauf über das Jahr',
+             style: {
+             fontSize: '15px'
+            }
+          },
+          credits: {
+          text: '',
+          href: ''
           },
           xAxis: {
-          categories: ['Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August']
+          categories: ['Januar 2018', 'Dezember 2017', 'November 2017', 'Oktober 2017', 'September 2017', 'August 2017'],
           },
           yAxis: {
           min: 0,
@@ -102,16 +123,51 @@ export class OverviewPage {
           },
           series: [{
           name: 'Augenbeschwerden',
-          data: [10, 4, 6, 8, 2, 6, 7]
+          data: [0, 0, 0, 0, 1, 3],
           }, {
           name: 'Nasenbeschwerden',
-          data: [5, 7, 3, 3, 1, 9, 12]
+          data: [1, 1, 0, 0, 2, 4],
           }, {
           name: 'Atembeschwerden',
-          data: [5, 7, 3, 10, 9, 4, 6]
+          data: [0, 0, 0, 0, 2, 2],
           }]
           });
+
+          var myChartYear = HighCharts.chart('containerYearTwo', {
+            chart: {
+            type: 'column'
+            },
+            title: {
+            text: '',
+            },
+            credits: {
+            text: '',
+            href: ''
+            },
+            xAxis: {
+            categories: ['Juli 2017', 'Juni 2017', 'Mai 2017', 'April 2017', 'März 2017', 'Februar 2017']
+            },
+            yAxis: {
+            min: 0,
+            max: 15,
+            title: {
+            text: 'Beschwerdestärke'
+            }
+            },
+            series: [{
+            name: 'Augenbeschwerden',
+            data: [8, 12, 10, 5, 1, 0],
+            }, {
+            name: 'Nasenbeschwerden',
+            data: [6, 5, 5, 1, 1, 0],
+            }, {
+            name: 'Atembeschwerden',
+            data: [3, 3, 3, 1, 1, 0],
+            }]
+            });
   }
+
+
 
   pushPage(val: String){
     if(val == 'week'){
