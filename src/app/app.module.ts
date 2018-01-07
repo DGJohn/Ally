@@ -64,6 +64,7 @@ import { Question4Page } from '../pages/game/question4/question4';
 import { PinwallPage } from '../pages/pinwall/pinwall';
 import { ArticleOnePage } from '../pages/pinwall/articleOne/articleOne';
 import { ArticleTwoPage } from '../pages/pinwall/articleTwo/articleTwo';
+import { UserPage } from '../pages/user/user';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -129,6 +130,7 @@ import { ModalService } from '../services/ModalService';
     PinwallPage,
     ArticleOnePage,
     ArticleTwoPage,
+    UserPage,
     TabsPage
   ],
   imports: [
@@ -196,6 +198,7 @@ import { ModalService } from '../services/ModalService';
     PinwallPage,
     ArticleOnePage,
     ArticleTwoPage,
+    UserPage,
     TabsPage
   ],
   providers: [

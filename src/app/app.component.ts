@@ -52,6 +52,7 @@ import { Question3Page } from '../pages/game/question3/question3';
 import { Question4Page } from '../pages/game/question4/question4';
 
 import { GamePage } from '../pages/game/game';
+import { UserPage } from '../pages/user/user';
 
 import { PinwallPage } from '../pages/pinwall/pinwall';
 import { ArticleOnePage } from '../pages/pinwall/articleOne/articleOne';
