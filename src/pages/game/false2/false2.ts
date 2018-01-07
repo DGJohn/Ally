@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Question3Page } from '../question3/question3';
+import { HomePage } from '../../../pages/home/home';
 
 
 @Component({
@@ -14,6 +15,10 @@ export class False2Page {
 
   onClick() {
     this.navCtrl.push(Question3Page);
+  }
+
+  pushHomePage() {
+    this.navCtrl.push(HomePage)
   }
 
 }
