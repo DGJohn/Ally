@@ -15,9 +15,11 @@
     (ionSelect)="selectedBiel()">Bümpliz</ion-segment-button>
   </ion-segment>
   <div [ngSwitch]="orte">
+
+    <!--Segment: aktueller Ort-->
     <ion-list *ngSwitchCase="'aktuellerOrt'">
       <ion-item>
-        <p>aktueller Ort: Biel, Donnerstag 11.01.2018</p>
+        <p>Biel, Donnerstag 11.01.2018</p>
         <ion-card>
           <ion-grid>
             <ion-row>
@@ -51,13 +53,13 @@
             </ion-row>
 
             <ion-row>
-              <ion-col>
+              <ion-col style="font-size:12px;">
                 keine Pollen
               </ion-col>
-              <ion-col>
+              <ion-col style="font-size:12px;">
                 keine Pollen
               </ion-col>
-              <ion-col>
+              <ion-col style="font-size:12px;">
                 wenige Pollen
               </ion-col>
             </ion-row>
@@ -113,6 +115,7 @@
       </ion-item>
     </ion-list>
 
+    <!--Segment: Bern-->
     <ion-list *ngSwitchCase="'bern'">
       <ion-item>
         <p>Bern, Donnerstag 11.01.2018</p>
@@ -149,13 +152,13 @@
             </ion-row>
 
             <ion-row>
-              <ion-col>
+              <ion-col style="font-size:12px;">
                 keine Pollen
               </ion-col>
-              <ion-col>
+              <ion-col style="font-size:12px;">
                 wenige Pollen
               </ion-col>
-              <ion-col>
+              <ion-col style="font-size:12px;">
                 viele Pollen
               </ion-col>
             </ion-row>
@@ -211,6 +214,7 @@
       </ion-item>
     </ion-list>
 
+    <!--Segment: Bümpliz-->
     <ion-list *ngSwitchCase="'bümpliz'">
       <ion-item>
         <p>Bümpliz, Donnerstag 11.01.2018</p>
@@ -247,13 +251,13 @@
             </ion-row>
 
             <ion-row>
-              <ion-col>
+              <ion-col style="font-size:12px;">
                 keine Pollen
               </ion-col>
-              <ion-col>
+              <ion-col style="font-size:12px;">
                 keine Pollen
               </ion-col>
-              <ion-col>
+              <ion-col style="font-size:12px;">
                 wenige Pollen
               </ion-col>
             </ion-row>

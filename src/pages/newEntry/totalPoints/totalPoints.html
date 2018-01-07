@@ -10,36 +10,32 @@
     <img class="full-image" src="assets/img/AllySuper.png"/>
   <ion-card-content>
   <p>Vielen Dank! Du hast soeben einen Punkt erhalten.</p>
-  <p>Ich habe Deine Daten analysiert. Deine Beschwerden entsprechen
-         am ehesten einer Gräserpollenallergie!</p>
+  <!--p>Ich habe Deine Daten analysiert. Deine Beschwerden entsprechen
+         am ehesten einer Gräserpollenallergie!</p-->
+  <p>Öffne eine Truhe und hole Dir zusätzliche Punkte und einen Tipp.</p>
        </ion-card-content>
        </ion-card>
 
-  <p>Öffne eine Truhe und hole dir zusätzliche Punkte und einen Tipp.</p>
+
 
   <ion-grid>
-    <ion-row justify-content-center>
-      <ion-col col-3>
-        <ion-icon name="briefcase" style="font-size:55px;color:gold"></ion-icon>
+    <ion-row>
+      <ion-col text-center>
+        <ion-icon name="briefcase" (click)="pushTipsPage()" style="font-size:55px;color:gold"></ion-icon>
       </ion-col>
-      <ion-col col-3>
-          <ion-icon name="briefcase" style="font-size:55px;color:blue"></ion-icon>
+      <ion-col text-center>
+          <ion-icon name="briefcase" (click)="pushTipsPage()" style="font-size:55px;color:blue"></ion-icon>
       </ion-col>
-      <ion-col col-3>
-         <ion-icon name="briefcase" style="font-size:55px;color:red"></ion-icon>
+      <ion-col text-center>
+         <ion-icon name="briefcase" (click)="pushTipsPage()" style="font-size:55px;color:red"></ion-icon>
       </ion-col>
     </ion-row>
   </ion-grid>
 
   <ion-grid>
     <ion-row>
-      <ion-col>
-        <button (click)="pushHomePage()" ion-button secondary icon-left>
-          <ion-icon name='close'></ion-icon>Abbrechen
-        </button>
-      </ion-col>
-      <ion-col>
-        <button (click)="pushTipsPage()" ion-button icon-right secondary>Weiter
+      <ion-col text-center>
+        <button (click)="pushHomePage()" ion-button icon-right secondary style="height:36px;width:130px">Abschliessen
           <ion-icon name="ios-arrow-forward"></ion-icon>
         </button>
       </ion-col>

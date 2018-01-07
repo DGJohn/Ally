@@ -21,10 +21,26 @@ export class ComplaintsPage {
     this.navCtrl.push(HomePage)
   }
 
+  showInfoBeschwerden() {
+    let confirm = this.alertCtrl.create({
+      title: 'Beschwerden',
+      message: '0 bedeutet keine Beschwerden und 15 bedeutet stärkste vorstellbare Beschwerden',
+      buttons: [
+        {
+          text: 'Verstanden',
+          handler: () => {
+            console.log('Disagree clicked');
+          }
+        },
+      ]
+    });
+    confirm.present();
+  }
+
 showInfoAugenbeschwerden() {
   let confirm = this.alertCtrl.create({
     title: 'Augenbeschwerden',
-    message: '0 bedeutet keine Augenbeschwerden und 15 bedeutet stärkste vorstellbare Beschwerden',
+    message: '0 bedeutet keine Augenbeschwerden und 15 bedeutet stärkste vorstellbare Augenbeschwerden',
     buttons: [
       {
         text: 'Verstanden',
@@ -40,7 +56,7 @@ showInfoAugenbeschwerden() {
 showInfoNasenbeschwerden() {
   let confirm = this.alertCtrl.create({
     title: 'Nasenbeschwerden',
-    message: '0 bedeutet keine Augenbeschwerden und 15 bedeutet stärkste vorstellbare Beschwerden',
+    message: '0 bedeutet keine Nasenbeschwerden und 15 bedeutet stärkste vorstellbare Nasenbeschwerden',
     buttons: [
       {
         text: 'Verstanden',
@@ -56,7 +72,7 @@ showInfoNasenbeschwerden() {
 showInfoAtembeschwerden() {
   let confirm = this.alertCtrl.create({
     title: 'Atembeschwerden',
-    message: '0 bedeutet keine Augenbeschwerden und 15 bedeutet stärkste vorstellbare Beschwerden',
+    message: '0 bedeutet keine Atembeschwerden und 15 bedeutet stärkste vorstellbare Atembeschwerden',
     buttons: [
       {
         text: 'Verstanden',

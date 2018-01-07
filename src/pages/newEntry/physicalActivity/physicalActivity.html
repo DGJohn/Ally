@@ -10,6 +10,7 @@
     <img class="full-image" src="assets/img/AllyOh.png"/>
   <ion-card-content>
   <p>Wie stark hast Du Dich körperlich betätigt?</p>
+  <ion-icon (click)="showInfo()" name="md-information-circle"></ion-icon>
 </ion-card-content>
 </ion-card>
 
@@ -22,13 +23,13 @@
 
   <ion-grid>
     <ion-row>
-      <ion-col>
-        <button (click)="pushHomePage()" ion-button secondary icon-left>
+      <ion-col text-center>
+        <button (click)="pushHomePage()" ion-button secondary icon-left style="height:36px;width:130px">
           <ion-icon name='close'></ion-icon>Abbrechen
         </button>
       </ion-col>
-      <ion-col>
-        <button (click)="pushMedicationPage()" ion-button icon-right secondary>Weiter
+      <ion-col text-center>
+        <button (click)="pushMedicationPage()" ion-button icon-right secondary style="height:36px;width:130px">Weiter
           <ion-icon name="ios-arrow-forward"></ion-icon>
         </button>
       </ion-col>
