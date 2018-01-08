@@ -16,8 +16,14 @@
     </ion-card-content>
   </ion-card>
 
-  <button (click)="onClick()" ion-button icon-right secondary>Abschliessen
-    <ion-icon name="ios-arrow-forward"></ion-icon>
-  </button>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <button (click)="onClick()" ion-button icon-right secondary style="height:36px;width:130px">Abschliessen
+          <ion-icon name="ios-arrow-forward"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>

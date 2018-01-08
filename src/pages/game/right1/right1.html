@@ -1,7 +1,7 @@
 <ion-header padding class="quiz-title">
 
     <ion-title>Quiz</ion-title>
-  
+
   </ion-header>
 
 <ion-content padding>
@@ -17,12 +17,19 @@
     </ion-card-content>
   </ion-card>
 
-  <button (click)="pushHomePage()" ion-button secondary icon-left>
-    <ion-icon name='close'></ion-icon>Abbrechen
-  </button>
-
-  <button (click)="onClick()" ion-button icon-right secondary>Weiter
-    <ion-icon name="ios-arrow-forward"></ion-icon>
-  </button>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <button (click)="pushHomePage()" ion-button secondary icon-left style="height:36px;width:130px">
+          <ion-icon name='close'></ion-icon>Abbrechen
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button (click)="onClick()" ion-button icon-right secondary style="height:36px;width:130px">Weiter
+          <ion-icon name="ios-arrow-forward"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
