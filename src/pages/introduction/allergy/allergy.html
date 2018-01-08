@@ -80,8 +80,13 @@
     <ion-option>Wegerich</ion-option>
   </ion-select>
 
-
-
-  <button (click)="pushHomePage()" ion-button secondary icon-left><ion-icon name='close'></ion-icon>Abbrechen</button>
-
-  <button ion-button icon-right secondary (click)="pushTakingDrugPage()">Weiter<ion-icon name="ios-arrow-forward"></ion-icon></button>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <button (click)="pushHomePage()" ion-button secondary icon-left style="height:36px;width:130px"><ion-icon name='close'></ion-icon>Abbrechen</button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button icon-right secondary (click)="pushTakingDrugPage()" style="height:36px;width:130px">Weiter<ion-icon name="ios-arrow-forward"></ion-icon></button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>

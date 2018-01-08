@@ -19,6 +19,13 @@ Hier kannst Du Deine Medikamente erfassen
   <ion-input placeholder="Produktbezeichnung eingeben" [(ngModel)]="description"></ion-input>
   <button ion-button full (click)="scanBarcode()">Barcode einscannen</button>
 
-<button (click)="pushHomePage()" ion-button secondary icon-left><ion-icon name='close'></ion-icon>Abbrechen</button>
-
-<button ion-button icon-right secondary (click)="pushDrugPage()">Weiter<ion-icon name="ios-arrow-forward"></ion-icon></button>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <button (click)="pushHomePage()" ion-button secondary icon-left style="height:36px;width:130px"><ion-icon name='close'></ion-icon>Abbrechen</button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button icon-right secondary (click)="pushDrugPage()" style="height:36px;width:130px">Weiter<ion-icon name="ios-arrow-forward"></ion-icon></button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
