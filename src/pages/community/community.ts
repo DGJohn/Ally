@@ -67,23 +67,23 @@ export class CommunityPage {
     const map = new google.maps.Map(this.mapRef.nativeElement, options);
 
     this.addMarker(location, map, 'blue');
-    this.addMarker(jegenstorf, map, 'grey');
-    this.addMarker(lindenhof, map, 'green');
-    this.addMarker(zurich, map, 'blue');
+    this.addMarker(jegenstorf, map, 'blue');
+    this.addMarker(lindenhof, map, 'blue');
+    this.addMarker(zurich, map, 'green');
     this.addMarker(muenchenbuchsee, map, 'blue');
     this.addMarker(ostring, map , 'blue');
     this.addMarker(buempliz, map, 'blue');
-    this.addMarker(solothurn, map, 'green');
+    this.addMarker(solothurn, map, 'grey');
     this.addMarker(luzern, map, 'grey');
     this.addMarker(biberist, map, 'grey');
     this.addMarker(grafenried, map, 'blue');
     this.addMarker(oerlikon, map, 'blue');
-    this.addMarker(doerfli, map, 'blue');
+    this.addMarker(doerfli, map, 'green');
     this.addMarker(baden, map, 'grey');
-    this.addMarker(lyss, map, 'grey');
+    this.addMarker(lyss, map, 'blue');
     this.addMarker(kongres, map, 'green');
-    this.addMarker(ostermundigen, map, 'green');
-    this.addMarker(ittigen, map, 'green');
+    this.addMarker(ostermundigen, map, 'grey');
+    this.addMarker(ittigen, map, 'blue');
   }
 
   addMarker(position, map, color?:String) {
