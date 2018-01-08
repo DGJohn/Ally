@@ -16,7 +16,7 @@ Hier kannst Du die Dosierung Deiner Medikamente erfassen
 </ion-card>
   </p>
 
-  <ion-item>
+  <!--ion-item>
     <ion-label>täglich</ion-label>
     <ion-select [(ngModel)]="bekannteAllergien" multiple="true" cancelText="Abbrechen">
       <ion-option>morgens</ion-option>
@@ -34,7 +34,29 @@ Hier kannst Du die Dosierung Deiner Medikamente erfassen
        <ion-label>nie</ion-label>
        <ion-radio value="never"></ion-radio>
      </ion-item>
-   </ion-list>
+   </ion-list-->
+
+ <ion-list radio-group [(ngModel)]="useMedication">
+     <ion-item>
+       <ion-label>täglich</ion-label>
+       <ion-radio value="diary" (ionSelect)="change(true)"></ion-radio>
+     </ion-item>
+      <ion-item>
+        <ion-label>nach Bedarf</ion-label>
+        <ion-radio value="uponNeed" (ionSelect)="change(false)"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>nie</ion-label>
+        <ion-radio value="never" (ionSelect)="change(false)"></ion-radio>
+      </ion-item>
+    </ion-list>
+
+    <ion-select [(ngModel)]="bekannteAllergien" multiple="true" [disabled]="isDisabled">
+      <ion-option>morgens</ion-option>
+      <ion-option>mittags</ion-option>
+      <ion-option>abends</ion-option>
+      <ion-option>nachts</ion-option>
+    </ion-select>
 
    <ion-grid>
      <ion-row>

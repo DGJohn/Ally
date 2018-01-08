@@ -51,15 +51,15 @@
   <ion-list radio-group [(ngModel)]="questionAllergy">
     <ion-item>
       <ion-label>Ja</ion-label>
-      <ion-radio value="true" (ionSelect)="change(true)"></ion-radio>
+      <ion-radio value="yes" (ionSelect)="change(true)"></ion-radio>
     </ion-item>
     <ion-item>
       <ion-label>Nein</ion-label>
-      <ion-radio value="false" (ionSelect)="change(false)"></ion-radio>
+      <ion-radio value="no" (ionSelect)="change(false)"></ion-radio>
     </ion-item>
     <ion-item>
       <ion-label>Ich weiss es nicht</ion-label>
-      <ion-radio value="false" (ionSelect)="change(false)"></ion-radio>
+      <ion-radio value="maybe" (ionSelect)="change(false)"></ion-radio>
     </ion-item>
   </ion-list>
 
