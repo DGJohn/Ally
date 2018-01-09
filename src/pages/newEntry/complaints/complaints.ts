@@ -21,22 +21,6 @@ export class ComplaintsPage {
     this.navCtrl.push(HomePage)
   }
 
-  showInfoBeschwerden() {
-    let confirm = this.alertCtrl.create({
-      title: 'Beschwerden',
-      message: '0 bedeutet keine Beschwerden und 15 bedeutet stärkste vorstellbare Beschwerden',
-      buttons: [
-        {
-          text: 'Verstanden',
-          handler: () => {
-            console.log('Disagree clicked');
-          }
-        },
-      ]
-    });
-    confirm.present();
-  }
-
 showInfoAugenbeschwerden() {
   let confirm = this.alertCtrl.create({
     title: 'Augenbeschwerden',
