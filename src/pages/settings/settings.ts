@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgZone} from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 
@@ -8,7 +8,12 @@ import { NavController } from 'ionic-angular';
 })
 export class SettingsPage {
 
-  constructor(public navCtrl: NavController) {
+  date : any = new Date();
+
+  constructor(public navCtrl: NavController, private zone: NgZone) {
+
+    this.date = "18:00"
   }
+
 
 }

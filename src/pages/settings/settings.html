@@ -12,22 +12,22 @@
     <ion-toggle checked="true"></ion-toggle>
    </ion-item>
    <ion-item>
-   <ion-label style="font-size:15px">Uhrzeit</ion-label>
-   <ion-datetime style="font-size:15px" displayFormat="HH:mm" display="18:00" cancelText="Abbrechen" doneText="Speichern"></ion-datetime>
+   <ion-label style="font-size:15px; color:black">Uhrzeit</ion-label>
+   <ion-datetime style="font-size:15px" displayFormat="HH:mm" [(ngModel)]="date"  cancelText="Abbrechen" doneText="Speichern"></ion-datetime>
    </ion-item>
   </ion-item-group>
   <ion-item-group>
     <ion-item-divider style="background-color:#550A21; color:white">Standorte</ion-item-divider>
       <ion-item>
-        <ion-label style="font-size:15px">Wohnort</ion-label>
+        <ion-label style="font-size:15px; color:black">Wohnort</ion-label>
         <ion-input style="font-size:15px" type="text" value="Zürich" disabled="true"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label style="font-size:15px">Arbeitsort</ion-label>
+        <ion-label style="font-size:15px; color:black">Arbeitsort</ion-label>
         <ion-input style="font-size:15px" type="text" value="Zug" disabled="true"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label style="font-size:15px">Standort 1</ion-label>
+        <ion-label style="font-size:15px; color:black">Standort 1</ion-label>
         <ion-select style="font-size:15px" [(ngModel)]="place" cancelText="Abbrechen">
           <ion-option value="3006">3006 Bern Ostring</ion-option>
           <ion-option value="3012" selected="true">3012 Bern Neufeld</ion-option>
@@ -35,22 +35,22 @@
         </ion-select>
       </ion-item>
       <ion-item>
-        <ion-label style="font-size:15px">Standort 2</ion-label>
-        <ion-select style="font-size:15px" [(ngModel)]="place" cancelText="Abbrechen">
+        <ion-label style="font-size:15px; color:black">Standort 2</ion-label>
+        <ion-select style="font-size:15px" [(ngModel)]="place2" cancelText="Abbrechen">
           <ion-option value="3006">3006 Bern Ostring</ion-option>
           <ion-option value="3012">3012 Bern Neufeld</ion-option>
           <ion-option value="3303">3303 Jegenstorf</ion-option>
         </ion-select>
       </ion-item>
       <ion-item>
-      <ion-label style="font-size:15px">Pollenbelastungsanzeige für</ion-label>
+      <ion-label style="font-size:15px; color:black">Pollenbelastungsanzeige für</ion-label>
       <ion-select style="font-size:15px" [(ngModel)]="favorite1" cancelText="Abbrechen">
         <ion-option value="wohnort">Wohnort</ion-option>
         <ion-option value="arbeitsort">Arbeitsort</ion-option>
         <ion-option value="standort1">Standort 1</ion-option>
         <ion-option value="standort2">Standort 2</ion-option>
       </ion-select>
-      <ion-select style="font-size:15px" [(ngModel)]="favorite2" cancelText="Abbrechen">
+      <ion-select style="font-size:15px; color:black" [(ngModel)]="favorite2" cancelText="Abbrechen">
         <ion-option value="wohnort">Wohnort</ion-option>
         <ion-option value="arbeitsort">Arbeitsort</ion-option>
         <ion-option value="standort1">Standort 1</ion-option>
@@ -62,7 +62,7 @@
       <ion-item-divider style="background-color:#550A21; color:white">Startansicht</ion-item-divider>
       <ion-list>
         <ion-item>
-          <ion-label style="font-size:15px">Startansicht</ion-label>
+          <ion-label style="font-size:15px; color:black">Startansicht</ion-label>
           <ion-select style="font-size:15px" [(ngModel)]="startansicht" cancelText="Abbrechen">
             <ion-option value="home" selected="true">Home</ion-option>
             <ion-option value="neuerEintrag">Neuer Eintrag</ion-option>
@@ -76,5 +76,10 @@
           </ion-select>
         </ion-item>
     </ion-list>
+    <ion-item-divider style="background-color: #550A21; color:white">Option Spiel</ion-item-divider>
+    <ion-item>
+    <ion-label style="font-size:15px; color:black">Punkte sammeln mit Spiel</ion-label>
+    <ion-toggle checked="true"></ion-toggle>
+   </ion-item>
   </ion-item-group>
 </ion-content>
