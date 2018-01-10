@@ -46,7 +46,7 @@ export class TakingDrugPage {
      showProduct() {
       let alert = this.alertCtrl.create({
         title: 'Medikament',
-        message: 'Ist das Ihr Produkt ' + this.val + " ?",
+        message: 'Ist das Dein Produkt ' + this.val + " ?",
         buttons: [
           {
             text: 'Nein',
