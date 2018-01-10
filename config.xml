@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="coop.midata.ch.midemo" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>MiDemo</name>
+    <name>Ally</name>
     <description>Demonstrate the potential of IONIC and MIDATA</description>
     <author email="medinf.i4mi@bfh.ch" href="https://i4mi.bfh.ch">BFH - I4MI</author>
     <content src="index.html" />
@@ -74,6 +74,8 @@
         <splash height="1024" src="resources/ios/splash/Default-Portrait~ipad.png" width="768" />
         <splash height="960" src="resources/ios/splash/Default@2x~iphone.png" width="640" />
         <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
+        <icon height="1024" src="resources/ios/icon/icon-1024.png" width="1024" />
+        <splash height="2732" src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" />
     </platform>
     <allow-navigation href="http://192.168.1.107:8100" />
     <engine name="android" spec="^6.2.3" />
