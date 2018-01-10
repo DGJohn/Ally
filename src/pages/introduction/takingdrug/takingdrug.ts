@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
+import { ReminderTimePage } from '../remindertime/remindertime';
 import { DrugPage } from '../drug/drug';
 import { HCIService } from '../../../services/HCIService';
 import { HomePage } from '../../../pages/home/home';
@@ -55,9 +56,10 @@ export class TakingDrugPage {
             }
           },
           {
-            text: 'Einverstanden',
+            text: 'Ja',
             handler: () => {
-              console.log('ok');
+              console.log('Medikament erfasst');
+                this.navCtrl.push(DrugPage)
             }
           }
         ]
@@ -66,8 +68,9 @@ export class TakingDrugPage {
     }
 
 
-  pushDrugPage() {
-    this.navCtrl.push(DrugPage)
+
+  pushReminderTimePage() {
+    this.navCtrl.push(ReminderTimePage)
   }
   pushHomePage() {
     this.navCtrl.push(HomePage)

@@ -21117,7 +21117,7 @@ ion-navbar.toolbar {
   text-align: center;
   font-size: 1.7rem;
   font-weight: 600;
-  color: #000;
+  color: #550A21;
   pointer-events: auto;
 }
 
@@ -22630,7 +22630,7 @@ ion-navbar.toolbar {
   padding: 0 12px;
   font-size: 2rem;
   font-weight: 500;
-  color: #424242;
+  color: #550A21;
 }
 
 .bar-buttons-md {
@@ -22689,8 +22689,8 @@ ion-navbar.toolbar {
 .bar-button-outline-md {
   border-width: 1px;
   border-style: solid;
-  border-color: #424242;
-  color: #424242;
+  border-color: #550A21;
+  color: #550A21;
   background-color: transparent;
 }
 
@@ -22703,12 +22703,12 @@ ion-navbar.toolbar {
 }
 
 .bar-button-outline-md .button-effect {
-  background-color: #424242;
+  background-color: #550A21;
 }
 
 .bar-button-solid-md {
   color: #fff;
-  background-color: #424242;
+  background-color: #550A21;
 }
 
 .bar-button-solid-md:hover:not(.disable-hover) {
@@ -22717,7 +22717,7 @@ ion-navbar.toolbar {
 
 .bar-button-solid-md.activated {
   color: #fff;
-  background-color: #515151;
+  background-color: #631e33;
 }
 
 .bar-button-md.bar-button-icon-start ion-icon {
@@ -22790,27 +22790,27 @@ ion-navbar.toolbar {
 .bar-button-default-md,
 .bar-button-clear-md-default,
 .bar-button-md-default {
-  color: #424242;
+  color: #550A21;
   background-color: transparent;
 }
 
 .bar-button-default-md:hover:not(.disable-hover),
 .bar-button-clear-md-default:hover:not(.disable-hover),
 .bar-button-md-default:hover:not(.disable-hover) {
-  color: #424242;
+  color: #550A21;
 }
 
 .bar-button-clear-md,
 .bar-button-clear-md-clear,
 .bar-button-md-clear {
-  color: #424242;
+  color: #550A21;
   background-color: transparent;
 }
 
 .bar-button-clear-md:hover:not(.disable-hover),
 .bar-button-clear-md-clear:hover:not(.disable-hover),
 .bar-button-md-clear:hover:not(.disable-hover) {
-  color: #424242;
+  color: #550A21;
 }
 
 .toolbar-md-primary .toolbar-background-md {
@@ -24059,7 +24059,7 @@ ion-navbar.toolbar {
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #000;
+  color: #550A21;
   padding: 0 6px;
 }
 
@@ -26039,4 +26039,15 @@ page-profile .uploadImage {
   margin-left: -7.5%;
   z-index: 2;
   position: absolute;
+}
+
+.ally {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 5px #4c7fa0;
+  box-shadow: 0 0 5px #4c7fa0;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
