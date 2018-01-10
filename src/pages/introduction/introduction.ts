@@ -12,13 +12,9 @@ export class IntroductionPage {
   tabBarElement : any;
 
   constructor(public navCtrl: NavController) {
-    this.tabBarElement = document.querySelector ('.tabbar.show-tabbar');
 
   }
- ionViewWillEnter()
- {
-     this.tabBarElement.style.display = 'none';
- }
+
 
 
   pushRewardPage() {

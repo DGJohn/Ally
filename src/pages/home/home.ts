@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { OverviewPage } from '../overview/overview';
 import { CommunityPage } from '../community/community';
-import { IntroductionPage } from '../introduction/introduction';
 import { NewEntryPage } from '../newEntry/newEntry';
 import { PollenPage } from '../pollen/pollen';
 import { GamePage } from '../game/game';
@@ -24,9 +23,6 @@ pushCommunityPage() {
   this.navCtrl.push(CommunityPage)
 }
 
-pushIntroductionPage() {
-  this.navCtrl.push(IntroductionPage)
-}
 
 pushNewEntryPage() {
   this.navCtrl.push(NewEntryPage)

@@ -62,8 +62,17 @@
       <ion-radio value="maybe" (ionSelect)="change(false)"></ion-radio>
     </ion-item>
   </ion-list>
-
-  <ion-select [(ngModel)]="questionKnownAllergy" multiple="true" [disabled]="isDisabled">
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <button (click)="pushHomePage()" ion-button secondary icon-left style="height:36px;width:130px"><ion-icon name='close'></ion-icon>Abbrechen</button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button icon-right secondary (click)="pushTakingDrugPage()" style="height:36px;width:130px">Weiter<ion-icon name="ios-arrow-forward"></ion-icon></button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-select [(ngModel)]="questionKnownAllergy" multiple="true" [disabled]="isDisabled" style="font-size:1px">
     <ion-option>Ambrosia</ion-option>
     <ion-option>Ampfer</ion-option>
     <ion-option>Beifuss</ion-option>
@@ -79,14 +88,3 @@
     <ion-option>Platane</ion-option>
     <ion-option>Wegerich</ion-option>
   </ion-select>
-
-  <ion-grid>
-    <ion-row>
-      <ion-col text-center>
-        <button (click)="pushHomePage()" ion-button secondary icon-left style="height:36px;width:130px"><ion-icon name='close'></ion-icon>Abbrechen</button>
-      </ion-col>
-      <ion-col text-center>
-        <button ion-button icon-right secondary (click)="pushTakingDrugPage()" style="height:36px;width:130px">Weiter<ion-icon name="ios-arrow-forward"></ion-icon></button>
-      </ion-col>
-    </ion-row>
-  </ion-grid>

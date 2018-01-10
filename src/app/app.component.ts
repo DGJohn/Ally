@@ -15,6 +15,8 @@ import { HomePage } from '../pages/home/home';
 import { BloodPage } from '../pages/blood/blood';
 import { LoginPage } from "../pages/login/login";
 import { ProfilePage } from "../pages/profile/profile";
+import { OverviewPage } from '../pages/overview/overview';
+import { CommunityPage } from '../pages/community/community';
 import { IntroductionPage } from '../pages/introduction/introduction';
 import { AllergyPage } from '../pages/introduction/allergy/allergy';
 import { DrugPage } from '../pages/introduction/drug/drug';
@@ -67,7 +69,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
 
-  rootPage: any = TabsPage;
+  rootPage: any = IntroductionPage;
 
   pages: Array<{ title: string, component: any, icon: string }>;
 
