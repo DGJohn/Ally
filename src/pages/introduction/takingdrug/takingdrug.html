@@ -16,7 +16,6 @@ Hier kannst Du Deine Medikamente erfassen
 </ion-card>
   </p>
 
-  <ion-input placeholder="Produktbezeichnung eingeben" [(ngModel)]="description"></ion-input>
   <button ion-button full (click)="scanBarcode()">Barcode einscannen</button>
 
   <ion-grid>
@@ -25,7 +24,7 @@ Hier kannst Du Deine Medikamente erfassen
         <button (click)="pushHomePage()" ion-button secondary icon-left style="height:36px;width:130px"><ion-icon name='close'></ion-icon>Abbrechen</button>
       </ion-col>
       <ion-col text-center>
-        <button ion-button icon-right secondary (click)="pushDrugPage()" style="height:36px;width:130px">Weiter<ion-icon name="ios-arrow-forward"></ion-icon></button>
+        <button ion-button icon-right secondary (click)="pushReminderTimePage()" style="height:36px;width:130px">Weiter<ion-icon name="ios-arrow-forward"></ion-icon></button>
       </ion-col>
     </ion-row>
   </ion-grid>
