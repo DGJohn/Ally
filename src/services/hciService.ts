@@ -55,6 +55,7 @@ export class HCIService {
                     text: 'Einverstanden',
                     handler: () => {
                         console.log('ok');
+                        
                     }
                 }
             ]
