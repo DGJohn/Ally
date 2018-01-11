@@ -10,7 +10,7 @@
 <img class="full-image" src="assets/img/AllyAchtung.png"/>
   <ion-card-content>
     <p>
-Hier kannst Du die Dosierung Deiner Medikamente erfassen
+      Hier kannst Du die Dosierung Deines Medikaments erfassen.
     </p>
   </ion-card-content>
 </ion-card>
@@ -50,6 +50,8 @@ Hier kannst Du die Dosierung Deiner Medikamente erfassen
         <ion-radio value="never" (ionSelect)="change(false)"></ion-radio>
       </ion-item>
     </ion-list>
+
+    <button ion-button full (click)="pushTakingDrugPage()">Weiteres Medikament hinzufügen</button>
 
    <ion-grid>
      <ion-row>

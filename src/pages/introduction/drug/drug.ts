@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 import { ReminderTimePage } from '../remindertime/remindertime';
 import { HomePage } from '../../../pages/home/home';
+import { TakingDrugPage } from '../takingdrug/takingdrug';
 
 @Component({
   selector: 'page-drug',
@@ -65,5 +66,9 @@ export class DrugPage {
 }
 pushHomePage() {
   this.navCtrl.push(HomePage)
+}
+
+pushTakingDrugPage() {
+  this.navCtrl.push(TakingDrugPage)
 }
 }
