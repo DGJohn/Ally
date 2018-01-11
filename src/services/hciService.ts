@@ -55,6 +55,7 @@ export class HCIService {
                     text: 'Ja',
                     handler: () => {
                         console.log('ok');
+                        
 
                     }
                 }
