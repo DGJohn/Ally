@@ -42,7 +42,7 @@ export class HCIService {
     showProduct(val: String) {
         let alert = this.alertCtrl.create({
             title: 'Medikament',
-            message: 'Ist das Ihr Produkt ' + val + " ?",
+            message: 'Ist das Dein Produkt ' + val + " ?",
             buttons: [
                 {
                     text: 'Nein',
@@ -52,10 +52,10 @@ export class HCIService {
                     }
                 },
                 {
-                    text: 'Einverstanden',
+                    text: 'Ja',
                     handler: () => {
                         console.log('ok');
-                        
+
                     }
                 }
             ]
